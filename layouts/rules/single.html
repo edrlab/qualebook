@@ -138,10 +138,10 @@ Origine :
                                       href="{{ `authors/` | relLangURL }}{{ . | urlize | lower }}/"> 
                                         {{ . | humanize }}</a>
                                   {{ end }}
-              | Reference Opquast {{ .Params.opquast }} 
+              | {{ i18n "opquastref" }}  {{ .Params.opquast }} 
             |                <i class="fa-regular fa-clock mr-2"></i>
-            Mise à jour le {{ time.Format ":date_long" .PublishDate }}</p>
-              <p><a class="normal" href="../{{ .Params.before }}">Régle précédente</a> | <a class="normal" href="../{{ .Params.after }}">Régle suivante</a></p>
+            {{ i18n "updateon" }} {{ time.Format ":date_long" .PublishDate }}</p>
+              <p><a class="normal" href="../{{ .Params.before }}">{{ i18n "previousrule" }}</a> | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }}</a></p>
 
             {{/*  <div class="lg:col-4 flex items-center">
               {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}

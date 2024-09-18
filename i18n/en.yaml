@@ -33,3 +33,15 @@
 
 - id: Referentiel
   translation: references
+
+- id: nextrule
+  translation: Next rule
+
+- id: previousrule
+  translation: Previous rule
+  
+- id: updateon
+  translation: Updated on 
+
+- id: opquastref
+  translation: Opquast reference
