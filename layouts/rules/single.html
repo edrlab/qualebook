@@ -1,0 +1,186 @@
+{{ define "main" }}
+  <section class="section pt-7">
+    <div class="container">
+      <div class="row justify-center">
+        <article class="lg:col-10">
+          {{ $image:= .Params.image }}
+          {{ if $image }}
+            <figure class="mb-10">
+              {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
+            </figure>
+          {{ end }}
+          <h1 class="h2 mb-4">
+            {{ .Title }}
+          </h1>
+          <ul class="mb-4">
+            <li class="mr-4 inline-block">
+            {{ .Params.description }}
+          </li>
+
+            <li class="mr-4 inline-block">
+              <i class="fa-regular fa-folder mr-2"></i>
+              {{ $categories:= .Params.categories }}
+              {{ range $i,$p:= $categories }}
+                <a
+                  href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+                  class="ms-1"
+                  >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                    {{ ", " }}
+                  {{ end }}
+                </a>
+              {{ end }}
+            </li>
+
+          </ul>
+          <div class="content mb-10">
+            {{ .Content }}
+            <blockquote>{{ .Params.abstract }}</blockquote>
+            
+            <h3>Objectifs</h3>
+            <ul>
+              {{ $objectif:= .Params.objectif }}
+              {{ range $i,$p:= $objectif }}
+                <li class="">
+
+                    {{ . | safeHTML  }}
+
+                </li>
+              {{ end }}
+            </ul>
+            <h3>Mise en œuvre</h3>
+            <ul>
+              {{ $meo:= .Params.meo }}
+              {{ range $i,$p:= $meo }}
+                <li class="">
+
+                    {{ . | safeHTML }}
+
+                </li>
+              {{ end }}
+            </ul>
+            <h3>Controle</h3>
+            <ul>
+              {{ $controle:= .Params.controle }}
+              {{ range $i,$p:= $controle }}
+                <li class="inline-block">
+
+                    {{ . | safeHTML }}
+
+                </li>
+              {{ end }}
+            </ul>
+
+            {{/*  <li class="inline-block">{{ .Params.Meo }}</li>
+            <h3>Contrôle </h3>
+            <li class="inline-block">{{ .Params.Controle }}</li>  */}}
+          </div>
+          <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+            <h5>Étapes concernées&nbsp;: </h5>
+            <ul>
+              {{ $steps:= .Params.steps }}
+              {{ range $i,$p:= $steps }}
+                <li class="inline-block">
+                  <a
+                  class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                  href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/"> 
+                    {{ . | humanize }}</a>
+
+                </li>
+              {{ end }}
+            </ul>
+            </div>
+          <div class="row items-start justify-between">
+            <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+              <h5 class="mr-3">{{ i18n "tags" }}&nbsp;:</h5>
+              <ul>
+                {{ $tags:= .Params.tags }}
+                {{ range $i,$p:= $tags }}
+                  <li class="inline-block">
+                    <a
+                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                      href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                      {{ . | humanize }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+              
+            </div>
+          </div>
+            <div class="row items-start justify-between">
+
+            <div class="">
+              <h5 class="mr-3">{{ i18n "Referentiel" }}&nbsp;:</h5>
+              <ul>
+                {{ $Referentiel:= .Params.Referentiel }}
+                {{ range $i,$p:= $Referentiel }}
+                <li class="inline-block">
+                    <a
+                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                      href="{{ `Referentiel/` | relLangURL }}{{ . | urlize | lower }}/">
+                      {{ . | humanize }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+              
+            </div>
+            </div>
+            
+            <h5 class="mr-3">À propos de cette règle</h5>
+              <p class="mr-4 inline-block">
+Origine : 
+                  {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}
+                                  {{ $source:= .Params.source }} 
+                                  {{ range $i,$p:= $source }}
+                                      <a
+                                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 rounded px-3 py-1 hover:text-white"
+                                      href="{{ `authors/` | relLangURL }}{{ . | urlize | lower }}/"> 
+                                        {{ . | humanize }}</a>
+                                  {{ end }}
+              | Reference Opquast {{ .Params.opquast }} 
+            |                <i class="fa-regular fa-clock mr-2"></i>
+            Mise à jour le {{ time.Format ":date_long" .PublishDate }}</p>
+              <p><a class="normal" href="../{{ .Params.before }}">Régle précédente</a> | <a class="normal" href="../{{ .Params.after }}">Régle suivante</a></p>
+
+            {{/*  <div class="lg:col-4 flex items-center">
+              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
+            </div>  */}}
+          </div>
+
+
+          <!-- comments -->
+          {{ if site.DisqusShortname }}
+            <div class="mt-20">
+              {{ template "_internal/disqus.html" . }}
+            </div>
+          {{ end }}
+        </article>
+        {{/*  <nav>
+          <a href="">Régle précédente</a> <a href="">Régle suivante</a>
+        </nav>  */}}
+      </div>
+
+      <!-- Related posts -->
+      {{/*  {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+      {{ $related = $related | shuffle | first 3 }}
+      {{ with $related }}
+        <div class="section pb-0">
+          <h2 class="h3 mb-12">{{ i18n "related_posts" }}</h2>
+          <div class="row">
+            {{ range . }}
+              <div class="lg:col-4">
+                {{ partial "components/blog-card" . }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>  */}}
+    {{/*  <div class="content mb-10">
+           
+      {{ .Content }}
+
+    </div>  */}}
+  </section>
+{{ end }}

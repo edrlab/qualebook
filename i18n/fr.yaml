@@ -1,0 +1,36 @@
+- id: home
+  translation: Accueil
+
+- id: read_more
+  translation: Détails
+
+- id: send
+  translation: Envoyer
+
+- id: related_posts
+  translation: Entrées reliées
+
+- id: categories
+  translation: Categories
+
+- id: tags
+  translation: Étiquettes
+
+- id: tocSommaire
+
+- id: share
+  translation: Partager
+
+- id: search_input_placeholder
+  translation: Rechercher ...
+
+- id: no_results_for
+  translation: Pas de résultat pour 
+
+- id: empty_search_results_placeholder
+  translation: Écrire pour rechercher.
+
+- id: Referentiel
+  translation: Référentiels
+
+  
