@@ -3,7 +3,7 @@
 # main menu
 [[main]]
 name = "Home"
-url = "/"
+url = ""
 weight = 1
 
 [[main]]
@@ -12,53 +12,21 @@ url = "about/"
 weight = 2
 
 [[main]]
-name = "Elements"
-url = "elements/"
+name = "Authors"
+url = "authors/"
+weight = 2
+
+[[main]]
+name = "Rules"
+url = "rules/"
 weight = 3
 
 [[main]]
-weight = 4
-name = "Pages"
-hasChildren = true
-
-[[main]]
-parent = "Pages"
-name = "Blog"
-url = "blog/"
-
-[[main]]
-parent = "Pages"
-name = "Contact"
-url = "contact/"
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "authors/"
-
-[[main]]
-parent = "Pages"
+# parent = "Pages"
 name = "Categories"
 url = "categories/"
 
 [[main]]
-parent = "Pages"
-name = "404 Page"
-url = "404/"
-
-
-# footer menu
-[[footer]]
-name = "About"
-url = "about/"
-weight = 1
-
-[[footer]]
-name = "Elements"
-url = "elements/"
-weight = 2
-
-[[footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
-weight = 3
+# parent = "Pages"
+name = "Tags"
+url = "tags/"
