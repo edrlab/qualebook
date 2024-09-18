@@ -44,3 +44,21 @@
 
 - id: opquastref
   translation: Reference Opquast
+
+- id: aboutthatrule
+  translation: À propos de cette règle 
+
+- id: stepsconcerned
+  translation: Étapes concernées 
+
+- id: control
+  translation: Contrôle
+
+- id: meo
+  translation: Mise en œuvre
+
+- id: objectives
+  translation: Objectifs 
+
+- id: ruleorigine
+  translation: Origine de la règle 
