@@ -27,7 +27,7 @@ Ce travail est basé sur la [Checklist Opquast - assurance qualité web](https:/
 Plusieurs méthodes sont possibles pour commenter, discuter et proposer des modifications ou améliorations. 
 
 * [Ouvrir une "Issue" sur l'outil de suivi](https://github.com/edrlab/qualebook/issues/new) (nécessite un compte GitHub).
-* Utiliser [Hypothesis](https://hypothes.is). [Exemple d'annotation Hypothesis](https://hyp.is/0Ue8yGaIEe6g0hMib30YBw/localhost:1313/qualebook/fr/rules/001/) 
+* Utiliser [Hypothesis](https://hypothes.is). [Exemple d'annotation Hypothesis]((https://hyp.is/0Ue8yGaIEe6g0hMib30YBw/edrlab.github.io/qualebook/fr/rules/001/) ) 
   
 ## Licence
 
