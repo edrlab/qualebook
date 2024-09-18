@@ -6,7 +6,12 @@ draft: false
 layout: about
 ---
 
-*Travail en cours.*
+Qualebook public presentations:
+* <span lang="fr">Assises du livre numérique : [QUALINUM la liste de référence qualité du livre numérique (En français sur Youtube)](https://youtu.be/zg6C0cuDUqE?list=PLY0BtmO03yYGQ8sQ7fwSw7IVaymmtp4Pm&t=2413)</span>
+* <span lang="en">Digital Publishing Summit 2024: [Quality of ebooks, Video of the presentation on the EDRLab website](https://www.edrlab.org/events/digital-publishing-summit-2024/#1708288836982-85ce3f99-0b0f)</span>
+
+
+*Qualebook est un travail en cours.*
 
 L’édition numérique a développé des processus d’industrialisation et de standardisation adaptés, comme le format EPUB mais n’échappe pas aujourd’hui aux injonctions extérieures liées à des dispositions légales et des enjeux sociétaux. 
 
