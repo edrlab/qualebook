@@ -1,7 +1,7 @@
 ---
-title: "Pourquoi qualebook"
+title: "Why qualebook?"
 meta_title: "À propos"
-description: "la liste de référence de qualité des livres numériques"
+description: "the quality reference list for digital books"
 draft: false
 layout: about
 ---
