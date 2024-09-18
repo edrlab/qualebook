@@ -45,3 +45,21 @@
 
 - id: opquastref
   translation: Opquast reference 
+
+- id: aboutthatrule
+  translation: About that rule 
+
+- id: stepsconcerned
+  translation: Steps concerned 
+
+- id: control
+  translation: Control
+
+- id: meo
+  translation: Implementation
+
+- id: objectives
+  translation: Objectives 
+
+- id: ruleorigine
+  translation: Rule origin  

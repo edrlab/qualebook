@@ -36,7 +36,7 @@
             {{ .Content }}
             <blockquote>{{ .Params.abstract }}</blockquote>
             
-            <h3>Objectifs</h3>
+            <h3>{{ i18n "objectives" }}</h3>
             <ul>
               {{ $objectif:= .Params.objectif }}
               {{ range $i,$p:= $objectif }}
@@ -47,7 +47,7 @@
                 </li>
               {{ end }}
             </ul>
-            <h3>Mise en œuvre</h3>
+            <h3>{{ i18n "meo" }}</h3>
             <ul>
               {{ $meo:= .Params.meo }}
               {{ range $i,$p:= $meo }}
@@ -58,7 +58,7 @@
                 </li>
               {{ end }}
             </ul>
-            <h3>Controle</h3>
+            <h3>{{ i18n "control" }}</h3>
             <ul>
               {{ $controle:= .Params.controle }}
               {{ range $i,$p:= $controle }}
@@ -75,7 +75,7 @@
             <li class="inline-block">{{ .Params.Controle }}</li>  */}}
           </div>
           <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-            <h5>Étapes concernées&nbsp;: </h5>
+            <h5>{{ i18n "stepsconcerned" }}&nbsp;: </h5>
             <ul>
               {{ $steps:= .Params.steps }}
               {{ range $i,$p:= $steps }}
@@ -127,9 +127,9 @@
             </div>
             </div>
             
-            <h5 class="mr-3">À propos de cette règle</h5>
+            <h5 class="mr-3">{{ i18n "aboutthatrule" }}</h5>
               <p class="mr-4 inline-block">
-Origine : 
+                {{ i18n "ruleorigine" }} : 
                   {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}
                                   {{ $source:= .Params.source }} 
                                   {{ range $i,$p:= $source }}
