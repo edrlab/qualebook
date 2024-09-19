@@ -63,3 +63,15 @@
 
 - id: ruleorigine
   translation: Rule origin  
+
+- id: epubcheck
+  translation: Reported by epubcheck. 
+
+- id: ace
+  translation: Reported by ACE.
+
+- id: humancheck
+  translation: Needs to be human verified.
+
+- id: validation
+  translation: Validation

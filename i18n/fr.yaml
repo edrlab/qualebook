@@ -62,3 +62,15 @@
 
 - id: ruleorigine
   translation: Origine de la règle 
+
+- id: epubcheck
+  translation: Vérifié par epubcheck. 
+
+- id: ace
+  translation: Vérifié par ACE 
+
+- id: humancheck
+  translation: Doit être vérifié par une personne
+
+- id: validation
+  translation: Validation

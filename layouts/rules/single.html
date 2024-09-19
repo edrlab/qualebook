@@ -69,10 +69,23 @@
                 </li>
               {{ end }}
             </ul>
-
-            {{/*  <li class="inline-block">{{ .Params.Meo }}</li>
-            <h3>Contrôle </h3>
-            <li class="inline-block">{{ .Params.Controle }}</li>  */}}
+          <h4>{{ i18n "validation" }}</h4>
+          <ul>
+          {{ $epubcheck:= .Params.epubcheck }}
+          {{ if eq $epubcheck  true }}
+          <li>{{ i18n "epubcheck" }} </li>
+          {{ end }}
+        
+          {{ $ace:= .Params.ace }}
+          {{ if eq $ace true }}
+          <li>{{ i18n "ace" }}</li> 
+          {{ end }}
+          
+          {{ $humancheck:= .Params.humancheck }}
+          {{ if eq $humancheck true }}
+          <li>{{ i18n "humancheck" }}</li> 
+          {{ end }}
+          </ul>
           </div>
           <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
             <h5>{{ i18n "stepsconcerned" }}&nbsp;: </h5>
