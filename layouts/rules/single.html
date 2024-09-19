@@ -9,7 +9,7 @@
               {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
             </figure>
           {{ end }}
-          <h1 class="h2 mb-4">
+          <h1>
             {{ .Title }}
           </h1>
           <ul class="mb-4">
@@ -36,7 +36,7 @@
             {{ .Content }}
             <blockquote>{{ .Params.abstract }}</blockquote>
             
-            <h3>{{ i18n "objectives" }}</h3>
+            <h2>{{ i18n "objectives" }}</h2>
             <ul>
               {{ $objectif:= .Params.objectif }}
               {{ range $i,$p:= $objectif }}
@@ -47,7 +47,7 @@
                 </li>
               {{ end }}
             </ul>
-            <h3>{{ i18n "meo" }}</h3>
+            <h2>{{ i18n "meo" }}</h2>
             <ul>
               {{ $meo:= .Params.meo }}
               {{ range $i,$p:= $meo }}
@@ -58,7 +58,7 @@
                 </li>
               {{ end }}
             </ul>
-            <h3>{{ i18n "control" }}</h3>
+            <h2>{{ i18n "control" }}</h2>
             <ul>
               {{ $controle:= .Params.controle }}
               {{ range $i,$p:= $controle }}
@@ -69,7 +69,7 @@
                 </li>
               {{ end }}
             </ul>
-          <h4>{{ i18n "validation" }}</h4>
+          <h3>{{ i18n "validation" }}</h3>
           <ul>
           {{ $epubcheck:= .Params.epubcheck }}
           {{ if eq $epubcheck  true }}
@@ -87,8 +87,9 @@
           {{ end }}
           </ul>
           </div>
+          <h2>{{ i18n "informations" }}&nbsp;: </h2>
           <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-            <h5>{{ i18n "stepsconcerned" }}&nbsp;: </h5>
+            <h3>{{ i18n "stepsconcerned" }}&nbsp;: </h3>
             <ul>
               {{ $steps:= .Params.steps }}
               {{ range $i,$p:= $steps }}
@@ -104,7 +105,7 @@
             </div>
           <div class="row items-start justify-between">
             <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-              <h5 class="mr-3">{{ i18n "tags" }}&nbsp;:</h5>
+              <h3 class="mr-3">{{ i18n "tags" }}&nbsp;:</h3>
               <ul>
                 {{ $tags:= .Params.tags }}
                 {{ range $i,$p:= $tags }}
@@ -124,7 +125,7 @@
 
 
             <div class="">
-              <h5 class="mr-3">{{ i18n "Referentiel" }}&nbsp;:</h5>
+              <h3 class="mr-3">{{ i18n "Referentiel" }}&nbsp;:</h3>
               <ul>
                 {{ $Referentiel:= .Params.Referentiel }}
                 {{ range $i,$p:= $Referentiel }}
@@ -140,7 +141,7 @@
               
             </div>
             <div class="">
-              <h5 class="mr-3">{{ i18n "metadata" }}&nbsp;:</h5>
+              <h3 class="mr-3">{{ i18n "metadata" }}&nbsp;:</h3>
               <ul>
                 <li>ONIX 
                 {{ $Onixmetadata:= .Params.Onixmetadata }}
@@ -155,7 +156,7 @@
             </div>
             </div>
             
-            <h5 class="mr-3">{{ i18n "aboutthatrule" }}</h5>
+            <h3 class="mr-3">{{ i18n "aboutthatrule" }}</h3>
               <p class="mr-4 inline-block">
                 {{ i18n "ruleorigine" }} : 
                   {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}

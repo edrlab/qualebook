@@ -75,3 +75,6 @@
 
 - id: validation
   translation: Validation
+
+- id: informations
+  translation: Informations

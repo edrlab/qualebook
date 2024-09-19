@@ -77,3 +77,6 @@
 
 - id: metadata
   translation: metadata
+
+- id: informations
+  translation: Informations
