@@ -65,6 +65,11 @@
 "Controle": {{ .Params.Controle | jsonify }},
 "Source": {{ .Params.Source | jsonify }},
 "Referentiel": {{ .Params.Referentiel | jsonify }},
+"epubcheck": {{ .Params.epubcheck | jsonify }},
+"ace": {{ .Params.ace | jsonify }},
+"humancheck": {{ .Params.humancheck | jsonify }},
+"OPFmetadata": {{ .Params.OPFmetadata | jsonify }},
+"onixmetadata": {{ .Params.onixmetadata | jsonify }},
 "Steps": {{ .Params.Steps | jsonify }},
             
  "content_html": {{ .Content | jsonify }}
