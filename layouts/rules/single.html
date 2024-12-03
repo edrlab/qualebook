@@ -51,11 +51,11 @@
             <ul>
               {{ $meo:= .Params.meo }}
               {{ range $i,$p:= $meo }}
-                <li class="">
+              
 
-                    {{ . | safeHTML }}
+                    {{ . | markdownify }}
 
-                </li>
+              
               {{ end }}
             </ul>
             <h2>{{ i18n "control" }}</h2>
@@ -64,7 +64,7 @@
               {{ range $i,$p:= $controle }}
                 <li class="inline-block">
 
-                    {{ . | safeHTML }}
+                    {{ . | markdownify }}
 
                 </li>
               {{ end }}
