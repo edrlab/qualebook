@@ -26,6 +26,11 @@ defaultContentLanguageInSubdir = true
 [permalinks.page]
 "pages" = "/:slugorfilename/"
 
+########################## taxonomies ############################
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  steps = 'steps'
 
 ############################# Modules ############################
 [module]

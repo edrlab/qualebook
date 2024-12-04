@@ -16,6 +16,10 @@
 - id: tags
   translation: Étiquettes
 
+
+- id: steps
+  translation: Étapes 
+
 - id: tocSommaire
 
 - id: share
