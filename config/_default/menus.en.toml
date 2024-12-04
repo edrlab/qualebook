@@ -1,19 +1,10 @@
 ############# English navigation ##############
 
 # main menu
-[[main]]
-name = "Home"
-url = ""
-weight = 1
 
 [[main]]
 name = "About"
 url = "about/"
-weight = 2
-
-[[main]]
-name = "Authors"
-url = "authors/"
 weight = 2
 
 [[main]]
@@ -22,11 +13,16 @@ url = "rules/"
 weight = 3
 
 [[main]]
-# parent = "Pages"
+parent = "Rules"
 name = "Categories"
 url = "categories/"
 
 [[main]]
-# parent = "Pages"
+parent = "Rules"
 name = "Tags"
 url = "tags/"
+
+[[main]]
+parent = "Rules"
+name = "Steps"
+url = "steps/"
