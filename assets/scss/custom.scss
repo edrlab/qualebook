@@ -1,25 +1,54 @@
 // Add your own custom styles here
 
-
+@media (prefers-color-scheme: light) {
 .normal {
     text-decoration: underline;
-    color: blue;
+    color: darkblue;
 }
 
+body{
+    color: darkblue;
+}
+
+.lightTheme blockquote{
+    background-color: cornsilk !important;
+    border-color: burlywood !important;
+}
+
+.darkTheme blockquote{
+    background-color: chocolate !important;
+    border-color: cornsilk !important;
+}
+
+footer{
+    background-color: cornsilk;
+    border-color: burlywood;
+}
+
+header{
+    background-color: cornsilk ;
+    border-color: burlywood ;
+}
 
 h1{
     font-size: 3rem;
+    color: DarkSlateBlue;
 }
 
 h2{
     font-size: 1rem;
+    color: DarkSlateBlue !important;
 }
 h3{
     font-size: 1rem;
+    color: DarkSlateBlue !important;
 }
 h4{
     font-size: 1rem;
+    color: DarkSlateBlue;
 }
 h5{
     font-size: 1rem;
+    color: DarkSlateBlue;
+}
 }
