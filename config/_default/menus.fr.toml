@@ -11,10 +11,10 @@ name = "À propos"
 url = "about/"
 weight = 2
 
-[[main]]
-name = "Auteurs"
-url = "authors/"
-weight = 2
+# [[main]]
+# name = "Auteurs"
+# url = "authors/"
+# weight = 2
 
 [[main]]
 name = "Règles"
