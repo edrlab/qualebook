@@ -1,54 +1,93 @@
 // Add your own custom styles here
 
-@media (prefers-color-scheme: light) {
+
 .normal {
     text-decoration: underline;
     color: darkblue;
 }
 
 body{
-    color: darkblue;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.1) 10%, transparent 10%) 0 0 / 20px 20px;
+    background-color: floralwhite; /* Optional: Add a background color */
+    margin: 0;
+    padding: 0;
+    
 }
-
-.lightTheme blockquote{
+bg-body {
     background-color: cornsilk !important;
     border-color: burlywood !important;
 }
 
-.darkTheme blockquote{
-    background-color: chocolate !important;
-    border-color: cornsilk !important;
+dark:bg-darkmode-body{
+    background-color: darkslateblue !important;
+    border-color: cornflowerblue !important;
 }
 
+blockquote{
+    background-color: cornsilk !important;
+    border-color: burlywood !important;
+}
+
+:is(.dark blockquote){
+    background-color: darkslateblue !important;
+    border-color: cornflowerblue !important;
+}
+
+
 footer{
-    background-color: cornsilk;
-    border-color: burlywood;
+    background-color: cornsilk !important;
+    border-color: burlywood !important;
+}
+:is(.dark footer){
+    color: darkslateblue !important;
 }
 
 header{
-    background-color: cornsilk ;
-    border-color: burlywood ;
+    background-color: cornsilk  !important;
+    border-color: burlywood  !important;
 }
 
+:is(.dark header){
+    color: darkslateblue !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 3rem;
+    color: DarkSlateBlue !important;
+}
+
+:is(.dark h1){
+    color: cornflowerblue !important;
+}
+:is(.dark h2){
+    color: cornflowerblue !important;
+}
+:is(.dark h3){
+    color: cornflowerblue !important;
+}
+:is(.dark h4){
+    color: cornflowerblue !important;
+}
+:is(.dark h5){
+    color: cornflowerblue !important;
+}
+:is(.dark h6){
+    color: cornflowerblue !important;
+}
 h1{
     font-size: 3rem;
-    color: DarkSlateBlue;
 }
 
 h2{
     font-size: 1rem;
-    color: DarkSlateBlue !important;
 }
 h3{
     font-size: 1rem;
-    color: DarkSlateBlue !important;
 }
 h4{
     font-size: 1rem;
-    color: DarkSlateBlue;
 }
 h5{
     font-size: 1rem;
     color: DarkSlateBlue;
-}
 }
