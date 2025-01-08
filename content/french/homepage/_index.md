@@ -8,6 +8,7 @@ banner:
     enable: true
     label: "Voir les règles"
     link: "fr/rules/"
+  layout: homepage
 
 # Features
 # features:
@@ -51,3 +52,5 @@ banner:
 #       label: ""
 #       link: ""
 ---
+
+<div class="cover"></div>
