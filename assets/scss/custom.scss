@@ -7,18 +7,59 @@
 }
 
 body{
-    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.1) 10%, transparent 10%) 0 0 / 20px 20px;
-    background-color: floralwhite; /* Optional: Add a background color */
-    margin: 0;
-    padding: 0;
-    
+    background: radial-gradient(circle at center,  rgba(0, 0, 0, 0.2), transparent 10%) 0 0 / 20px 20px;
+    background-color: floralwhite; 
 }
+:is(.dark body){
+    background: radial-gradient(circle at center,  rgba(235, 235, 235, 0.2), transparent 10%) 0 0 / 20px 20px;
+    background-color: darkslateblue; 
+}
+
+.taxonomies {
+    background-color: cornsilk !important;
+    border-color: burlywood !important;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+
+:is(.dark .taxonomies){
+    background-color: darkslateblue !important;
+    border-color: darkslateblue !important;
+}
+
+
+:is(.dark .mb-8){
+    background-color: darkslateblue !important;
+    border-color: cornflowerblue !important;
+    padding: 1em;
+    border-radius: 10px;
+}
+.mb-8 {
+    background-color: cornsilk !important;
+    border-color: burlywood !important;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+
+.taxonomiesticker {
+    background-color: floralwhite !important;
+    border-color: burlywood !important;
+    border: solid 2px;
+}
+:is(.dark .taxonomiesticker){
+    background-color: darkslateblue !important;
+    border-color: cornflowerblue !important;
+    border: solid 2px;
+}
+
 bg-body {
     background-color: cornsilk !important;
     border-color: burlywood !important;
 }
 
-dark:bg-darkmode-body{
+bg-darkmode-body{
     background-color: darkslateblue !important;
     border-color: cornflowerblue !important;
 }
@@ -33,22 +74,87 @@ blockquote{
     border-color: cornflowerblue !important;
 }
 
+.bouton {
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: burlywood !important;
+    background-color: floralwhite;
+    font-variant: bold;
+}
+
+.btn {
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: burlywood !important;
+    background-color: burlywood;
+    font-variant: bold;
+    color: darkslateblue !important;
+}
+
+:is(.dark .btn){
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: cornflowerblue !important;
+    background-color: cornflowerblue;
+    font-variant: bold;
+}
+
+:is(.dark .bouton) {
+    padding: 1em;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: floralwhite !important;
+    background-color: darkslateblue;
+    font-variant: bold;
+    color: floralwhite !important;
+}
+
+:is(.dark a) {
+       color: floralwhite !important;
+}
+
+:is(.dark .pagetitle) {
+
+    background-color: darkslateblue !important;
+    font-variant: bold;
+    color: floralwhite !important;
+}
+.pagetitle {
+    padding: 1em;
+    // border-radius: 2%;
+    // border: solid 1px;
+    // border-color: burlywood !important;
+    background-color: floralwhite !important;
+    font-variant: bold;
+    color: darkslateblue !important;
+}
 
 footer{
     background-color: cornsilk !important;
+    border-top: solid 1px;
     border-color: burlywood !important;
 }
 :is(.dark footer){
-    color: darkslateblue !important;
+    background-color: darkslateblue  !important;
+    border-color: floralwhite  !important;
+    border-bottom: solid 1px;
+    color: floralwhite !important;
 }
 
 header{
     background-color: cornsilk  !important;
     border-color: burlywood  !important;
+    border-bottom: solid 1px;
 }
 
 :is(.dark header){
-    color: darkslateblue !important;
+    background-color: darkslateblue  !important;
+    border-color: floralwhite  !important;
+    border-bottom: solid 1px;
+    color: floralwhite !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,22 +163,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 :is(.dark h1){
-    color: cornflowerblue !important;
+    color: floralwhite !important;
 }
 :is(.dark h2){
-    color: cornflowerblue !important;
+    color: floralwhite !important;
 }
 :is(.dark h3){
-    color: cornflowerblue !important;
+    color: floralwhite !important;
 }
 :is(.dark h4){
-    color: cornflowerblue !important;
+    color: floralwhite !important;
 }
 :is(.dark h5){
-    color: cornflowerblue !important;
+    color: floralwhite !important;
 }
 :is(.dark h6){
-    color: cornflowerblue !important;
+    color: floralwhite !important;
 }
 h1{
     font-size: 3rem;
