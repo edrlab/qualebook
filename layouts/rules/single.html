@@ -17,7 +17,7 @@
           {{/*  </p>   */}}
           <div class="content mb-10">
            
-            <blockquote>{{ .Params.abstract }}</blockquote>
+            <blockquote>{{ .Params.abstract | safeHTML  }}</blockquote>
             
             <h2><i class="fa-solid fa-bullseye"></i> {{ i18n "objectives" }}</h2>
             <ul>
@@ -114,7 +114,12 @@
               {{ range $i,$p:= $source }}
               {{ . | humanize }}
               {{ end }}
-            | {{ i18n "opquastref" }}  {{ .Params.opquast }}
+
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i> {{ i18n "opquastref" }} : {{ .Params.opquast }}
+
             </li>
             <li>
               <i class="fa-regular fa-clock mr-2"></i>
