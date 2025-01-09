@@ -5,6 +5,11 @@
     font-weight: 600;
     font-size: 0.875em;
 }
+:is(.dark .content) {
+    color: floralwhite !important;
+    font-weight: 600;
+    font-size: 0.875em;
+}
 
 .code {
     color: floralwhite !important;
@@ -44,7 +49,7 @@ body {
 }
 
 :is(.dark li) {
-    color: floralwhite;
+    color: floralwhite !important;
 }
 
 .taxonomies,.mb-8  {
@@ -95,8 +100,9 @@ blockquote {
 }
 
 :is(.dark blockquote) {
-    background-color: darkslateblue;
-    border-color: cornflowerblue;
+    background-color: darkslateblue !important;
+    border-color: cornflowerblue !important;
+    color: floralwhite !important;
 }
 
 .bouton {
