@@ -67,17 +67,17 @@
           <ul>
           {{ $epubcheck:= .Params.epubcheck }}
           {{ if eq $epubcheck  true }}
-          <li>{{ i18n "epubcheck" }} </li>
+          <li><i class="fa-solid fa-check-to-slot"></i> {{ i18n "epubcheck" }} </li>
           {{ end }}
         
           {{ $ace:= .Params.ace }}
           {{ if eq $ace true }}
-          <li>{{ i18n "ace" }}</li> 
+          <li><i class="fa-solid fa-universal-access"></i> {{ i18n "ace" }}</li> 
           {{ end }}
           
           {{ $humancheck:= .Params.humancheck }}
           {{ if eq $humancheck true }}
-          <li>{{ i18n "humancheck" }}</li> 
+          <li><i class="fa-solid fa-user-check"></i> {{ i18n "humancheck" }}</li> 
           {{ end }}
           </ul>
           
