@@ -1,35 +1,30 @@
 // Add your own custom styles here
 
-:is(.dark .content) :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-    color: floralwhite ; 
+:is(.dark .content) :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    color: floralwhite;
     font-weight: 600;
     font-size: 0.875em;
 }
 
 .code {
     color: floralwhite !important;
- }​
+}
 
- :is(.dark .code) {
-color: floralwhite !important;
- }​
-
+// :is(.dark .code) {
+//     color: floralwhite !important;
+// }
 
 .cover {
-    content:url(https://github.com/edrlab/qualebook/blob/content-preparation-based-on-new-layout/assets/images/cover-light.png?raw=true);
+    content: url(https://github.com/edrlab/qualebook/blob/content-preparation-based-on-new-layout/assets/images/cover-light.png?raw=true);
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
- }​
+}
 
- :is(.dark .cover) {
-    content:url(https://github.com/edrlab/qualebook/blob/content-preparation-based-on-new-layout/assets/images/cover-dark.png?raw=true) !important;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
- }​
+:is(.dark .cover) {
+    content: url(https://github.com/edrlab/qualebook/blob/content-preparation-based-on-new-layout/assets/images/cover-dark.png?raw=true);
+}
 
 
 .normal {
@@ -37,199 +32,189 @@ color: floralwhite !important;
     color: darkblue;
 }
 
-body{
-    background: radial-gradient(circle at center,  rgba(0, 0, 0, 0.2), transparent 10%) 0 0 / 20px 20px;
-    background-color: floralwhite; 
-}
-:is(.dark body){
-    background: radial-gradient(circle at center,  rgba(235, 235, 235, 0.2), transparent 10%) 0 0 / 20px 20px;
-    background-color: darkslateblue; 
-    color: floralwhite !important;
+body {
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.2), transparent 10%) 0 0 / 20px 20px;
+    background-color: floralwhite;
 }
 
-:is(.dark li){
-    color: floralwhite !important;
+:is(.dark body) {
+    background: radial-gradient(circle at center, rgba(235, 235, 235, 0.2), transparent 10%) 0 0 / 20px 20px;
+    background-color: darkslateblue;
+    color: floralwhite;
 }
 
-.taxonomies {
-    background-color: cornsilk !important;
-    border-color: burlywood !important;
+:is(.dark li) {
+    color: floralwhite;
+}
+
+.taxonomies,.mb-8  {
+    background-color: cornsilk;
+    border-color: burlywood;
     padding: 1em;
     border-radius: 10px;
 }
 
 
-:is(.dark .taxonomies){
-    background-color: darkslateblue !important;
-    border-color: darkslateblue !important;
+:is(.dark .taxonomies) {
+    background-color: darkslateblue;
+    border-color: darkslateblue;
 }
 
 
-:is(.dark .mb-8){
-    background-color: darkslateblue !important;
-    border-color: cornflowerblue !important;
-    padding: 1em;
-    border-radius: 10px;
-}
-.mb-8 {
-    background-color: cornsilk !important;
-    border-color: burlywood !important;
+:is(.dark .mb-8) {
+    background-color: darkslateblue;
+    border-color: cornflowerblue;
     padding: 1em;
     border-radius: 10px;
 }
 
 
 .taxonomiesticker {
-    background-color: floralwhite !important;
-    border-color: burlywood !important;
-    border: solid 2px;
+    background-color: floralwhite;
+    border: solid 2px burlywood;
 }
-:is(.dark .taxonomiesticker){
-    background-color: darkslateblue !important;
-    border-color: cornflowerblue !important;
-    border: solid 2px;
+
+:is(.dark .taxonomiesticker) {
+    background-color: darkslateblue;
+    border: solid 2px cornflowerblue;
 }
 
 bg-body {
-    background-color: cornsilk !important;
-    border-color: burlywood !important;
+    background-color: cornsilk;
+    border-color: burlywood;
 }
 
-bg-darkmode-body{
-    background-color: darkslateblue !important;
-    border-color: cornflowerblue !important;
+bg-darkmode-body {
+    background-color: darkslateblue;
+    border-color: cornflowerblue;
 }
 
-blockquote{
-    background-color: cornsilk !important;
-    border-color: burlywood !important;
+blockquote {
+    background-color: cornsilk;
+    border-color: burlywood;
 }
 
-:is(.dark blockquote){
-    background-color: darkslateblue !important;
-    border-color: cornflowerblue !important;
+:is(.dark blockquote) {
+    background-color: darkslateblue;
+    border-color: cornflowerblue;
 }
 
 .bouton {
     padding: 1em;
     border-radius: 10px;
     border: solid 1px;
-    border-color: burlywood !important;
+    border-color: burlywood;
     background-color: floralwhite;
     font-variant: bold;
+    font-weight: bold;
 }
 
 .btn {
     padding: 1em;
     border-radius: 10px;
     border: solid 1px;
-    border-color: burlywood !important;
+    border-color: burlywood;
     background-color: burlywood;
     font-variant: bold;
-    color: darkslateblue !important;
+    font-weight: bold;
+    color: darkslateblue;
 }
 
-:is(.dark .btn){
+:is(.dark .btn) {
     padding: 1em;
     border-radius: 10px;
     border: solid 1px;
-    border-color: cornflowerblue !important;
+    border-color: cornflowerblue;
     background-color: cornflowerblue;
     font-variant: bold;
+    font-weight: bold;
 }
 
 :is(.dark .bouton) {
     padding: 1em;
     border-radius: 10px;
     border: solid 1px;
-    border-color: floralwhite !important;
+    border-color: floralwhite;
     background-color: darkslateblue;
     font-variant: bold;
-    color: floralwhite !important;
+    font-weight: bold;
+    color: floralwhite;
 }
 
 :is(.dark a) {
-       color: floralwhite !important;
+    color: floralwhite;
 }
 
 :is(.dark .pagetitle) {
-
-    background-color: darkslateblue !important;
-    font-variant: bold;
-    color: floralwhite !important;
+    background-color: darkslateblue;
+    color: floralwhite;
 }
+
 .pagetitle {
     padding: 1em;
     // border-radius: 2%;
     // border: solid 1px;
     // border-color: burlywood !important;
-    background-color: floralwhite !important;
+    background-color: floralwhite;
     font-variant: bold;
-    color: darkslateblue !important;
+    font-weight: bold;
+    color: darkslateblue;
 }
 
-footer{
+footer {
     background-color: cornsilk !important;
     border-top: solid 1px;
-    border-color: burlywood !important;
-}
-:is(.dark footer){
-    background-color: darkslateblue  !important;
-    border-color: floralwhite  !important;
-    border-bottom: solid 1px;
-    color: floralwhite !important;
+    border-color: burlywood;
 }
 
-header{
-    background-color: cornsilk  !important;
-    border-color: burlywood  !important;
+:is(.dark footer) {
+    background-color: darkslateblue !important;
+    border-color: floralwhite;
+    border-bottom: solid 1px;
+    color: floralwhite;
+}
+
+header {
+    background-color: cornsilk !important;
+    border-color: burlywood;
     border-bottom: solid 1px;
 }
 
-:is(.dark header){
-    background-color: darkslateblue  !important;
-    border-color: floralwhite  !important;
+:is(.dark header) {
+    background-color: darkslateblue !important;
+    border-color: floralwhite;
     border-bottom: solid 1px;
-    color: floralwhite !important;
+    color: floralwhite;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 3rem;
-    color: DarkSlateBlue !important;
+    color: DarkSlateBlue;
 }
 
-:is(.dark h1){
-    color: floralwhite !important;
+:is(.dark) h1,
+:is(.dark) h2,
+:is(.dark) h3,
+:is(.dark) h4,
+:is(.dark) h5,
+:is(.dark) h6 {
+    color: floralwhite;
 }
-:is(.dark h2){
-    color: floralwhite !important;
-}
-:is(.dark h3){
-    color: floralwhite !important;
-}
-:is(.dark h4){
-    color: floralwhite !important;
-}
-:is(.dark h5){
-    color: floralwhite !important;
-}
-:is(.dark h6){
-    color: floralwhite !important;
-}
-h1{
+
+h1 {
     font-size: 3rem;
 }
 
-h2{
+h2, h3, h4 {
     font-size: 1rem;
 }
-h3{
-    font-size: 1rem;
-}
-h4{
-    font-size: 1rem;
-}
-h5{
+
+h5 {
     font-size: 1rem;
     color: DarkSlateBlue;
 }
