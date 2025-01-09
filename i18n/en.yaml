@@ -16,6 +16,9 @@
 - id: tags
   translation: Tags
 
+- id: steps
+  translation: Steps 
+
 - id: toc
   translation: Table of Contents
 

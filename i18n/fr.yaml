@@ -16,6 +16,10 @@
 - id: tags
   translation: Étiquettes
 
+
+- id: steps
+  translation: Étapes 
+
 - id: tocSommaire
 
 - id: share
@@ -49,7 +53,7 @@
   translation: À propos de cette règle 
 
 - id: stepsconcerned
-  translation: Étapes concernées 
+  translation: Étapes 
 
 - id: control
   translation: Contrôle
