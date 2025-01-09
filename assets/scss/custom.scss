@@ -1,5 +1,19 @@
 // Add your own custom styles here
 
+:is(.dark .content) :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color: floralwhite ; 
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+.code {
+    color: floralwhite !important;
+ }​
+
+ :is(.dark .code) {
+color: floralwhite !important;
+ }​
+
 
 .cover {
     content:url(https://github.com/edrlab/qualebook/blob/content-preparation-based-on-new-layout/assets/images/cover-light.png?raw=true);
