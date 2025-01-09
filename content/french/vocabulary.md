@@ -37,3 +37,6 @@ Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/
     -->
 
 </dl>
+
+
+https://www.w3.org/publishing/epub3/
