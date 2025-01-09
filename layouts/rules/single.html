@@ -12,31 +12,25 @@
           <h1>
             {{ .Title }}
           </h1>
-          <ul class="mb-4">
-            <li class="mr-4 inline-block">
-            {{ .Params.description }}
-          </li>
-
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-folder mr-2"></i>
+            <i class="fa-solid fa-arrows-to-circle"></i> {{ .Params.description }} | 
+            
               {{ $categories:= .Params.categories }}
               {{ range $i,$p:= $categories }}
                 <a
                   href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
                   class="ms-1"
-                  >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                  ><i class="fa-regular fa-folder mr-2"></i> {{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
                     {{ ", " }}
                   {{ end }}
-                </a>
+                </a>  | 
               {{ end }}
-            </li>
-
-          </ul>
+            <a class="normal" href="../{{ .Params.before }}"><i class="fa-regular fa-circle-left"></i> {{ i18n "previousrule" }}</a> | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }} <i class="fa-regular fa-circle-right"></i></a> | 
+          {{/*  </p>   */}}
           <div class="content mb-10">
             {{ .Content }}
             <blockquote>{{ .Params.abstract }}</blockquote>
             
-            <h2>{{ i18n "objectives" }}</h2>
+            <h2><i class="fa-solid fa-bullseye"></i> {{ i18n "objectives" }}</h2>
             <ul>
               {{ $objectif:= .Params.objectif }}
               {{ range $i,$p:= $objectif }}
@@ -47,7 +41,7 @@
                 </li>
               {{ end }}
             </ul>
-            <h2>{{ i18n "meo" }}</h2>
+            <h2><i class="fa-solid fa-fire-flame-simple"></i></i> {{ i18n "meo" }}</h2>
             <ul>
               {{ $meo:= .Params.meo }}
               {{ range $i,$p:= $meo }}
@@ -58,7 +52,7 @@
                 </li>
               {{ end }}
             </ul>
-            <h2>{{ i18n "control" }}</h2>
+            <h2><i class="fa-solid fa-magnifying-glass"></i></i> {{ i18n "control" }}</h2>
             <ul>
               {{ $controle:= .Params.controle }}
               {{ range $i,$p:= $controle }}
@@ -69,7 +63,7 @@
                 </li>
               {{ end }}
             </ul>
-          <h3>{{ i18n "validation" }}</h3>
+          <h2><i class="fa-regular fa-circle-check"></i> {{ i18n "validation" }}</h2>
           <ul>
           {{ $epubcheck:= .Params.epubcheck }}
           {{ if eq $epubcheck  true }}
@@ -86,109 +80,49 @@
           <li>{{ i18n "humancheck" }}</li> 
           {{ end }}
           </ul>
-          </div>
-          <h2>{{ i18n "informations" }}&nbsp;: </h2>
-          <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-            <h3>{{ i18n "stepsconcerned" }}&nbsp;: </h3>
+          
+          <h2>
+            <i class="fa-solid fa-circle-info"></i>
+             {{ i18n "informations" }}&nbsp;</h2>
             <ul>
+              <li class="">
+              <i class="fa-solid fa-shoe-prints"></i> {{ i18n "stepsconcerned" }}&nbsp;: 
               {{ $steps:= .Params.steps }}
               {{ range $i,$p:= $steps }}
-                <li class="inline-block">
-                  <a
-                  class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+              <a
+                  class="taxonomie"
                   href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/"> 
                     {{ . | humanize }}</a>
 
-                </li>
               {{ end }}
-            </ul>
-            </div>
-          <div class="row items-start justify-between">
-            <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-              <h3 class="mr-3">{{ i18n "tags" }}&nbsp;:</h3>
-              <ul>
+          </li>
+          <li class=""> <i class="fa-solid fa-note-sticky"></i> {{ i18n "tags" }}&nbsp;:
                 {{ $tags:= .Params.tags }}
                 {{ range $i,$p:= $tags }}
-                  <li class="inline-block">
                     <a
-                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                      class="taxonomie"
                       href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
                       {{ . | humanize }}
                     </a>
-                  </li>
                 {{ end }}
-              </ul>
-              
-            </div>
-          </div>
-            {{/*  <div class="row items-start justify-between">
+                  </p>
+          {{/*  <h3 class="inkline-block">
+            <i class="fa-solid fa-address-card"></i> {{ i18n "aboutthatrule" }}
+          </h3>  */}}
+              <li><i class="fa-solid fa-address-card"></i> {{ i18n "ruleorigine" }} : 
+              {{ $source:= .Params.source }} 
+              {{ range $i,$p:= $source }}
+              {{ . | humanize }}
+              {{ end }}
+            | {{ i18n "opquastref" }}  {{ .Params.opquast }}
+            </li>
+            <li>
+              <i class="fa-regular fa-clock mr-2"></i>
+              {{ i18n "updateon" }} {{ time.Format ":date_long" .PublishDate }}
+            </li>
 
-
-            <div class="">
-              <h3 class="mr-3">{{ i18n "Referentiel" }}&nbsp;:</h3>
-              <ul>
-                {{ $Referentiel:= .Params.Referentiel }}
-                {{ range $i,$p:= $Referentiel }}
-                <li class="inline-block">
-                    <a
-                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
-                      href="{{ `Referentiel/` | relLangURL }}{{ . | urlize | lower }}/">
-                      {{ . | humanize }}
-                    </a>
-                  </li>
-                {{ end }}
-              </ul>
-              
-            </div>
-            <div class="">
-              <h3 class="mr-3">{{ i18n "metadata" }}&nbsp;:</h3>
-              <ul>
-                <li>ONIX 
-                {{ $Onixmetadata:= .Params.Onixmetadata }}
-                {{ $Onixmetadata  }}</li>
-
-                <li>OPF 
-                {{ $OPFmetadata:= .Params.OPFmetadata }}
-                {{ $OPFmetadata }}</li>
-             
-              </ul>
-              
-            </div>
-            </div>  */}}
-            
-            <h3 class="mr-3">{{ i18n "aboutthatrule" }}</h3>
-              <p class="mr-4 inline-block">
-                {{ i18n "ruleorigine" }} : 
-                  {{/*  <i class="fa-regular fa-circle-user mr-2"></i>  */}}
-                                  {{ $source:= .Params.source }} 
-                                  {{ range $i,$p:= $source }}
-                                      <a
-                                      class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 rounded px-3 py-1 hover:text-white"
-                                      href="{{ `authors/` | relLangURL }}{{ . | urlize | lower }}/"> 
-                                        {{ . | humanize }}</a>
-                                  {{ end }}
-              | {{ i18n "opquastref" }}  {{ .Params.opquast }} 
-            |                <i class="fa-regular fa-clock mr-2"></i>
-            {{ i18n "updateon" }} {{ time.Format ":date_long" .PublishDate }}</p>
-              <p><a class="normal" href="../{{ .Params.before }}">{{ i18n "previousrule" }}</a> | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }}</a></p>
-
-            {{/*  <div class="lg:col-4 flex items-center">
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
-            </div>  */}}
-          </div>
-
-
-          <!-- comments -->
-          {{ if site.DisqusShortname }}
-            <div class="mt-20">
-              {{ template "_internal/disqus.html" . }}
-            </div>
-          {{ end }}
+          </ul>
         </article>
-        {{/*  <nav>
-          <a href="">Régle précédente</a> <a href="">Régle suivante</a>
-        </nav>  */}}
-      </div>
 
       <!-- Related posts -->
       {{/*  {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
