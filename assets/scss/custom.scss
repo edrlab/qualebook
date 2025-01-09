@@ -95,8 +95,8 @@ bg-darkmode-body {
 }
 
 blockquote {
-    background-color: cornsilk;
-    border-color: burlywood;
+    background-color: cornsilk !important;
+    border-color: burlywood !important;
 }
 
 :is(.dark blockquote) {
