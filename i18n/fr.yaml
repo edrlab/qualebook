@@ -83,3 +83,6 @@
 
 - id: vocabulary
   translation: Vocabulaire associé
+
+- id: category
+  translation: Categorie
