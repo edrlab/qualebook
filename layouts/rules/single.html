@@ -122,8 +122,11 @@
             </li>
 
           </ul>
+          {{ $vocabulary:= .Params.vocabulary }} 
+          {{ if eq $vocabulary true }}
          <h2><i class="fa-solid fa-spell-check"></i> {{ i18n "vocabulary" }}</h2> 
          {{ .Content }}
+         {{ end }}
         </article>
 
       <!-- Related posts -->
