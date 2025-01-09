@@ -27,7 +27,7 @@
             <a class="normal" href="../{{ .Params.before }}"><i class="fa-regular fa-circle-left"></i> {{ i18n "previousrule" }}</a> | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }} <i class="fa-regular fa-circle-right"></i></a> | 
           {{/*  </p>   */}}
           <div class="content mb-10">
-            {{ .Content }}
+           
             <blockquote>{{ .Params.abstract }}</blockquote>
             
             <h2><i class="fa-solid fa-bullseye"></i> {{ i18n "objectives" }}</h2>
@@ -122,6 +122,8 @@
             </li>
 
           </ul>
+         <h2><i class="fa-solid fa-spell-check"></i> {{ i18n "vocabulary" }}</h2> 
+         {{ .Content }}
         </article>
 
       <!-- Related posts -->

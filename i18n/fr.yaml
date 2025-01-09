@@ -80,3 +80,6 @@
 
 - id: informations
   translation: Informations
+
+- id: vocabulary
+  translation: Vocabulaire associé
