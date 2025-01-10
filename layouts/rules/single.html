@@ -125,6 +125,12 @@
               <i class="fa-regular fa-clock mr-2"></i>
               {{ i18n "updateon" }} {{ time.Format ":date_long" .PublishDate }}
             </li>
+            {{ $referentiel:= .Params.referentiel }} 
+            {{ range $i,$p:= $referentiel }}
+            <li>
+              <i class="fa-solid fa-umbrella-beach"></i> {{ i18n "Referentiel" }} : <span class="inline-block">{{ . | markdownify }}</span>
+            </li>
+             {{ end }}
             {{ $vocabulary:= .Params.vocabulary }} 
             {{ if eq $vocabulary true }}
             <li>
