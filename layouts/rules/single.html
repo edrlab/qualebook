@@ -9,15 +9,15 @@
               {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
             </figure>
           {{ end }}
-          <a class="normal" href="../{{ .Params.before }}"><i class="fa-regular fa-circle-left"></i> {{ i18n "previousrule" }}</a> | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }} <i class="fa-regular fa-circle-right"></i></a> 
+          <a class="normal" href="../{{ .Params.before }}"><i class="fa-regular fa-circle-left"></i> {{ i18n "previousrule" }}</a>  |             <i class="fa-solid fa-arrows-to-circle"></i> {{ .Params.description }}   | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }} <i class="fa-regular fa-circle-right"></i></a> 
           <h1>
             {{ .Title }}
           </h1>
-            <i class="fa-solid fa-arrows-to-circle"></i> {{ .Params.description }}            
+          
           {{/*  </p>   */}}
           <div class="content mb-10">
            
-            <blockquote>{{ .Params.abstract | safeHTML  }}</blockquote>
+            <blockquote>{{ .Params.abstract | safeHTML | markdownify }}</blockquote>
             
             <h2><i class="fa-solid fa-bullseye"></i> {{ i18n "objectives" }}</h2>
             <ul>
@@ -25,7 +25,7 @@
               {{ range $i,$p:= $objectif }}
                 <li class="">
 
-                    {{ . | safeHTML  }}
+                    {{ . | safeHTML | markdownify }}
 
                 </li>
               {{ end }}
@@ -36,7 +36,7 @@
               {{ range $i,$p:= $meo }}
                 <li class="">
 
-                    {{ . | safeHTML }}
+                    {{ . | safeHTML | markdownify }}
 
                 </li>
               {{ end }}
@@ -47,7 +47,7 @@
               {{ range $i,$p:= $controle }}
                 <li class="inline-block">
 
-                    {{ . | safeHTML }}
+                    {{ . | safeHTML | markdownify }}
 
                 </li>
               {{ end }}
