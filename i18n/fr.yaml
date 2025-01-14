@@ -35,7 +35,7 @@
   translation: Écrire pour rechercher.
 
 - id: Referentiel
-  translation: Référentiels
+  translation: Référence
 
 - id: nextrule
   translation: Règles suivante
@@ -84,3 +84,9 @@
 
 - id: informations
   translation: Informations
+
+- id: vocabulary
+  translation: Vocabulaire associé
+
+- id: category
+  translation: Categorie

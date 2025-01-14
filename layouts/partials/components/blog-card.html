@@ -1,4 +1,4 @@
-<section class="bg-body dark:bg-darkmode-body">
+<div class="bouton">
   {{ $image:= .Params.image }}
   {{ if $image }}
     {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mb-6 w-full rounded") }}
@@ -33,4 +33,4 @@
   {{/*  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
     {{ i18n "read_more" }}
   </a>  */}}
-</section>
+</div>

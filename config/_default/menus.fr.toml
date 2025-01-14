@@ -1,45 +1,55 @@
 ############# French navigation ##############
 
 # main menu
-# [[main]]
-# name = "Accueil"
-# url = ""
-# weight = 1
+[[main]]
+name = "Accueil"
+url = ""
+weight = 1
 
 [[main]]
 name = "À propos"
 url = "about/"
+weight = 2
+
+# [[main]]
+# name = "Auteurs"
+# url = "authors/"
+# weight = 2
 
 [[main]]
 name = "Règles"
 url = "rules/"
 weight = 3
 
-[[main]]
-parent = "Règles"
-name = "Toutes les règles"
-url = "rules/"
-weight = 3
+# [[main]]
+# weight = 4
+# name = "Pages"
+# hasChildren = true
+
+# [[main]]
+# parent = "Pages"
+# name = "Blog"
+# url = "blog/"
+
+# [[main]]
+# parent = "Pages"
+# name = "Contact"
+# url = "contact/"
+
+# [[main]]
+# parent = "Pages"
+# name = "Authors"
+# url = "authors/"
 
 [[main]]
-parent = "Règles"
+# parent = "Pages"
 name = "Categories"
 url = "categories/"
 
 [[main]]
-parent = "Règles"
+# parent = "Pages"
 name = "Étiquettes"
 url = "tags/"
-
-[[main]]
-parent = "Règles"
-name = "Étapes"
-url = "steps/"
-
-[[main]]
-name = "Glossaire"
-url = "vocabulary"
-weight = 3
 
 # [[main]]
 # parent = "Pages"
@@ -52,6 +62,11 @@ weight = 3
 # name = "About"
 # url = "about/"
 # weight = 1
+
+# [[footer]]
+# name = "Elements"
+# url = "elements/"
+# weight = 2
 
 # [[footer]]
 # name = "Privacy Policy"
