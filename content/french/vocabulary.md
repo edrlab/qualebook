@@ -51,6 +51,7 @@ Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/
      * ["[Web Content Accessibility Guidelines (WCAG) 1.3.3 Sensory Characteristics (Level A)](https://www.w3.org/TR/WCAG22/#sensory-characteristics)"]
      * ["[Web Content Accessibility Guidelines (WCAG) 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/TR/WCAG22/#contrast-minimum)"]
      * ["[Web Content Accessibility Guidelines (WCAG)  1.4.1 Use of Color (Level A)](https://www.w3.org/TR/WCAG22/#use-of-color)"]
+     * ["[Web Content Accessibility Guidelines (WCAG) 3.1.4  Abbreviations (Level AAA)](https://www.w3.org/TR/WCAG22/#abbreviations)"]
      * ["[Web Content Accessibility Guidelines (WCAG) 3.2.3 Consistent Navigation (Level AA)](https://www.w3.org/TR/WCAG22/#consistent-navigation)"]
      * ["[Web Content Accessibility Guidelines (WCAG) Keyboard Accessible ](https://www.w3.org/TR/WCAG22/#keyboard-accessible)"]
      * ["[Web Content Accessibility Guidelines (WCAG)  (Level A)]()"]
