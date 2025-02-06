@@ -82,3 +82,10 @@ Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/
 * [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript"), 
 
 * [Référentiel général de l’écoconception des services numériques](https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf) 
+
+
+* [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustainableweb-wsg/)
+
+* [Web Sustainability Guidelines (WSG) 3.2 Minify Your HTML, CSS, and JavaScript](https://w3c.github.io/sustainableweb-wsg/#minify-your-html-css-and-javascript)
+
+* [Web Sustainability Guidelines (WSG) 3.3 Use Code-Splitting Within Projects](https://w3c.github.io/sustainableweb-wsg/#use-code-splitting-within-projects)
