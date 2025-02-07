@@ -9,6 +9,6 @@ api_token_env: CROWDIN_PERSONAL_TOKEN
 "files": [
   {
     "source": "/content/french/**/*.md",
-    "translation": "/content/%two_letters_code%/%original_folder_name%/%original_file_name%"
+    "translation": "/content/%language%/**/%original_file_name%"
   },
 ]
