@@ -1,7 +1,20 @@
 on:
   push:
     branches: [ main ]
-
+permissions:
+    actions: none
+    checks: none
+    contents: write
+    deployments: none
+    id-token: none
+    issues: none
+    packages: none
+    pages: none
+    pull-requests: write
+    repository-projects: none
+    security-events: none
+    statuses: none
+    
 jobs:
   synchronize-with-crowdin:
     runs-on: ubuntu-latest
