@@ -1,0 +1,7 @@
+
+{{- $pages := where .Site.RegularPages "Type" "rules" -}}
+title,author
+{{- range $pages -}}
+title,author
+"{{ .Params.Title }}","{{ .Params.Rubrique }}"
+{{- end }}
