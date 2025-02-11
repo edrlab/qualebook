@@ -5,6 +5,7 @@ description: This is meta description
 draft: true
 ---
 
+{{< toc >}}
 
 [EMPTY SLOT - No need to translate this line] You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
 
@@ -90,7 +91,27 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 - Item List
 - Item List
 
+<hr>
 
+### Notices
+
+{{< note "note" >}}
+This is a simple note.
+{{< /notice >}}
+
+{{< "tip" record >}}
+This is a simple tip.
+{{< /notice >}}
+
+{{< notice "info" >}}
+This is a simple info.
+{{< /notice >}}
+
+{{< notice "warning" >}}
+This is a simple warning.
+{{< /notice >}}
+
+<hr>
 
 ### Tab
 
