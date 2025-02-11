@@ -6,9 +6,11 @@ categories:
 description: ""
 layout: blog
 date: 2024-09-18
-tags: [""]
+tags: 
+    - ""]
 ReadiumGoToolkit: 
-Source: ["SNE"]
+Source: 
+    - "SNE"]
 ---
 
 ## Vocabulaire
