@@ -1,7 +1,7 @@
 
 {{- $pages := where .Site.RegularPages "Type" "rules" -}}
-title,author
+title,date_published,date_modified,url,detail,abstract,categories,agrege,description,actif,tags,objectif,Meo,Controle,Source,Referentiel,epubcheck,ace,humancheck,OPFmetadata,onixmetadata,Steps
 {{- range $pages -}}
-title,author
-"{{ .Params.Title }}","{{ .Params.Rubrique }}"
+title,date_published,date_modified,url,detail,abstract,categories,agrege,description,actif,tags,objectif,Meo,Controle,Source,Referentiel,epubcheck,ace,humancheck,OPFmetadata,onixmetadata,Steps
+"{{ .Params.Title }}","{{ .Date }}","{{ .Lastmod }}","{{ .Permalink }}","{{ .Params.detail | jsonify }}","{{ .Params.abstract | jsonify }}","{{ .Params.categories | jsonify }}","{{ .Params.agrege | jsonify }}","{{ .Params.description | jsonify }}","{{ .Params.actif | jsonify }}","{{ .Params.tags | jsonify }}","{{ .Params.objectif | jsonify }}","{{ .Params.Meo | jsonify }}","{{ .Params.Controle | jsonify }}","{{ .Params.Source | jsonify }}","{{ .Params.Referentiel | jsonify }}","{{ .Params.epubcheck | jsonify }},""{{ .Params.ace | jsonify }}","{{ .Params.humancheck | jsonify }}","{{ .Params.OPFmetadata | jsonify }}","{{ .Params.onixmetadata | jsonify }}","{{ .Params.Steps | jsonify }}","{{ .Content | jsonify }}"
 {{- end }}
