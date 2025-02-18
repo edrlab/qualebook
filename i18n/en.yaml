@@ -2,13 +2,13 @@
   translation: Home
 
 - id: read_more
-  translation: Read More
+  translation: Read more
 
 - id: send
   translation: Send
 
 - id: related_posts
-  translation: Related Posts
+  translation: Related posts
 
 - id: categories
   translation: Categories
@@ -20,22 +20,22 @@
   translation: Steps 
 
 - id: toc
-  translation: Table of Contents
+  translation: Table of contents
 
 - id: share
   translation: Share
 
 - id: search_input_placeholder
-  translation: Search Post ...
+  translation: Search for posts...
 
 - id: no_results_for
   translation: No results for
 
 - id: empty_search_results_placeholder
-  translation: Type something to search..
+  translation: Type something to search...
 
 - id: Referentiel
-  translation: references
+  translation: References
 
 - id: nextrule
   translation: Next rule
@@ -53,7 +53,7 @@
   translation: About that rule 
 
 - id: stepsconcerned
-  translation: Steps concerned 
+  translation: Steps involved 
 
 - id: control
   translation: Control
@@ -65,19 +65,25 @@
   translation: Objectives 
 
 - id: ruleorigine
-  translation: Rule origin  
+  translation: Rule source  
 
 - id: epubcheck
   translation: Reported by epubcheck. 
 
 - id: ace
-  translation: Reported by ACE.
+  translation: Reported by Ace by DAISY.
 
 - id: humancheck
-  translation: Needs to be human verified.
+  translation: Needs to be verified by a human.
 
 - id: validation
   translation: Validation
 
 - id: informations
-  translation: Informations
+  translation: Information
+
+- id: vocabulary 
+  translation: Associated vocabulary
+
+- id: category
+  translation: Category  
