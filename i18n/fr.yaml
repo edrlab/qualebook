@@ -16,7 +16,6 @@
 - id: tags
   translation: Étiquettes
 
-
 - id: steps
   translation: Étapes 
 
@@ -89,4 +88,4 @@
   translation: Vocabulaire associé
 
 - id: category
-  translation: Categorie
+  translation: Catégorie
