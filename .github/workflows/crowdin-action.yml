@@ -4,7 +4,7 @@ on:
 # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions
 permissions:
-    actions: none
+    actions: write
     checks: none
     contents: write
     deployments: none
