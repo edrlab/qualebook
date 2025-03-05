@@ -7,7 +7,7 @@ draft: true
 
 {{< toc >}}
 
-[EMPTY SLOT - No need to translate this line] You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
+[EMPTY SLOT - No need to translate this line] [EMPTY SLOT - No need to translate this line] You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
 
 # Heading 1
 
