@@ -1,5 +1,5 @@
 ---
-title: The backups
+title: The Rules
 meta_title: ""
-description: The quality reference list of the digital book
+description: The quality reference list for digital book
 ---
