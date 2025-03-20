@@ -6,7 +6,7 @@ banner:
   image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Quality_assurance_oaicons.png/677px-Quality_assurance_oaicons.png?20211028203946"
   button:
     enable: true
-    label: "Voir les règles"
+    label: "Consulter les règles"
     link: "fr/rules/"
   layout: homepage
 
