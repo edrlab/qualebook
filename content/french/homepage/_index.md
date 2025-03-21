@@ -20,7 +20,7 @@ features:
       link: "/about"
 
   - title: "À quoi sert Qualebook ?"
-    image: "images/firefly1.jpg"
+    image: "images/firefly4.jpg"
     content: "Les listes de contrôle de qualité du livre numérique ont pour objectifs :"
     bulletpoints:
       - "assurer l’accès aux livres numérique pour le plus grand nombre de lecteurs, sans discrimination d’age, de compétence, d’aptitudes physiques ou mentales, de culture, de matériel et modalités d’accès"
@@ -38,15 +38,6 @@ features:
       - "Les règles sont discutées au cours d'ateliers interprofessionnels ouverts"
       - "Les décisions sont prises au consensus par un comité technique"
       - "Les règles doivent correspondre à des pratiques ou être liées à un référentiel"
-    button:
-      enable: false
-      label: ""
-      link: ""
-
-  - title: "Ce que n'est pas Qualebook "
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Quality_assurance_oaicons.png/677px-Quality_assurance_oaicons.png?20211028203946"
-    content: "Qualebook n'est pas un standard ou une norme, il n'a pas vocation à remplacer les définitions techniques existantes, mais plutôt à les mettre en valeur et les rendre compréhensibles par l'ensemble de l'interprofession"
-
     button:
       enable: false
       label: ""
