@@ -4,7 +4,7 @@
 [[main]]
 name = "Accueil"
 url = ""
-weight = 1
+weight = 10
 
 [[main]]
 name = "À propos"
@@ -14,12 +14,12 @@ weight = 2
 # [[main]]
 # name = "Auteurs"
 # url = "authors/"
-# weight = 2
+# weight = 20
 
 [[main]]
 name = "Règles"
 url = "rules/"
-weight = 3
+weight = 30
 
 # [[main]]
 # weight = 4
@@ -45,16 +45,19 @@ weight = 3
 # parent = "Pages"
 name = "Categories"
 url = "categories/"
+weight = 40
 
 [[main]]
 # parent = "Pages"
 name = "Étiquettes"
 url = "tags/"
+weight = 50
 
 [[main]]
 # parent = "Pages"
 name = "Glossaire"
 url = "glossary/"
+weight = 15
 
 # [[main]]
 # parent = "Pages"
