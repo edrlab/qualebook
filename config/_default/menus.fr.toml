@@ -51,6 +51,11 @@ url = "categories/"
 name = "Étiquettes"
 url = "tags/"
 
+[[main]]
+# parent = "Pages"
+name = "Glossaire"
+url = "glossary/"
+
 # [[main]]
 # parent = "Pages"
 # name = "404 Page"
