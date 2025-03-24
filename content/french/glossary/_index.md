@@ -10,6 +10,12 @@ date: 2024-09-18
 
 ## Vocabulaire
 <dl>
+<dt id="metadata">Métadonnée</dt>
+<dd>
+Dans le monde de l'édition, il s'agit d'informations détaillées sur le livre qui sont transmises aux partenaires pour leur permettre d'avoir des informations sans disposer du livre. Les métadonnées les plus connues sont le titre et l'auteur.
+Dans le cas du livre numérique, ces informations permettent aussi aux dispositifs de lecture de restituer correctement le contenu.
+</dd>
+<dl>
 <dt id="landmarks">Landmarks (points de repère)</dt>
 <dd>
 Les points de repère sont des endroits clés d'une publication auxquels un utilisateur est susceptible de vouloir accéder rapidement. Ils comprennent la table des matières, les glossaires, les bibliographies et d'autres aides à la navigation et à l'information.

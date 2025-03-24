@@ -71,7 +71,9 @@ target = '$1'
 ############################# Outputs ############################
 [outputs]
 home = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "json", "csv"] 
-section = ["HTML", "json", "csv"] 
+section = ["HTML", "WebAppManifest", "SearchIndex", "json", "csv"] 
+about = ["HTML", "RSS", "WebAppManifest", "SearchIndex", "json", "csv"] 
+
 
 ############################# Imaging ############################
 [imaging]
