@@ -21,6 +21,9 @@ https://creativecommons.org/licenses/by-sa/4.0/
 * https://edrlab.github.io/qualebook/fr/rules/index.json
 * https://edrlab.github.io/qualebook/fr/rules/index.csv
 
+## Deepwiki
+
+This repo documentation is available as [deepwiki].(https://deepwiki.com/edrlab/qualebook/)
 
 --- 
 
