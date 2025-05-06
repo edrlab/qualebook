@@ -17,8 +17,9 @@ www.opquast.com. Opquast is a French registered trademark.
 https://github.com/edrlab/qualebook
 https://creativecommons.org/licenses/by-sa/4.0/
 
-## JSON API
-Rules are available as .json : https://edrlab.github.io/qualebook/fr/rules/index.json
+## Rules are available as JSON and CSV Data sets
+* https://edrlab.github.io/qualebook/fr/rules/index.json
+* https://edrlab.github.io/qualebook/fr/rules/index.csv
 
 
 --- 
