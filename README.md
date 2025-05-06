@@ -18,6 +18,7 @@ https://github.com/edrlab/qualebook
 https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Rules are available as JSON and CSV Data sets
+JSON and CSV outputs are used to export rule data in structured formats that can be consumed by other systems or used for data analysis. To access these outputs:
 * https://edrlab.github.io/qualebook/fr/rules/index.json
 * https://edrlab.github.io/qualebook/fr/rules/index.csv
 
