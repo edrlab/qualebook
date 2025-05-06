@@ -1,4 +1,27 @@
-Accès aux régles comme .json : https://edrlab.github.io/qualebook/fr/rules/index.json
+# Quality control list for digital books
+
+Collective work of the Normes & standards working group of the SNE digital commission.
+
+The quality control lists for digital books aim to :
+
+* ensure access to digital books for as many readers as possible, without discrimination as to age, skills, physical or mental abilities, culture, equipment or access methods;
+* to build a common quality standard for digital books
+* make it easier for professionals to take ownership and give meaning to the actions undertaken;
+
+This work is based on the Opquast Checklist - web quality assurance, 240 rules to improve your sites and take better account of your users - Version 4 - 2020-2025
+
+## Licence
+The rules are published under a Creative Commons BY-SA licence. You may use them freely, provided you maintain authorship of the content, via a link to :
+
+www.opquast.com. Opquast is a French registered trademark.
+https://github.com/edrlab/qualebook
+https://creativecommons.org/licenses/by-sa/4.0/
+
+## JSON API
+Rules are available as .json : https://edrlab.github.io/qualebook/fr/rules/index.json
+
+
+--- 
 
 # Liste de contrôle de qualité pour le livre numérique
 
@@ -22,7 +45,7 @@ Les règles sont publiées sous licence Creative Commons BY-SA. Vous pouvez les 
 https://creativecommons.org/licenses/by-sa/4.0/
 
 
-# Construit avec Hugoplate
+# Built with Hugoplate
 
 <p align="center">Hugoplate is a free starter template built with Hugo, and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
 
