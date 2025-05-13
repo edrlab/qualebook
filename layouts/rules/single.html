@@ -11,7 +11,7 @@
           {{ end }}
           <a class="normal" href="../{{ .Params.before }}"><i class="fa-regular fa-circle-left"></i> {{ i18n "previousrule" }}</a>  |             <i class="fa-solid fa-arrows-to-circle"></i> {{ .Params.description }}   | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }} <i class="fa-regular fa-circle-right"></i></a> 
           <h1>
-            {{ .Title }}
+            {{ .Title  | safeHTML | markdownify }}
           </h1>
           
           {{/*  </p>   */}}
