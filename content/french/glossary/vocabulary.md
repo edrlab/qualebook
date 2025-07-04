@@ -1,5 +1,5 @@
 ---
-title: Vocabulaire 
+title: Glossaire 
 detail: 
 abstract: 
 categories: 
@@ -7,6 +7,7 @@ description: ""
 layout: blog
 date: 2024-09-18
 ---
+# Glossaire
 
 ## Vocabulaire
 <dl>
@@ -25,11 +26,9 @@ ARIA et EPUB définissent tous deux des méthodes pour exprimer les points de re
 * EPUB utilise une aide à la navigation spéciale dans le document de navigation pour définir où se trouvent les points de repère, car ceux-ci sont généralement répartis dans de nombreux documents (voir les points de repère EPUB pour plus d'informations).
 Voir [EPUB 3.3 section 7.4.4 The landmarks nav element](https://www.w3.org/TR/epub-33/#sec-nav-landmarks)
 </dd>
-<dt id="contentdocument">Document de Contenu (Content Document)</dt>
+<dt id="contentdocument">Content Document (Fichier de contenu)</dt>
 <dd>
-Un document de contenu EPUB est une ressource de publication référencée à partir de la colonne vertébrale ou d'une chaîne de repli du manifeste qui est conforme aux définitions de document de contenu XHTML ou SVG.
-
-Les documents de contenu EPUB contiennent tout ou partie du contenu d'une publication EPUB (c'est-à-dire le contenu textuel, visuel et/ou audio).
+Un EPUB contient plusieurs dossiers et fichiers. Parmi eux, on appelle fichier de contenu (Content Document) les fichiers XHTML qui contiennent tout ou partie de la publication, c'est-à-dire le texte lui-même et les éventuels appels de ressources (image, audio, vidéo...). Ces fichiers de contenu peuvent être référencés dans le fichier OPF pour être atteignables via le sommaire de l'application de lecture.
 
 Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/#sec-contentdocs).
 </dd> 
