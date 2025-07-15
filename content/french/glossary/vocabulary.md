@@ -32,65 +32,65 @@ Un EPUB contient plusieurs dossiers et fichiers. Parmi eux, on appelle fichier d
 
 Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/#sec-contentdocs).
 </dd> 
-<dt>CSS</dt>
+<dt id="CSS">CSS</dt>
     <dd>Les feuilles de style en cascade (CSS) sont un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML ou en XML (y compris les dialectes XML tels que SVG, MathML ou XHTML). Les CSS décrivent comment les éléments doivent être rendus sur l'écran, sur papier, en audio, ou sur d'autres supports.</dd> 
-<dt>Scripts</dt>
+<dt id="Scripts">Scripts</dt>
     <dd>ensemble d'instructions ou de commandes exécutées par un programme.</dd> 
-<dt>Code source</dt>
+<dt id="Codesource">Code source</dt>
     <dd>texte brut d'un programme écrit dans un langage de programmation.</dd> 
-<dt>Fichier toc.ncx</dt>
+<dt id="tocncx">Fichier toc.ncx</dt>
     <dd>fichier XML qui définit la table des matières d'un EPUB.</dd> 
-<dt>Fichier opf</dt>
+<dt id="opf">Fichier opf</dt>
     <dd>fichier XML central d'un EPUB, contenant les métadonnées et la structure du livre.</dd> 
-<dt>Fallback (chaîne de repli) (Cf. Règle 026)</dt>
+<dt id="Fallback">Fallback (chaîne de repli) (Cf. Règle 026)</dt>
     <dd>contenu alternatif affiché si le contenu principal n'est pas pris en charge ou disponible.</dd> 
-<dt>Repli intrinsèques (Cf. Règle 026)</dt>
+<dt id="Repli">Repli intrinsèques (Cf. Règle 026)</dt>
     <dd>mécanisme de repli intégré à un élément HTML ou CSS.</dd> 
-<dt>Minification (Cf. Règle 067)</dt>
+<dt id="Minification">Minification (Cf. Règle 067)</dt>
     <dd>processus de suppression des caractères inutiles dans le code source pour réduire la taille des fichiers.</dd> 
-<dt>Métadonnées de couverture (Cf. Règle 086)</dt>
+<dt id="couverture">Métadonnées de couverture (Cf. Règle 086)</dt>
     <dd>informations descriptives associées à l'image de couverture d'un livre numérique.</dd> 
-<dt>Media queries (Cf. Règle 086)</dt>
+<dt id="Mediaqueries">Media queries (Cf. Règle 086)</dt>
     <dd>règles CSS qui permettent d'appliquer des styles différents en fonction des caractéristiques de l'appareil (taille d'écran, orientation, etc.).</dd> 
-<dt>Ancre (Cf. Règle 059)</dt>
+<dt id="Ancre">Ancre (Cf. Règle 059)</dt>
     <dd>lien interne qui renvoie à une section spécifique d'une page.</dd> 
-<dt>Balise de structuration / balise sémantique (Cf. Règle 058)</dt>
+<dt id="balisesemantique">Balise de structuration / balise sémantique (Cf. Règle 058)</dt>
     <dd>balise HTML qui donne un sens au contenu qu'elle englobe (ex: `<header>`, `<article>`, `<footer>`).</dd> 
-<dt>Linéarisation (Cf. Règle 077)</dt>
+<dt id="Linearisation">Linéarisation (Cf. Règle 077)</dt>
     <dd>présentation séquentielle du contenu, souvent utilisée pour l'accessibilité ou l'impression.</dd> 
-<dt>Listes de définitions (Cf. Règle 073)</dt>
+<dt id="Listesdedefinitions">Listes de définitions (Cf. Règle 073)</dt>
     <dd>listes HTML (`<dl>`, `<dt>`, `<dd>`) utilisées pour définir des termes.</dd> 
-<dt>Attribut charset (jeu de caractères) (Cf. Règles 070 et 071)</dt>
+<dt id="Attributcharset">Attribut charset (jeu de caractères) (Cf. Règles 070 et 071)</dt>
     <dd>attribut spécifiant l'encodage des caractères d'un document HTML.</dd> 
-<dt>Balise meta (balise de métadonnées) (Cf. Règles 070 et 071)</dt>
+<dt id="Balisemeta">Balise meta (balise de métadonnées) (Cf. Règles 070 et 071)</dt>
     <dd>balise HTML utilisée pour fournir des métadonnées sur la page (description, mots-clés, etc.).</dd> 
-<dt>Décharge mentale (Cf. Règle 057)</dt>
+<dt id="Dechargementale">Décharge mentale (Cf. Règle 057)</dt>
     <dd>principe de conception visant à réduire la charge cognitive de l'utilisateur.</dd> 
-<dt>Registre des sous-tags de langue (Cf. Règle 036)</dt>
+<dt id="Registredessous-tagsdelangue ">Registre des sous-tags de langue (Cf. Règle 036)</dt>
     <dd>liste normalisée des sous-tags utilisés pour spécifier des variantes linguistiques (ex: `fr-CA` pour le français canadien).</dd> 
-<dt>Éléments canvas (Cf. Règle 026, Règle 023)</dt>
+<dt id="canvas">Éléments canvas (Cf. Règle 026, Règle 023)</dt>
     <dd>élément HTML5 (`<canvas>`) permettant de dessiner des graphiques et des animations via JavaScript.</dd> 
-<dt>Manifest (Cf. Règle 026)</dt>
+<dt id="Manifest">Manifest (Cf. Règle 026)</dt>
     <dd>fichier JSON ou XML décrivant les ressources d'une application web progressive (PWA).</dd> 
-<dt>Arguments des images (Cf. Règle 022)</dt>
+<dt id="Argumentsdesimages">Arguments des images (Cf. Règle 022)</dt>
     <dd>attributs HTML (ex: `alt`, `title`, `width`, `height`) qui fournissent des informations supplémentaires sur une image.</dd> 
-<dt>Rôles ARIA (Cf. Règle 020)</dt>
+<dt id="RolesARIA">Rôles ARIA (Cf. Règle 020)</dt>
     <dd>attributs qui définissent la nature sémantique des éléments HTML, améliorant l'accessibilité pour les technologies d'assistance.</dd> 
-<dt>Types EPUB (Cf. Règle 020)</dt>
+<dt id="TypesEPUB">Types EPUB (Cf. Règle 020)</dt>
     <dd>cela signifie qu'il faut spécifier les valeurs ou les options possibles pour l'attribut `epub:type`. En d'autres termes, il s'agit de lister les différentes catégories ou fonctions qu'un élément peut avoir dans un EPUB, en utilisant cet attribut.</dd> 
-<dt>Text and Data Mining (TDM) (Cf. Règle 017)</dt>
+<dt id="TDM">Text and Data Mining (TDM) (Cf. Règle 017)</dt>
     <dd>techniques d'analyse automatique de grandes quantités de texte et de données.</dd> 
-<dt>XMP (Extensible Metadata Platform) (Cf. Règle 017)</dt>
+<dt id="XMP">XMP (Extensible Metadata Platform) (Cf. Règle 017)</dt>
     <dd>norme de métadonnées utilisée pour intégrer des informations descriptives dans des fichiers numériques.</dd> 
-<dt>Élément accessibility summary (Cf. Règle 014)</dt>
+<dt id="accessibilitysummary">Élément accessibility summary (Cf. Règle 014)</dt>
     <dd>résumé textuel des caractéristiques d'accessibilité d'un document.</dd> 
-<dt>Fiche ONIX (Cf. Règle 012)</dt>
+<dt id="FicheONIX">Fiche ONIX (Cf. Règle 012)</dt>
     <dd>format standardisé d'échange de métadonnées pour l'industrie du livre.</dd> 
-<dt>Tooltip (Cf. Règle 007)</dt>
+<dt id="Tooltip">Tooltip (Cf. Règle 007)</dt>
     <dd>petit texte d'aide qui apparaît lorsque l'utilisateur survole un élément.</dd> 
 
     <!-- 
-    <dt></dt>
+    <dt id=""></dt>
     <dd></dd> 
     -->
 
