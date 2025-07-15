@@ -66,15 +66,15 @@ weight = 15
 
 
 # footer menu
-# [[footer]]
-# name = "About"
-# url = "about/"
-# weight = 1
+[[footer]]
+name = "Accéder au règles au format JSON"
+url = "https://edrlab.github.io/qualebook/fr/rules/index.json"
+weight = 1
 
-# [[footer]]
-# name = "Elements"
-# url = "elements/"
-# weight = 2
+[[footer]]
+name = "Télécharger les règles au format CSV"
+url = "https://edrlab.github.io/qualebook/fr/rules/index.csv"
+weight = 2
 
 # [[footer]]
 # name = "Privacy Policy"
