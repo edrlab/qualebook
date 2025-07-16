@@ -64,8 +64,8 @@ Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/
     <dd>attribut spécifiant l'encodage des caractères d'un document HTML.</dd> 
 <dt id="Balisemeta">Balise meta (balise de métadonnées) (Cf. Règles 070 et 071)</dt>
     <dd>balise HTML utilisée pour fournir des métadonnées sur la page (description, mots-clés, etc.).</dd> 
-<dt id="Dechargementale">Décharge mentale (Cf. Règle 057)</dt>
-    <dd>principe de conception visant à réduire la charge cognitive de l'utilisateur.</dd> 
+<dt id="Chargecognitive">charge cognitive (Cf. Règle 057)</dt>
+    <dd>En psychologie cognitive, la charge cognitive est l'effort fourni par la mémoire de travail.</dd> 
 <dt id="Registredessous-tagsdelangue ">Registre des sous-tags de langue (Cf. Règle 036)</dt>
     <dd>liste normalisée des sous-tags utilisés pour spécifier des variantes linguistiques (ex: `fr-CA` pour le français canadien).</dd> 
 <dt id="canvas">Éléments canvas (Cf. Règle 026, Règle 023)</dt>
