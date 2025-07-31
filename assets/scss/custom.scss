@@ -1,5 +1,14 @@
 // Add your own custom styles here
 
+dt{
+    display: inline;
+}
+dd{
+    display: inline;
+}
+
+
+
 :is(.dark .content) :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
     color: floralwhite;
     font-weight: 600;

@@ -131,13 +131,17 @@
               <i class="fa-solid fa-umbrella-beach"></i> {{ i18n "Referentiel" }} : <span class="inline-block">{{ . | markdownify }}</span>
             </li>
              {{ end }}
-            {{ $vocabulary:= .Params.vocabulary }} 
-            {{ if eq $vocabulary true }}
             <li>
-             <i class="fa-solid fa-spell-check"></i> {{ i18n "vocabulary" }} : <span class="inline-block">{{ .Content }}</span>
-             {{ end }}
-            </li>
-
+             <i class="fa-solid fa-spell-check"></i> {{ i18n "vocabulary" }} : 
+          <ul class="inline-block">
+            {{ $vocabulary:= .Params.vocabulary }} 
+            {{ range $i,$p:= $vocabulary }}
+                <li class="inline-block">
+                    {{ . | safeHTML | markdownify }}
+                </li>
+              {{ end }}
+            </ul>
+          </li>
           </ul>
 
         </article>

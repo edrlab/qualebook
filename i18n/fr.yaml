@@ -73,7 +73,7 @@
   translation: Vérifié par ACE 
 
 - id: humancheck
-  translation: Doit être vérifié par une personne
+  translation: Vérification humaine
 
 - id: validation
   translation: Validation
