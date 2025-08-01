@@ -12,7 +12,7 @@
                   active
                 {{ end }} m-1 block rounded bg-white px-3 py-1 hover:text-white"
                 href="{{ .Page.RelPermalink }}">
-                {{ .Page.Title }}
+                {{ .Page.Title | strings.ToLower  }}
               </a>
             </li>
           {{ end }}
