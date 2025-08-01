@@ -10,7 +10,7 @@ date: 2025-07-15
 
 ## Vocabulaire
 <dl>
-<dt id="accessibilitysummary">Élément accessibility summary (Cf. Règle 014)</dt>
+<dt id="accessibilitysummary">Élément <code>accessibility summary</code> (Cf. Règle 014)</dt>
 <dd>résumé textuel des caractéristiques d'accessibilité d'un document.</dd> <br/>
 <dt id="Ancre">Ancre (Cf. Règle 059)</dt>
 <dd>lien interne qui renvoie à une section spécifique d'une page.</dd> <br/>
