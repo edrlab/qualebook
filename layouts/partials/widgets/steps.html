@@ -6,13 +6,13 @@
       <div class="taxonomies rounded p-6">
         <ul>
           {{ range $name, $items := site.Taxonomies.steps }}
-            <li class="inline-block">
+<li class="inline-block">
               <a
-                class="hover:bg-primary dark:bg-darkmode-body dark:hover:bg-darkmode-primary dark:hover:text-dark {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `steps`) (eq $.Page.Title .Page.Title)) }}
+                class="taxonomiesticker {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `tags`) (eq $.Page.Title .Page.Title)) }}
                   active
-                {{ end }} m-1 block rounded bg-white px-3 py-1 hover:text-white"
+                {{ end }} m-1 block rounded px-3 py-1"
                 href="{{ .Page.RelPermalink }}">
-                {{ .Page.Title | strings.ToLower  }}
+                {{ .Page.Title | strings.ToLower }}
               </a>
             </li>
           {{ end }}

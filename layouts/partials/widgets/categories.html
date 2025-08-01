@@ -6,15 +6,13 @@
       <div class="taxonomies rounded p-6">
         <ul>
           {{ range $name, $items := site.Taxonomies.categories }}
-            <li>
+          <li class="inline-block">
               <a
-                class="taxonomiesticker {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `categories`) (eq $.Page.Title .Page.Title)) }}
+                class="taxonomiesticker {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `tags`) (eq $.Page.Title .Page.Title)) }}
                   active
                 {{ end }} m-1 block rounded px-3 py-1"
                 href="{{ .Page.RelPermalink }}">
-                {{ .Page.Title | strings.ToLower }} 
-                
-                {{/*  <span>( {{ len $items }} )</span>  */}}
+                {{ .Page.Title | strings.ToLower }}
               </a>
             </li>
           {{ end }}
