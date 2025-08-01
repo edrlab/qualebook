@@ -4,26 +4,26 @@ detail:
 abstract: 
 categories: 
 description: ""
-layout: blog
+layout: glossary
 date: 2025-07-15
 ---
 
 ## Vocabulaire
 <dl>
-<dt id="accessibilitysummary">Élément accessibility summary (Cf. Règle 014)</dt>
+<dt id="accessibilitysummary">Élément <code>accessibility summary</code> (Cf. Règle 014)</dt>
 <dd>résumé textuel des caractéristiques d'accessibilité d'un document.</dd> <br/>
 <dt id="Ancre">Ancre (Cf. Règle 059)</dt>
 <dd>lien interne qui renvoie à une section spécifique d'une page.</dd> <br/>
 <dt id="Argumentsdesimages">Arguments des images (Cf. Règle 022)</dt>
-<dd>attributs HTML (ex: `alt`, `title`, `width`, `height`) qui fournissent des informations supplémentaires sur une image.</dd> <br/>
+<dd>attributs HTML (par exemple&nbsp;:<code>alt</code>, <code>title</code>, <code>width</code>, <code>height</code>) qui fournissent des informations supplémentaires sur une image.</dd> <br/>
 <dt id="Attributcharset">Attribut charset (jeu de caractères) (Cf. Règles 070 et 071)</dt>
 <dd>attribut spécifiant l'encodage des caractères d'un document HTML.</dd> <br/>
 <dt id="balisesemantique">Balise de structuration / balise sémantique (Cf. Règle 058)</dt>
-<dd>balise HTML qui donne un sens au contenu qu'elle englobe (ex: `<header>`, `<article>`, `<footer>`).</dd> <br/>
+<dd>balise HTML qui donne un sens au contenu qu'elle englobe (par exemple&nbsp;:<code>header</code>, <code>article</code>, <code>footer</code>).</dd> <br/>
 <dt id="Balisemeta">Balise meta (balise de métadonnées) (Cf. Règles 070 et 071)</dt>
 <dd>balise HTML utilisée pour fournir des métadonnées sur la page (description, mots-clés, etc.).</dd> <br/>
 <dt id="canvas">Éléments canvas (Cf. Règle 026, Règle 023)</dt>
-<dd>élément HTML5 (`<canvas>`) permettant de dessiner des graphiques et des animations via JavaScript.</dd> <br/>
+<dd>élément HTML5 (<code>canvas</code>) permettant de dessiner des graphiques et des animations via JavaScript.</dd> <br/>
 <dt id="Chargecognitive">charge cognitive (Cf. Règle 057)</dt>
 <dd>En psychologie cognitive, la charge cognitive est l'effort fourni par la mémoire de travail.</dd> <br/>
 <dt id="Codesource">Code source</dt>
@@ -53,7 +53,7 @@ Voir [EPUB 3.3 section 7.4.4 The landmarks nav element](https://www.w3.org/TR/ep
 <dt id="Linearisation">Linéarisation (Cf. Règle 077)</dt>
 <dd>présentation séquentielle du contenu, souvent utilisée pour l'accessibilité ou l'impression.</dd> <br/>
 <dt id="Listesdedefinitions">Listes de définitions (Cf. Règle 073)</dt>
-<dd>listes HTML (`<dl>`, `<dt>`, `<dd>`) utilisées pour définir des termes.</dd> <br/>
+<dd>listes HTML (<code>dl</code>, <code>dt</code>, <code>dd</code>) utilisées pour définir des termes.</dd> <br/>
 <dt id="Manifest">Manifest (Cf. Règle 026)</dt>
 <dd>fichier JSON ou XML décrivant les ressources d'une application web progressive (PWA).</dd> <br/>
 <dt id="Mediaqueries">Media queries (Cf. Règle 086)</dt>
@@ -67,7 +67,7 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 <dt id="opf">.opf</dt>
 <dd>fichier XML central d'un EPUB, contenant les métadonnées et la structure du livre.</dd> <br/>
 <dt id="Registredessous-tagsdelangue ">Registre des sous-tags de langue (Cf. Règle 036)</dt>
-<dd>liste normalisée des sous-tags utilisés pour spécifier des variantes linguistiques (ex: `fr-CA` pour le français canadien).</dd> <br/>
+<dd>liste normalisée des sous-tags utilisés pour spécifier des variantes linguistiques (par exemple&nbsp;: <code>fr-CA</code>pour le français canadien).</dd> <br/>
 <dt id="RolesARIA">Rôles ARIA (Cf. Règle 020)</dt>
 <dd>attributs qui définissent la nature sémantique des éléments HTML, améliorant l'accessibilité pour les technologies d'assistance.</dd> <br/>
 <dt id="Script">Script</dt>
@@ -79,7 +79,7 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 <dt id="Tooltip">Tooltip (Cf. Règle 007)</dt>
 <dd>petit texte d'aide qui apparaît lorsque l'utilisateur survole un élément.</dd> 
 <dt id="TypesEPUB">Types EPUB (Cf. Règle 020)</dt>
-<dd>cela signifie qu'il faut spécifier les valeurs ou les options possibles pour l'attribut `epub:type`. En d'autres termes, il s'agit de lister les différentes catégories ou fonctions qu'un élément peut avoir dans un EPUB, en utilisant cet attribut.</dd> <br/>
+<dd>cela signifie qu'il faut spécifier les valeurs ou les options possibles pour l'attribut <code>>epub:type</code>. En d'autres termes, il s'agit de lister les différentes catégories ou fonctions qu'un élément peut avoir dans un EPUB, en utilisant cet attribut.</dd> <br/>
 <dt id="XMP">XMP (Extensible Metadata Platform) (Cf. Règle 017)</dt>
 <dd>norme de métadonnées utilisée pour intégrer des informations descriptives dans des fichiers numériques.</dd> <br/>
 </dl>
