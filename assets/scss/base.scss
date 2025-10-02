@@ -1,59 +1,180 @@
-html {
-  @apply text-base;
-}
-
 body {
-  @apply bg-body font-primary text-text dark:bg-darkmode-body dark:text-darkmode-text font-normal leading-relaxed;
+    padding: 0 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-secondary text-dark dark:text-darkmode-dark font-bold leading-tight;
+main {
+    margin-bottom: 40px;
 }
 
-h1,
-.h1 {
-  @apply text-h1-sm md:text-h1;
+a, button {
+    cursor: pointer;
 }
 
-h2,
-.h2 {
-  @apply text-h2-sm md:text-h2;
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+
+    section {
+        flex: 1;
+        background-color: $-color-bg-light;
+        aspect-ratio: 1;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        img {
+            height: 300px;
+            margin: auto;
+            padding-top: 40px;
+        }
+    }
+
+    .feature-actions {
+        margin: auto;
+        width: fit-content;
+        a {
+            background-color: $-color-orange;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
 }
 
-h3,
-.h3 {
-  @apply text-h3-sm md:text-h3;
+.rules-container {
+    display: flex;
+    gap: 40px;
+
+    h5 {
+        font-size: 40px;
+        font-weight: bold;
+    }
 }
 
-h4,
-.h4 {
-  @apply text-h4 font-medium;
+.rules-filters {
+    flex: 1;
+
+    .filters {
+
+        .tabs {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .tab-button {
+            color: $-color-light-blue;
+            font-size: 24px;
+            font-weight: 400;
+            position: relative;
+            padding-right: 1.5em;
+
+            &::after {
+                content: "›";            /* chevron droit */
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(0deg);
+                transition: transform 0.2s ease;
+                color: $-color-orange;
+            }
+        }
+
+        .tab-button.active {
+            font-weight: 600;
+
+            &::after {
+                transform: translateY(-50%) rotate(90deg);
+            }
+        }
+    }
 }
 
-h5,
-.h5 {
-  @apply text-h5 font-medium;
+.tab-content {
+    background-color: $-color-bg-light;
+    padding: 40px 60px;
+
+    .taxonomy-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .taxonomy-link  {
+        background-color: white;
+        padding: 10px 20px;
+        line-height: 2;
+    }
 }
 
-h6,
-.h6 {
-  @apply text-h6 font-medium;
+.rules-list {
+    flex: 1;
+
+    .card-container {
+        margin: 20px 0;
+    }
+    .blog-card {
+        background-color: $-color-bg-light;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 60px;
+        gap: 20px;
+        padding: 0 20px;
+
+        .rule-arrow {
+            display: flex; // pour centrer facilement
+            align-items: center;
+            justify-content: center;
+            
+            min-width: 44px;
+            min-height: 44px;
+            max-width: 44px;
+            max-height: 44px;
+            background-color: $-color-orange;
+            border-radius: 50%;
+            
+            font-size: 24px;
+            font-weight: 100;
+            color: white;
+        }
+
+        p {
+            background-color: white;
+            min-width: 40px;
+            max-width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $-color-light-blue;
+        }
+    }
 }
 
-b,
-strong {
-  @apply font-semibold;
-}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 22px;
 
-code {
-  @apply after:border-none;
-}
+    svg {
+        background-color: $-color-orange;
+        border-radius: 50%;
+        fill: white;
+    }
 
-blockquote > p {
-  @apply my-0;
+    .current-page {
+        color: $-color-light-blue;
+        font-size: 24px;
+        text-decoration: underline;
+    }
 }

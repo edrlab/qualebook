@@ -1,22 +1,13 @@
-<footer class="bg-theme-light dark:bg-darkmode-theme-light">
-  <div class="container">
-    <div class="row items-center py-10">
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
+<footer>
+      <div>
         <!-- navbar brand/logo -->
-        <a
-          class="navbar-brand inline-block"
-          href="{{ site.BaseURL | relLangURL }}">
+        <a href="{{ site.BaseURL | relLangURL }}">
           {{ partial "logo" }}
         </a>
       </div>
-      <div class="lg:col-6 mb-8 text-center lg:mb-0">
-        <img class="m-3 inline-block" src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/logosne.jpg
-" alt="logo SNE" width="120px">
-        <img class="m-3 inline-block" src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/edrlab_logo.jpg" alt="logo EDRLab" width="60px">
-
-        <ul>
+        <ul class="footer-list">
           {{ range site.Menus.footer }}
-            <li class="m-3 inline-block">
+            <li>
               <a
                 {{ if findRE `^http` .URL }}
                   target="_blank" rel="noopener"
@@ -32,26 +23,11 @@
               >
             </li>
           {{ end }}
-          <li class="m-3 inline-block">{{ site.Params.copyright | markdownify }}</li>
+          <li>{{ site.Params.copyright | markdownify }}</li>
         </ul>
-      </div>
-      
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+      <div class="footer-logo">
+        <img src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/logosne.jpg" alt="logo SNE" width="120px">
+        <img src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/edrlab_logo.jpg" alt="logo EDRLab" width="60px">
 
-        <ul class="">
-          {{ range site.Data.social.main }}
-            <li>
-              <a
-                target="_blank"
-                aria-label="{{ .name }}"
-                rel="nofollow noopener"
-                href="{{ .link | safeURL }}">
-                <i class="{{ .icon }}"></i>
-              </a>
-            </li>
-          {{ end }}
-        </ul>
       </div>
-    </div>
-  </div>
 </footer>

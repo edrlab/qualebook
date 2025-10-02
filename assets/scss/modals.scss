@@ -1,0 +1,23 @@
+$-bg-opacity: 1;
+
+
+.search-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999999;
+    transition: .2s;
+    opacity: 0;
+    visibility: hidden;
+
+    .search-wrapper-content {
+        background-color: rgba(28, 28, 28, 1);
+    }
+}
+
+.search-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
