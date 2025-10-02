@@ -1,7 +1,6 @@
 <section>
-  <div class="container text-center">
-    <div
-      class="pagetitle rounded-2xl bg-gradient-to-b px-8 py-14">
+  <div>
+    <div>
       <h1>{{ .Title | title }}</h1>
       <p>{{ .Description }}</p>
       {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
