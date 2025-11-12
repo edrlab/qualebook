@@ -1,23 +1,19 @@
 {{ define "main" }}
   {{ with site.GetPage "about" }}
-    <!-- Banner -->
+  <div class="about-page">
+    <div class="about-main-section">
+ <!-- Banner -->
     {{ with .Params.banner }}
       <section>
-        <div>
-          <div>
-            <div>
-              <h1>{{ .title | markdownify }}</h1>
-              <p>{{ .content | markdownify }}</p>
-              {{ with .button }}
-                {{ if .enable }}
-                  <a href="{{ .link | absURL }}">
-                    {{ .label }}
-                  </a>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
-        </div>
+        <h1>{{ .title | markdownify }}</h1>
+        <p>{{ .content | markdownify }}</p>
+        {{ with .button }}
+          {{ if .enable }}
+            <a href="{{ .link | absURL }}">
+              {{ .label }}
+            </a>
+          {{ end }}
+        {{ end }}
       {{ end }}
       {{ .Content }}
     </section>
@@ -27,25 +23,21 @@
     {{ range $i, $e := .Params.features }}
       <section>
         <div>
-          <div>
-            <div>
-              {{ partial "image" (dict "Src" .image "Alt" "feature image") }}
-            </div>
-            <div>
-              <h2>{{ .title | markdownify }}</h2>
-              <p>{{ .content | markdownify }}</p>
-              <ul>
-                {{ range .bulletpoints }}
-                  <li>{{ . | markdownify }}</li>
-                {{ end }}
-              </ul>
-              {{ with .button }}
-                {{ if .enable }}
-                  <a href="{{ .link | absURL }}">{{ .label }}</a>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
+          {{ partial "image" (dict "Src" .image "Alt" "feature image") }}
+        </div>
+        <div>
+          <h2>{{ .title | markdownify }}</h2>
+          <p>{{ .content | markdownify }}</p>
+          <ul>
+            {{ range .bulletpoints }}
+              <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+          {{ with .button }}
+            {{ if .enable }}
+              <a href="{{ .link | absURL }}">{{ .label }}</a>
+            {{ end }}
+          {{ end }}
         </div>
       </section>
     {{ end }}
@@ -87,5 +79,35 @@
       {{ end }}
     {{ end }}
     <!-- /Testimonials -->
+    </div>
+   
+         <aside>
+          {{ range $i, $e := .Params.aside }}
+      <section>
+        <div>
+          <div>
+            <div>
+              {{ partial "image" (dict "Src" .image "Alt" "feature image") }}
+            </div>
+            <div>
+              <h2>{{ .title | markdownify }}</h2>
+              <p>{{ .content | markdownify }}</p>
+              <ul>
+                {{ range .bulletpoints }}
+                  <li>{{ . | markdownify }}</li>
+                {{ end }}
+              </ul>
+              {{ with .button }}
+                {{ if .enable }}
+                  <a href="{{ .link | absURL }}">{{ .label }}</a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+    </aside>
+    </div>
   {{ end }}
 {{ end }}

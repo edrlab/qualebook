@@ -308,3 +308,31 @@ a, button {
         }
     }
 }
+
+.about-page {
+    display: flex;
+
+    aside {
+        flex: 1;
+        color: $-color-light-blue;
+
+        section {
+            background-color: $-color-bg-light;
+            padding: 40px 60px;
+            margin: 40px 0 40px 40px;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+    .about-main-section {
+        flex: 2;
+        h1, h2 {
+            font-size: 34px;
+            font-weight: 900;
+            margin: 10px 0;
+        }
+    }
+}
