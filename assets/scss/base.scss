@@ -22,6 +22,7 @@ a, button {
         background-color: $-color-bg-light;
         aspect-ratio: 1;
         max-width: 500px;
+        min-width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -334,5 +335,33 @@ a, button {
             font-weight: 900;
             margin: 10px 0;
         }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .features-container, .about-page {
+        flex-direction: column;
+    }
+
+    .about-page aside section {
+        margin-left: 0;
+    }
+
+    .tab-button {
+        padding-right: 20px!important;
+        margin-right: 10px;
+    }
+
+    .tab-content {
+        padding: 20px!important;
+
+        .taxonomy-list {
+            gap: 15px;
+        }
+    }
+
+    .rules-container {
+        flex-direction: column;
     }
 }

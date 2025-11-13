@@ -1,33 +1,30 @@
 <footer>
-      <div>
-        <!-- navbar brand/logo -->
-        <a href="{{ site.BaseURL | relLangURL }}">
-          {{ partial "logo" }}
-        </a>
-      </div>
-        <ul class="footer-list">
-          {{ range site.Menus.footer }}
-            <li>
-              <a
-                {{ if findRE `^http` .URL }}
-                  target="_blank" rel="noopener"
-                {{ end }}
-                href="{{ if findRE `^#` .URL }}
-                  {{ if not $.IsHome }}
-                    {{ site.BaseURL | relLangURL }}
-                  {{ end }}{{ .URL }}
-                {{ else }}
-                  {{ .URL | relLangURL }}
-                {{ end }}"
-                >{{ .Name }}</a
-              >
-            </li>
-          {{ end }}
-          <li>{{ site.Params.copyright | markdownify }}</li>
-        </ul>
-      <div class="footer-logo">
-        <img src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/logosne.jpg" alt="logo SNE" width="120px">
-        <img src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/edrlab_logo.jpg" alt="logo EDRLab" width="60px">
-
-      </div>
+  <div class="logo-container">
+    <div class="qualebook-logo-footer">
+      <!-- navbar brand/logo -->
+      <a href="{{ site.BaseURL | relLangURL }}">
+        {{ partial "logo" }}
+      </a>
+    </div>
+    <div class="footer-logo">
+      <img src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/logosne.jpg" alt="logo SNE"
+        width="120px">
+      <img src="https://raw.githubusercontent.com/edrlab/qualebook/main/assets/images/edrlab_logo.jpg" alt="logo EDRLab"
+        width="60px">
+    </div>
+  </div>
+  <ul class="footer-list">
+    {{ range site.Menus.footer }}
+    <li>
+      <a {{ if findRE `^http` .URL }} target="_blank" rel="noopener" {{ end }} href="{{ if findRE `^#` .URL }}
+                {{ if not $.IsHome }}
+                  {{ site.BaseURL | relLangURL }}
+                {{ end }}{{ .URL }}
+              {{ else }}
+                {{ .URL | relLangURL }}
+              {{ end }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    <li>{{ site.Params.copyright | markdownify }}</li>
+  </ul>
 </footer>

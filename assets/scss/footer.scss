@@ -6,10 +6,24 @@ footer {
     background-color: $-color-bg-blue;
     margin-left: -20px;
     padding: 20px 20px;
+    position: relative;
 
-    & > * {
-        flex: 0.5;
-    }
+    // & > * {
+    //     flex: 0.5;
+    // }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.qualebook-logo-footer {
+    position: absolute;
+    top: 30px;
+    left: 20px;
 }
 
 .footer-logo {
@@ -17,6 +31,9 @@ footer {
     align-items: center;
     justify-content: end;
     gap: 10px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
 
     img {
         max-width: 100px;
@@ -30,12 +47,16 @@ footer {
     flex-wrap: wrap;
     flex: 2;
     gap: 20px;
+    margin: 0 15%;
 
     li {
         padding: 10px 20px;
         background-color: white;
         position: relative;
-        margin-right: 40px;
+
+        &:has(a) {
+            margin-right: 40px;
+        }
 
         a::after {
             content: "\2197";
@@ -55,4 +76,26 @@ footer {
             color: white;
         }
     }
+}
+
+@media screen and (max-width: 1105px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 2rem;
+    width: calc(100% + 40px);
+  }
+
+  .footer-list {
+    margin: 0;
+  }
+
+  .logo-container {
+    flex-direction: row;
+  }
+  
+  .qualebook-logo-footer, .footer-logo {
+    position: unset;
+  }
 }

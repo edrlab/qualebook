@@ -44,36 +44,14 @@ header {
             }
         }
     }
-
-    .header-nav #nav-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 50px;
-        width: 100%;
-        padding: 30px;
-        border: 2px solid $-color-grey;
-
-        li {
-            font-size: 25px;
-            flex: 1;
-            text-align: center;
-            position: relative;
-
-            &:not(:last-child)::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                right: 0;
-                height: 100%;
-                border-right: 1px solid $-color-grey;
-            }
-        }
-    }
 }
 
-@media screen and (min-width: 1024px) {
-    .burger-toggle {
-        display: none;
+@media screen and (max-width: 900px) {
+    .header-hero {
+        flex-direction: column;
+    }
+    .header-actions {
+        justify-self: flex-end;
+        width: 100%;
     }
 }
