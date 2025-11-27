@@ -1,5 +1,7 @@
 body {
     padding: 0 20px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 main {
@@ -16,12 +18,14 @@ a, button {
     justify-content: center;
     width: 100%;
     gap: 30px;
+    height: calc(100vh - 395px);
+    margin: 50px 0;
 
     section {
         flex: 1;
         background-color: $-color-bg-light;
         aspect-ratio: 1;
-        max-width: 500px;
+        max-width: 400px;
         min-width: 400px;
         display: flex;
         flex-direction: column;
@@ -59,7 +63,7 @@ a, button {
 }
 
 .rules-filters {
-    flex: 1;
+    flex: 0.75;
 
     .filters {
 
@@ -67,6 +71,8 @@ a, button {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            width: 80%;
+            padding-left: 20px;
         }
 
         .tab-button {
@@ -99,13 +105,13 @@ a, button {
 
 .tab-content {
     background-color: $-color-bg-light;
-    padding: 40px 60px;
+    padding: 40px;
 
     .taxonomy-list {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 40px;
+        gap: 20px;
     }
 
     .taxonomy-link  {
@@ -118,45 +124,51 @@ a, button {
 .rules-list {
     flex: 1;
 
-    .card-container {
-        margin: 20px 0;
-    }
     .blog-card {
-        background-color: $-color-bg-light;
+        margin: 0;
+    }
+
+}
+.card-container {
+    margin: 20px 0;
+}
+
+.blog-card {
+    background-color: $-color-bg-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    gap: 20px;
+    padding: 0 20px;
+    margin: 20px 0;
+
+    .rule-arrow {
+        display: flex; // pour centrer facilement
+        align-items: center;
+        justify-content: center;
+        
+        min-width: 44px;
+        min-height: 44px;
+        max-width: 44px;
+        max-height: 44px;
+        background-color: $-color-orange;
+        border-radius: 50%;
+        
+        font-size: 24px;
+        font-weight: 100;
+        color: white;
+    }
+
+    p {
+        background-color: white;
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        min-height: 60px;
-        gap: 20px;
-        padding: 0 20px;
-
-        .rule-arrow {
-            display: flex; // pour centrer facilement
-            align-items: center;
-            justify-content: center;
-            
-            min-width: 44px;
-            min-height: 44px;
-            max-width: 44px;
-            max-height: 44px;
-            background-color: $-color-orange;
-            border-radius: 50%;
-            
-            font-size: 24px;
-            font-weight: 100;
-            color: white;
-        }
-
-        p {
-            background-color: white;
-            min-width: 40px;
-            max-width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $-color-light-blue;
-        }
+        justify-content: center;
+        color: $-color-light-blue;
     }
 }
 
@@ -322,6 +334,22 @@ a, button {
             padding: 40px 60px;
             margin: 40px 0 40px 40px;
 
+             ul {
+                list-style: unset;
+
+                li {
+                    margin: 10px 0;
+
+                    > p {
+                        font-weight: bold;
+                    }
+
+                    blockquote {
+                        font-style: italic;
+                    }
+                }
+            }
+
             h2 {
                 font-size: 24px;
                 font-weight: 600;
@@ -335,7 +363,17 @@ a, button {
             font-weight: 900;
             margin: 10px 0;
         }
+
+        img {
+            width: 100px;
+            float: left;
+        }
     }
+}
+
+.breadcrumb-container {
+    display: flex;
+    gap: 10px;
 }
 
 

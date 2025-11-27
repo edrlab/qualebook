@@ -1,9 +1,16 @@
 <section>
-  <div>
-    <div>
-      <h1>{{ .Title | title }}</h1>
+<div>
+    {{ $path := .RelPermalink }}
+    {{ if or (strings.Contains $path "categories/") (strings.Contains $path "steps/") (strings.Contains $path "tags/") }}
+    <div class="mt-6" style="text-align: left;">
+      <a href="{{ "/rules/" | relLangURL }}" style="font-size: 16px; font-weight: 500; color: #007bff; text-decoration: underline;">
+        Retour aux Règles du Site
+      </a>
+    </div>
+    {{ end }}
+    <div style="text-align: center;">
+      <h1 style="font-size: 30px; font-weight: bold;">{{ .Title | title }}</h1>
       <p>{{ .Description }}</p>
-      {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
     </div>
   </div>
 </section>
