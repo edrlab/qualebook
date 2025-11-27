@@ -1,6 +1,6 @@
 ---
-title: Steps
-meta_title: steps
+title: "Étapes"
+meta_title: "steps"
 description: ""
 draft: false
 layout: about
