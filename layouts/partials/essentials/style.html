@@ -43,9 +43,9 @@
     {{ $styles = $styles | append (resources.Get .link) }}
   {{ end }}
 {{ end }}
-{{ $styles := $styles | append (resources.Get "scss/main.scss" | toCSS) }}
-{{ $styles := $styles | resources.Concat "css/style.css" }}
-{{ $styles = $styles | css.PostCSS }}
+{{ $styles = $styles | append (resources.Get "scss/main.scss" | toCSS) }}
+{{ $styles = $styles | resources.Concat "css/style.css" }}
+{{ $styles = css.PostCSS $styles }}
 {{ if hugo.IsProduction }}
   {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | minify | fingerprint | resources.PostProcess }}
 {{ else }}
@@ -55,5 +55,5 @@
 
 <link
   href="{{ $styles.RelPermalink }}"
-  integrity="{{ $styles.Data.Integrity }}"
+  {{ with $styles.Data.Integrity }} integrity="{{ . }}"{{ end }}
   rel="stylesheet" />
