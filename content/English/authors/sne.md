@@ -1,12 +1,13 @@
 ---
-title: "[currency symbol] SNE"
-email: null
-image: null
-description: National Editing Union
+title: SNE
+email: 
+image: 
+description: Syndicat national de l'édition
 draft: true
 ---
 
-Standard & Standards Group of the [National Publishing Union Numbers Commission](https://www.sne.fr/numerique-2/).
+Groupe Normes & Standards de la [Commission Numérique du Syndicat national de l'édition](https://www.sne.fr/numerique-2/). 
+
 
 <!-- 
 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
