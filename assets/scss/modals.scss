@@ -11,6 +11,11 @@ $-bg-opacity: 1;
     transition: .2s;
     opacity: 0;
     visibility: hidden;
+    color: white;
+
+    #search-modal-input {
+        color: black;
+    }
 
     .search-wrapper-content {
         background-color: rgba(28, 28, 28, 1);

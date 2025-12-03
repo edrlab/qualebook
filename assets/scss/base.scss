@@ -380,6 +380,7 @@ a, button {
 @media screen and (max-width: 900px) {
     .features-container, .about-page {
         flex-direction: column;
+        height: unset;
     }
 
     .about-page aside section {

@@ -48,7 +48,8 @@ footer {
     flex-wrap: wrap;
     flex: 2;
     gap: 20px;
-    margin: 0 10%;
+    margin: 0 170px 0 100px;
+    flex-wrap: wrap;
 
     li {
         padding: 10px 20px;
@@ -88,8 +89,13 @@ footer {
     width: calc(100% + 40px);
   }
 
+  footer {
+    margin-left: -20px;
+  }
+
   .footer-list {
     margin: 0;
+    justify-content: center;
   }
 
   .logo-container {

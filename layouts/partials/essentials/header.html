@@ -59,7 +59,59 @@
   <nav class="nav-dropdown">
     <ul id="nav-menu-dropdown">
       {{ range site.Menus.main }}
-        <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+      {{ if in (slice "about" "rules" "glossary") .Identifier }}
+        {{ $menuURL := .URL | absLangURL }}
+        {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+        {{ $active := eq $menuURL $pageURL }}
+        {{ if .HasChildren }}
+          <li>
+            <span>
+              {{ .Name }}
+              <svg viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </span>
+            <ul>
+              {{ range .Children }}
+                {{ $childURL := .URL | absLangURL }}
+                {{ $active := eq $childURL $pageURL }}
+                <li>
+                  <a
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{- if findRE `^#` .URL -}}
+                      {{- if not $.IsHome -}}
+                        {{- site.BaseURL | relLangURL -}}
+                      {{- end }}
+                      {{- .URL -}}
+                    {{- else -}}
+                      {{- .URL | relLangURL -}}
+                    {{- end -}}">
+                    {{ .Name }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ else }}
+          <li class="nav-item">
+            <a
+              {{ if findRE `^http` .URL }}
+                target="_blank" rel="noopener"
+              {{ end }}
+              href="{{- if findRE `^#` .URL -}}
+                {{- if not $.IsHome -}}
+                  {{- site.BaseURL | relLangURL -}}
+                {{- end }}{{- .URL -}}
+              {{- else -}}
+                {{- .URL | relLangURL -}}
+              {{- end -}}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
       {{ end }}
     </ul>
   </nav>
