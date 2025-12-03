@@ -15,7 +15,14 @@
       style="--color-primary: {{ site.Params.search.primary_color | default `#7f0ec6` }}">
       <div class="search-wrapper-content">
         <div class="search-input-body">
-          <label for="search-modal-input" style="margin-top:-1px">
+          <input
+            id="search-modal-input"
+            type="text"
+            data-search-input
+            autocomplete="off"
+            aria-label="Search"
+            placeholder="{{ i18n `search_input_placeholder` | default .input_placeholder }}" />
+                      <label for="search-modal-input" style="margin-top:-1px">
             <span class="sr-only">search icon</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,13 +47,6 @@
                 d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
             </svg>
           </label>
-          <input
-            id="search-modal-input"
-            type="text"
-            data-search-input
-            autocomplete="off"
-            aria-label="Search"
-            placeholder="{{ i18n `search_input_placeholder` | default .input_placeholder }}" />
         </div>
         <div class="search-wrapper-body">
           <div class="search-result" data-search-result></div>
