@@ -1,5 +1,5 @@
 ---
-title: "Étapes"
+title: "Steps"
 meta_title: "steps"
 description: ""
 draft: false
