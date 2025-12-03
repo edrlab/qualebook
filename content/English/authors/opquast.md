@@ -1,12 +1,14 @@
 ---
 title: OPQUAST
-email: null
-image: null
+email: 
+image: 
 description: Open Quality Standards
 draft: true
+
 ---
 
 [OPQUAST](https://www.opquast.com/a-propos/)
+
 
 <!-- lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
 social:
