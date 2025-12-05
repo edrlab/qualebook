@@ -1,7 +1,7 @@
 ---
-title: "lisibilité"
-meta_title: "lisibilite"
-description: "Clarté et facilité avec laquelle le contenu peut être lu et compris. Cela concerne la manière dont le contenu est présenté et s’adapte dynamiquement à différents écrans et orientations."
+title: "Readability"
+meta_title: "Readability"
+description: "Clarity and ease with which content can be read and understood. This concerns how content is presented and dynamically adapts to different screens and orientations."
 draft: false
 layout: about
 ---

@@ -1,7 +1,7 @@
 ---
-title: "écoconception"
-meta_title: "ecoconception"
-description: "Attention portée pour minimiser l’impact environnemental du livre numérique. Cela inclut l'optimisation des ressources graphiques et l'utilisation de formats de fichiers efficaces pour réduire la taille des données."
+title: "Ecodesign"
+meta_title: "Ecodesign"
+description: "Attention paid to minimize the environmental impact of digital books. This includes optimizing graphics resources and using efficient file formats to reduce data size."
 draft: false
 layout: about
 ---
