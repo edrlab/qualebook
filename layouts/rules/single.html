@@ -1,171 +1,208 @@
 {{ define "main" }}
-  <section class="section pt-7">
-    <div class="container">
-      <div class="row justify-center">
-        <article class="rule lg:col-10">
-          {{ $image:= .Params.image }}
-          {{ if $image }}
-            <figure class="mb-10">
-              {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
-            </figure>
-          {{ end }}
-          <a class="normal" href="../{{ .Params.before }}"><i class="fa-regular fa-circle-left"></i> {{ i18n "previousrule" }}</a>  |             <i class="fa-solid fa-arrows-to-circle"></i> {{ .Params.description }}   | <a class="normal" href="../{{ .Params.after }}">{{ i18n "nextrule" }} <i class="fa-regular fa-circle-right"></i></a> 
-          <h1>
-            {{ .Title  | safeHTML | markdownify }}
-          </h1>
-          
-          {{/*  </p>   */}}
-          <div class="content mb-10">
-           
-            <blockquote>{{ .Params.abstract | safeHTML | markdownify }}</blockquote>
-            
-            <h2><i class="fa-solid fa-bullseye"></i> {{ i18n "objectives" }}</h2>
-            <ul>
-              {{ $objectif:= .Params.objectif }}
-              {{ range $i,$p:= $objectif }}
-                <li class="">
+<section>
+  <div>
+    <div class="rule-page-wrapper">
+      <article>
+        {{ $image:= .Params.image }}
+        {{ if $image }}
+        <figure>
+          {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
+        </figure>
+        {{ end }}
+        <div class="rule-navigation-container">
+          <a href="../{{ .Params.before }}" class="previous-rule-link">
+            <i class="fa-regular fa-arrow-left"></i> {{ i18n "previousrule" }}
+          </a>
+          <!-- <i class="fa-solid fa-arrows-to-circle"></i> -->
+          <p class="current-rule-indicator">{{ .Params.description }}</p>
+          <a href="../{{ .Params.after }}" class="next-rule-link">
+            {{ i18n "nextrule" }} <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <h1 class="rule-title">
+          {{ .Title | safeHTML | markdownify }}
+        </h1>
 
-                    {{ . | safeHTML | markdownify }}
-
-                </li>
-              {{ end }}
-            </ul>
-            <h2><i class="fa-solid fa-fire-flame-simple"></i></i> {{ i18n "meo" }}</h2>
-            <ul>
-              {{ $meo:= .Params.meo }}
-              {{ range $i,$p:= $meo }}
-                <li class="">
-
-                    {{ . | safeHTML | markdownify }}
-
-                </li>
-              {{ end }}
-            </ul>
-            <h2><i class="fa-solid fa-magnifying-glass"></i></i> {{ i18n "control" }}</h2>
-            <ul>
-              {{ $controle:= .Params.controle }}
-              {{ range $i,$p:= $controle }}
-                <li class="inline-block">
-
-                    {{ . | safeHTML | markdownify }}
-
-                </li>
-              {{ end }}
-            </ul>
-          <h2><i class="fa-regular fa-circle-check"></i> {{ i18n "validation" }}</h2>
+        {{/* </p> */}}
+        <div class="rule-text-container">
+          <blockquote class="rule-abstract">{{ .Params.abstract | safeHTML | markdownify }}</blockquote>
+          <h2>
+            <i class="fa-solid fa-bullseye"></i> {{ i18n "objectives" }}
+          </h2>
           <ul>
-          {{ $epubcheck:= .Params.epubcheck }}
-          {{ if eq $epubcheck  true }}
-          <li><i class="fa-solid fa-check-to-slot"></i> {{ i18n "epubcheck" }} </li>
-          {{ end }}
-        
-          {{ $ace:= .Params.ace }}
-          {{ if eq $ace true }}
-          <li><i class="fa-solid fa-universal-access"></i> {{ i18n "ace" }}</li> 
-          {{ end }}
-          
-          {{ $humancheck:= .Params.humancheck }}
-          {{ if eq $humancheck true }}
-          <li><i class="fa-solid fa-user-check"></i> {{ i18n "humancheck" }}</li> 
-          {{ end }}
+            {{ $objectif:= .Params.objectif }}
+            {{ range $i,$p:= $objectif }}
+            <li class="">
+              {{ . | safeHTML | markdownify }}
+            </li>
+            {{ end }}
           </ul>
-          
+          <h2>
+            <i class="fa-solid fa-rocket"></i> {{ i18n "meo" }}
+          </h2>
+          <ul>
+            {{ $meo:= .Params.meo }}
+            {{ range $i,$p:= $meo }}
+            <li class="">
+              {{ . | safeHTML | markdownify }}
+            </li>
+            {{ end }}
+          </ul>
+          <h2>
+            <i class="fa-solid fa-magnifying-glass"></i> {{ i18n "control" }}
+          </h2>
+          <ul>
+            {{ $controle:= .Params.controle }}
+            {{ range $i,$p:= $controle }}
+            <li class="inline-block">
+              {{ . | safeHTML | markdownify }}
+            </li>
+            {{ end }}
+          </ul>
+          <div class="rule-validation-block">
+            <h2>
+              <i class="fa-regular fa-circle-check"></i> {{ i18n "validation" }}
+            </h2>
+            <ul>
+              {{ $epubcheck:= .Params.epubcheck }}
+              {{ if eq $epubcheck true }}
+              <li>
+                <i class="fa-solid fa-check-to-slot"></i> {{ i18n "epubcheck" }} 
+              </li>
+              {{ end }}
+
+              {{ $ace:= .Params.ace }}
+              {{ if eq $ace true }}
+              <li>
+                <i class="fa-solid fa-universal-access"></i> {{ i18n "ace" }}
+              </li>
+              {{ end }}
+
+              {{ $humancheck:= .Params.humancheck }}
+              {{ if eq $humancheck true }}
+              <li>
+                <i class="fa-solid fa-user-check"></i> {{ i18n "humancheck" }}
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+      </article>
+
+      <aside>
+        <div class="aside-text-container">
           <h2>
             <i class="fa-solid fa-circle-info"></i>
-             {{ i18n "informations" }}&nbsp;</h2>
-            <ul>
-              <li class="">
-              <i class="fa-solid fa-shoe-prints"></i> {{ i18n "stepsconcerned" }}&nbsp;: 
+            {{ i18n "informations" }}&nbsp;
+          </h2>
+          <ul class="rule-infos-list">
+            <li>
+              <span>
+                <i class="fa-solid fa-shoe-prints"></i> {{ i18n "stepsconcerned" }}&nbsp;:
+              </span>
               {{ $steps:= .Params.steps }}
               {{ range $i,$p:= $steps }}
-              <a
-                  class="taxonomie"
-                  href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/"> 
-                    {{ . | humanize }}</a>
-
+              <a href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/">
+                {{ . | humanize }}</a>
               {{ end }}
-          </li>
-          <li class=""> <i class="fa-solid fa-note-sticky"></i> {{ i18n "tags" }}&nbsp;:
-                {{ $tags:= .Params.tags }}
-                {{ range $i,$p:= $tags }}
-                    <a
-                      class="taxonomie"
-                      href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
-                      {{ . | humanize }}
-                    </a>
+            </li>
+            <li>
+              <span>
+                <i class="fa-solid fa-note-sticky"></i> {{ i18n "tags" }}&nbsp;:
+              </span>
+              {{ $tags:= .Params.tags }}
+              {{ range $i,$p:= $tags }}
+              <a href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                {{ . | humanize }}
+              </a>
+              {{ end }}
+            <li>
+              <span>
+                <i class="fa-regular fa-folder"></i>{{ i18n "category" }}&nbsp;:
+              </span>
+              {{ $categories:= .Params.categories }}
+              {{ range $i,$p:= $categories }}
+              <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/">
+                {{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                {{ ", " }}
                 {{ end }}
-          <li><i class="fa-regular fa-folder mr-2"></i> {{ i18n "category" }}&nbsp;:
-            {{ $categories:= .Params.categories }}
-            {{ range $i,$p:= $categories }}
-              <a
-                href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-                class="ms-1"
-                > {{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-                  {{ ", " }}
-                {{ end }}
-              </a> 
-            {{ end }}</li>
-               
-          {{/*  <h3 class="inkline-block">
-            <i class="fa-solid fa-address-card"></i> {{ i18n "aboutthatrule" }}
-          </h3>  */}}
-              <li><i class="fa-solid fa-address-card"></i> {{ i18n "ruleorigine" }} : 
-              {{ $source:= .Params.source }} 
+              </a>
+              {{ end }}
+            </li>
+
+            {{/* 
+            <h3>
+              <i class="fa-solid fa-address-card"></i> {{ i18n "aboutthatrule" }}
+            </h3> */}}
+            <li>
+              <span>
+                <i class="fa-solid fa-address-card"></i> {{ i18n "ruleorigine" }} :
+              </span>
+              {{ $source:= .Params.source }}
               {{ range $i,$p:= $source }}
               {{ . | humanize }}
               {{ end }}
-
             </li>
 
             <li>
-              <i class="fa-solid fa-check"></i> {{ i18n "opquastref" }} : {{ .Params.opquast }}
+              <span>
+                <i class="fa-solid fa-check"></i> {{ i18n "opquastref" }} :
+              </span>
+               {{ .Params.opquast }}
+            </li>
 
-            </li>
             <li>
-              <i class="fa-regular fa-clock mr-2"></i>
-              {{ i18n "updateon" }} {{ time.Format ":date_long" .PublishDate }}
+              <span>
+                <i class="fa-regular fa-clock"></i> {{ i18n "updateon" }}
+              </span>
+               {{ time.Format ":date_long" .PublishDate }}
             </li>
-            {{ $referentiel:= .Params.referentiel }} 
+            {{ $referentiel:= .Params.referentiel }}
             {{ range $i,$p:= $referentiel }}
             <li>
-              <i class="fa-solid fa-umbrella-beach"></i> {{ i18n "Referentiel" }} : <span class="inline-block">{{ . | markdownify }}</span>
+              <span>
+                <i class="fa-solid fa-umbrella-beach"></i> {{ i18n "Referentiel" }} :
+              </span>
+               {{ . | markdownify }}
             </li>
-             {{ end }}
+            {{ end }}
             <li>
-             <i class="fa-solid fa-spell-check"></i> {{ i18n "vocabulary" }} : 
-          <ul class="inline-block">
-            {{ $vocabulary:= .Params.vocabulary }} 
-            {{ range $i,$p:= $vocabulary }}
-                <li class="inline-block">
-                    {{ . | safeHTML | markdownify }}
+              <span>
+                <i class="fa-solid fa-spell-check"></i> {{ i18n "vocabulary" }} :
+              </span>
+              <ul>
+                {{ $vocabulary:= .Params.vocabulary }}
+                {{ range $i,$p:= $vocabulary }}
+                <li>
+                  {{ . | safeHTML | markdownify }}
                 </li>
-              {{ end }}
-            </ul>
-          </li>
+                {{ end }}
+              </ul>
+            </li>
           </ul>
-
-        </article>
+        </div>
+      </aside>
 
       <!-- Related posts -->
-      {{/*  {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
+      {{/* {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where
+      site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
       {{ $related = $related | shuffle | first 3 }}
       {{ with $related }}
-        <div class="section pb-0">
-          <h2 class="h3 mb-12">{{ i18n "related_posts" }}</h2>
-          <div class="row">
-            {{ range . }}
-              <div class="lg:col-4">
-                {{ partial "components/blog-card" . }}
-              </div>
-            {{ end }}
+      <div>
+        <h2>{{ i18n "related_posts" }}</h2>
+        <div>
+          {{ range . }}
+          <div>
+            {{ partial "components/blog-card" . }}
           </div>
+          {{ end }}
         </div>
+      </div>
       {{ end }}
-    </div>  */}}
-    {{/*  <div class="content mb-10">
-           
+    </div> */}}
+    {{/* <div>
+
       {{ .Content }}
 
-    </div>  */}}
-  </section>
+    </div> */}}
+</section>
 {{ end }}

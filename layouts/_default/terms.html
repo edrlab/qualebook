@@ -1,56 +1,23 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
+  <section>
+    <ul>
+      {{ $taxonomies := dict "categories" site.Taxonomies.categories "tags" site.Taxonomies.tags "steps" site.Taxonomies.steps }}
+      {{ $current := "" }}
+      {{ if eq .Permalink (`categories/` | absLangURL) }} {{ $current = "categories" }} {{ end }}
+      {{ if eq .Permalink (`tags/` | absLangURL) }} {{ $current = "tags" }} {{ end }}
+      {{ if eq .Permalink (`steps/` | absLangURL) }} {{ $current = "steps" }} {{ end }}
 
-  <section class="section">
-    <div class="container">
-      <ul class="text-center">
-        {{/* categories */}}
-        {{ if eq .Permalink (`categories/` | absLangURL) }}
-          {{ range site.Taxonomies.categories.ByCount }}
-            <li class="m-3 inline-block">
-              <a
-                href="{{ .Page.Permalink }}"
-                class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
-                {{ .Page.Title  | strings.ToLower  }}
-                <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
-                  {{ .Count }}
-                </span>
-              </a>
-            </li>
-          {{ end }}
+      {{ with index $taxonomies $current }}
+        {{ range .ByCount }}
+          <li>
+            <a href="{{ .Page.Permalink }}">
+              {{ .Page.Title | strings.ToLower }} ({{ .Count }})
+            </a>
+          </li>
         {{ end }}
-        {{/* tags */}}
-        {{ if eq .Permalink (`tags/` | absLangURL) }}
-          {{ range site.Taxonomies.tags.ByCount }}
-            <li class="m-3 inline-block">
-              <a
-                href="{{ .Page.Permalink }}"
-                class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
-                {{ .Page.Title   | strings.ToLower }}
-                <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
-                  {{ .Count }}
-                </span>
-              </a>
-            </li>
-          {{ end }}
-        {{ end }}
-                  {{/* steps */}}
-                  {{ if eq .Permalink (`steps/` | absLangURL) }}
-                  {{ range site.Taxonomies.steps.ByCount }}
-                    <li class="m-3 inline-block">
-                      <a
-                        href="{{ .Page.Permalink }}"
-                        class="bg-theme-light text-dark dark:bg-darkmode-theme-light dark:text-darkmode-dark block rounded px-4 py-2 text-xl">
-                        {{ .Page.Title   | strings.ToLower }}
-                        <span class="bg-body dark:bg-darkmode-body ml-2 rounded px-2">
-                          {{ .Count }}
-                        </span>
-                      </a>
-                    </li>
-                  {{ end }}
-                {{ end }}
-      </ul>
-    </div>
+      {{ end }}
+    </ul>
   </section>
 {{ end }}

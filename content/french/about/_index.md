@@ -11,15 +11,6 @@ banner:
     link: "fr/rules/"
 
 features:
-  - title: "Qualebook est un travail en cours"
-    image: "/images/service-1.png"
-    content: "La première version de Qualebook a été préparée en 2024 par EDRLab et le Groupe Normes & Standards de la Commission Numérique du Syndicat national de l'édition (SNE). L'année 2025 est dédiée à confronter cette liste aux réalités des équipes professionelles au cour d'ateliers "
-    bulletpoints:
-    button:
-      enable: false
-      label: "En savoir plus sur Qualebook"
-      link: "/about"
-
   - title: "Qui sont les auteurs ?"
     image: "/images/service-1.png"
     content: "Qualebook est développé par le laboratoire Européen pour la lecture numérique ([edrlab.org](https://www.edrlab.org/about/)) en partenariat avec le Groupe Normes & Standards de la [Commission Numérique du Syndicat national de l'édition](https://www.sne.fr/numerique-2/). Les régles ont étées développées à partir des 240 règles de la Checklist Opquast - assurance qualité web développées par la société [OPQUAST](https://www.opquast.com/a-propos/). "
@@ -28,18 +19,6 @@ features:
       enable: false
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
-
-  - title: "presentations publiques"
-    image: "/images/service-3.png"
-    content: ""
-    bulletpoints:
-      - "Assises du livre numérique&nbsp;: [QUALINUM la liste de référence qualité du livre numérique (En français sur Youtube)](https://youtu.be/zg6C0cuDUqE?list=PLY0BtmO03yYGQ8sQ7fwSw7IVaymmtp4Pm&t=2413)"
-      - "Digital Publishing Summit 2024: [Quality of ebooks, Video of the presentation on the EDRLab website](https://www.edrlab.org/events/digital-publishing-summit-2024/#1708288836982-85ce3f99-0b0f)"
-
-    button:
-      enable: false
-      label: ""
-      link: ""
 
   - title: "Comment collaborer ?"
     image: "/images/service-3.png"
@@ -71,4 +50,26 @@ features:
       enable: false
       label: ""
       link: ""
+aside:
+  - title: "Qualebook est un travail en cours"
+    image: "/images/service-1.png"
+    content: "La première version de Qualebook a été préparée en 2024 par EDRLab et le Groupe Normes & Standards de la Commission Numérique du Syndicat national de l'édition (SNE). L'année 2025 est dédiée à confronter cette liste aux réalités des équipes professionelles au cour d'ateliers "
+    bulletpoints:
+    button:
+      enable: false
+      label: "En savoir plus sur Qualebook"
+      link: "/about"
+
+  - title: "Présentations publiques"
+    image: "/images/service-3.png"
+    content: ""
+    bulletpoints:
+      - "Assises du livre numérique&nbsp;: [QUALINUM la liste de référence qualité du livre numérique (En français sur Youtube)](https://youtu.be/zg6C0cuDUqE?list=PLY0BtmO03yYGQ8sQ7fwSw7IVaymmtp4Pm&t=2413)"
+      - "Digital Publishing Summit 2024: [Quality of ebooks, Video of the presentation on the EDRLab website](https://www.edrlab.org/events/digital-publishing-summit-2024/#1708288836982-85ce3f99-0b0f)"
+
+    button:
+      enable: false
+      label: ""
+      link: ""
+
 ---

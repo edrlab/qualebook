@@ -2,31 +2,24 @@
 {{ $class := .Class }}
 {{ $base := site.BaseURL }}
 
-
-<ul class="{{ $class }} inline-flex space-x-1 capitalize">
+<ul>
   <li>
-    <a
-      class="text-primary dark:text-darkmode-primary"
-      href="{{ $base | relLangURL }}">
+    <a href="{{ $base | relLangURL }}">
       {{ i18n "home" | default "Home" }}
     </a>
-    <span class="inlin-block mr-1">/</span>
+    <span>/</span>
   </li>
   {{ range $i, $e:= $context.Ancestors.Reverse }}
     {{ if and (not .IsHome) (ne .Title "Pages") }}
       <li>
-        <a
-          class="text-primary dark:text-darkmode-primary"
-          href="{{ .RelPermalink }}">
+        <a href="{{ .RelPermalink }}">
           {{ .Title }}
         </a>
-        <span class="inlin-block mr-1">/</span>
+        <span>/</span>
       </li>
     {{ end }}
   {{ end }}
   <li>
-    <span class="text-primary dark:text-darkmode-primary">
-      {{ $context.Title }}
-    </span>
+    <span>{{ $context.Title }}</span>
   </li>
 </ul>

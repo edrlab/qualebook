@@ -5,64 +5,76 @@
 name = "Accueil"
 url = ""
 weight = 10
+identifier = "home"
 
 [[main]]
 name = "À propos"
 url = "about/"
 weight = 2
+identifier = "about"
 
 # [[main]]
 # name = "Auteurs"
 # url = "authors/"
 # weight = 20
+# identifier = "authors"
 
 [[main]]
 name = "Règles"
 url = "rules/"
 weight = 30
+identifier = "rules"
 
 # [[main]]
 # weight = 4
 # name = "Pages"
 # hasChildren = true
+# identifier = "pages"
 
 # [[main]]
 # parent = "Pages"
 # name = "Blog"
 # url = "blog/"
+# identifier = "blog"
 
 # [[main]]
 # parent = "Pages"
 # name = "Contact"
 # url = "contact/"
+# identifier = "contact"
 
 # [[main]]
 # parent = "Pages"
 # name = "Authors"
 # url = "authors/"
+# identifier = "authors"
 
 [[main]]
 # parent = "Pages"
 name = "Categories"
 url = "categories/"
 weight = 40
+identifier = "categories"
 
 [[main]]
 # parent = "Pages"
 name = "Étiquettes"
 url = "tags/"
 weight = 50
+identifier = "tags"
 
 [[main]]
 # parent = "Pages"
 name = "Glossaire"
 url = "glossary/"
 weight = 15
+identifier = "glossary"
 
 # [[main]]
 # parent = "Pages"
 # name = "404 Page"
 # url = "404/"
+# identifier = "404"
 
 
 # footer menu

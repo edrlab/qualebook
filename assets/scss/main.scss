@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "variables";
+
 @layer base {
   @import "base";
 }
@@ -16,15 +18,8 @@
   @import "utilities";
 }
 
-@import "search";
-@import "social-share";
-@import "gallery-slider";
-@import "images";
-@import "toc";
-@import "tab";
-@import "accordion";
-@import "modal";
-@import "notice";
-
 @import "module-overrides";
 @import "custom";
+@import "header";
+@import "footer";
+@import "modals";
