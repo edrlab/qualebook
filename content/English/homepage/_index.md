@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "The quality reference list of the digital book"
+  title: "Ebook quality assurance framework"
   content: ""
   image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Quality_assurance_oaicons.png/677px-Quality_assurance_oaicons.png?20211028203946"
   button:
@@ -33,11 +33,11 @@ features:
 
   - title: "Qui décide des règles ? "
     image: "images/firefly3.jpg"
-    content: "Qualebook est un projet collaboratif porté par le SNE et EDRLab. Nous espérons agrandir le cercle de collaboration pour garantir que les règles correspondent aux diversités de réalités des maisons d'édition, partout dans le monde."
+    content: "Qualebook est un projet collaboratif porté par le SNE et EDRLab. We hope to expand this collaboration to ensure the rules reflect the diverse realities of publishing houses around the world."
     bulletpoints:
-      - "Les règles sont discutées au cours d'ateliers interprofessionnels ouverts"
-      - "Les décisions sont prises au consensus par un comité technique"
-      - "Les règles doivent correspondre à des pratiques ou être liées à un référentiel"
+      - "Rules are discussed during open inter-professional workshops"
+      - "Decisions are reached by consensus within a technical committee"
+      - "Rules must reflect actual practices or be tied to existing standards"
     button:
       enable: false
       label: ""

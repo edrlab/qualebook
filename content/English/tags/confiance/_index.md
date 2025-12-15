@@ -1,7 +1,7 @@
 ---
-title: "fiabilité"
-meta_title: "confiance"
-description: "Assurance que le contenu est fiable. Cela inclut la vérification de l'intégrité des données, et des liens ainsi que l’identification de la structure éditoriale."
+title: "Reliability"
+meta_title: "Trust"
+description: "Assurance that the content is reliable. This includes checking the integrity of data and links as well as identifying the editorial structure.."
 draft: false
 layout: about
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Étiquettes"
+title: "Tags"
 meta_title: "tags"
 description: ""
 draft: false
