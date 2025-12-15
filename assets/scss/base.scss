@@ -18,30 +18,35 @@ a, button {
     justify-content: center;
     width: 100%;
     gap: 30px;
-    height: calc(100vh - 395px);
+    min-height: calc(100vh - 395px);
     margin: 50px 0;
 
     section {
         flex: 1;
         background-color: $-color-bg-light;
-        aspect-ratio: 1;
-        max-width: 400px;
-        min-width: 400px;
+        // aspect-ratio: 1;
+        max-width: 600px;
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
 
         img {
-            height: 300px;
+            min-height: 300px;
+            max-height: 500px;
+            max-width: 500px;
+            min-width: 300px;
+            height: 40dvh;
             margin: auto;
-            padding-top: 40px;
+            padding: 40px 10px 50px;
         }
     }
 
     .feature-actions {
         margin: auto;
         width: fit-content;
+        height: 70px;
         a {
             background-color: $-color-orange;
             padding: 20px;
