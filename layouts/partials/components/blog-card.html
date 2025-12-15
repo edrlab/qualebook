@@ -1,14 +1,16 @@
 <div class="blog-card">
-  <p>{{ .Weight }}</p>
-  {{ $image:= .Params.image }}
-  {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "" ) }}
-  {{ end }}
-  <h4>
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
-    </a>
-  </h4>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+    <p>{{ .Weight }}</p>
+    {{ $image:= .Params.image }}
+    {{ if $image }}
+      {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "" ) }}
+    {{ end }}
+    <h4>
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h4>
+  </div>
   <span class="rule-arrow">↗</span>
 
   {{/*  <ul>
