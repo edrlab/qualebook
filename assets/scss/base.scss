@@ -60,6 +60,8 @@ a, button {
 .rules-container {
     display: flex;
     gap: 40px;
+    min-height: calc(100vh - 395px);
+    margin-top: 50px;
 
     h5 {
         font-size: 40px;
