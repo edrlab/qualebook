@@ -7,8 +7,10 @@ description: ""
 layout: glossary
 date: 2025-07-15
 ---
+<div class="about-page">
+<div class="about-main-section">
 
-## Glossaire
+## Glossary
 
 <dl>
 <dt id="accessibilitysummary">Élément <code>accessibility summary</code> (Cf. Règle 014)</dt>
@@ -84,75 +86,48 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 <dt id="XMP">XMP (Extensible Metadata Platform) (Cf. Règle 017)</dt>
 <dd>norme de métadonnées utilisée pour intégrer des informations descriptives dans des fichiers numériques.</dd><br/>
 </dl>
-
-## Référentiels
-
+</div>
+<aside>
 <section>
 <h2 id="référentiels">Référentiels</h2>
 <ul>
 <li>
-<p><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
+<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
 </li>
 <li>
-<p><a href="https://html.spec.whatwg.org/" target="_blank">HTML5 Specification</a>
+<a href="https://html.spec.whatwg.org/" target="_blank">HTML5 Specification</a>
 </li>
 <li>
-<p><a href="https://www.w3.org/TR/xml/" target="_blank">Extensible Markup Language (XML)</a></p></blockquote>
-<p></p>
+<a href="https://www.w3.org/TR/xml/" target="_blank">Extensible Markup Language (XML)</a>
 </li>
 <li>
-<p><a href="https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/" <p="">EPUB Type and ARIA Role Authoring guide</a></p>
+<a href="https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/"  target="_blank">EPUB Type and ARIA Role Authoring guide</a>
 </li>
 <li>
-<p><a href="https://www.w3.org/TR/epub-a11y-11/" <p="">EPUB Accessibility 1.1</a></p></blockquote>
-<p></p>
+<a href="https://www.w3.org/TR/epub-a11y-11/"  target="_blank">EPUB Accessibility 1.1</a>
 </li>
 <li>
-<p><a href="https://www.w3.org/publishing/epub3/" <p="">target="_blank"</a></p><a href="https://www.w3.org/publishing/epub3/" <p="">
-</a><blockquote><a href="https://www.w3.org/publishing/epub3/" <p="">
-</a><p><a href="https://www.w3.org/publishing/epub3/" <p="">EPUB 3 Specification</a></p></blockquote>
-<p></p>
+<a href="https://www.w3.org/publishing/epub3/"  target="_blank">EPUB 3 Specification</a>
 </li>
 <li>
-<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">target="_blank"</a></p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">
-</a><blockquote><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">
-</a><p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">Dublin Core Metadata Initiative (DCMI)</a></p></blockquote>
-<p></p>
+<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"  target="_blank">Dublin Core Metadata Initiative (DCMI)</a>
+</li>
+<li><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/"  target="_blank">TDM Reservation Protocol (TDMRep)</a>
 </li>
 <li>
-<p><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">target="_blank"</a></p><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">
-</a><blockquote><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">
-</a><p><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">TDM Reservation Protocol (TDMRep)</a></p></blockquote>
-<p></p>
-</li>
-<li>
-<p>ONIX</p>
-<ul>
-<li><a href="https://ns.editeur.org/onix/en/196/51" <p="">target="_blank"<p></p>
-</a><blockquote><a href="https://ns.editeur.org/onix/en/196/51" <p="">
-</a><p><a href="https://ns.editeur.org/onix/en/196/51" <p="">liste 196, code 51</a></p></blockquote>
-</li>
-<li><a href="https://ns.editeur.org/onix/en/196/52" <p="">target="_blank"<p></p>
-</a><blockquote><a href="https://ns.editeur.org/onix/en/196/52" <p="">
-</a><p><a href="https://ns.editeur.org/onix/en/196/52" <p="">liste 196, code 52</a></p></blockquote>
+<a href="https://ns.editeur.org/onix/fr/"  target="_blank">ONIX for books</a>
 </li>
 </ul>
 </li>
 <li>
-<p><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">target="_blank"</a></p><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">
-</a><blockquote><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">
-</a><p><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">Web Sustainability Guidelines (WSG)</a>
-,</p><p></p></blockquote>
+<a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22"  target="_blank">Web Sustainability Guidelines (WSG)</a>
 </li>
 <li>
-<p><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">target="_blank"</a></p><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">
-</a><blockquote><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">
-</a><p><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">Référentiel général de l’écoconception des services numériques</a></p></blockquote>
-<p></p>
+<a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf"  target="_blank">Référentiel général de l’écoconception des services numériques</a>
 </li>
 </ul>
 </section>
-
+</aside>
 
 
 <!-- 
