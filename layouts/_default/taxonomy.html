@@ -1,21 +1,9 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-
-  <section class="section">
-    <div class="container">
-      <div class="row gx-5">
-        <!-- blog posts -->
-        <div class="">
-          <div class="row">
-            {{ range .Data.Pages }}
-              <div class="md:col-4 mb-14">
-                {{ partial "components/blog-card" . }}
-              </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
+  <section>
+    {{ range .Data.Pages }}
+      {{ partial "components/blog-card" . }}
+    {{ end }}
   </section>
 {{ end }}
