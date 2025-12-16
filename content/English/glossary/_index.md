@@ -8,7 +8,7 @@ layout: glossary
 date: 2025-07-15
 ---
 
-## Vocabulaire
+## Glossaire
 
 <dl>
 <dt id="accessibilitysummary">Élément <code>accessibility summary</code> (Cf. Règle 014)</dt>
@@ -87,6 +87,75 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 
 ## Référentiels
 
+<section>
+<h2 id="référentiels">Référentiels</h2>
+<ul>
+<li>
+<p><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
+</li>
+<li>
+<p><a href="https://html.spec.whatwg.org/" target="_blank">HTML5 Specification</a>
+</li>
+<li>
+<p><a href="https://www.w3.org/TR/xml/" target="_blank">Extensible Markup Language (XML)</a></p></blockquote>
+<p></p>
+</li>
+<li>
+<p><a href="https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/" <p="">EPUB Type and ARIA Role Authoring guide</a></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/TR/epub-a11y-11/" <p="">EPUB Accessibility 1.1</a></p></blockquote>
+<p></p>
+</li>
+<li>
+<p><a href="https://www.w3.org/publishing/epub3/" <p="">target="_blank"</a></p><a href="https://www.w3.org/publishing/epub3/" <p="">
+</a><blockquote><a href="https://www.w3.org/publishing/epub3/" <p="">
+</a><p><a href="https://www.w3.org/publishing/epub3/" <p="">EPUB 3 Specification</a></p></blockquote>
+<p></p>
+</li>
+<li>
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">target="_blank"</a></p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">
+</a><blockquote><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">
+</a><p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" <p="">Dublin Core Metadata Initiative (DCMI)</a></p></blockquote>
+<p></p>
+</li>
+<li>
+<p><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">target="_blank"</a></p><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">
+</a><blockquote><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">
+</a><p><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/" <p="">TDM Reservation Protocol (TDMRep)</a></p></blockquote>
+<p></p>
+</li>
+<li>
+<p>ONIX</p>
+<ul>
+<li><a href="https://ns.editeur.org/onix/en/196/51" <p="">target="_blank"<p></p>
+</a><blockquote><a href="https://ns.editeur.org/onix/en/196/51" <p="">
+</a><p><a href="https://ns.editeur.org/onix/en/196/51" <p="">liste 196, code 51</a></p></blockquote>
+</li>
+<li><a href="https://ns.editeur.org/onix/en/196/52" <p="">target="_blank"<p></p>
+</a><blockquote><a href="https://ns.editeur.org/onix/en/196/52" <p="">
+</a><p><a href="https://ns.editeur.org/onix/en/196/52" <p="">liste 196, code 52</a></p></blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">target="_blank"</a></p><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">
+</a><blockquote><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">
+</a><p><a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22" <p="">Web Sustainability Guidelines (WSG)</a>
+,</p><p></p></blockquote>
+</li>
+<li>
+<p><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">target="_blank"</a></p><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">
+</a><blockquote><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">
+</a><p><a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf" <p="">Référentiel général de l’écoconception des services numériques</a></p></blockquote>
+<p></p>
+</li>
+</ul>
+</section>
+
+
+
+<!-- 
 - [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 - ["[Web Content Accessibility Guidelines (WCAG) 1.3.1 Info and Relationships Level A](https://www.w3.org/Translations/WCAG22-fr/#info-and-relationships)"]
@@ -145,4 +214,4 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 
 - [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript"),
 
-- [Référentiel général de l’écoconception des services numériques](https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf)
+- [Référentiel général de l’écoconception des services numériques](https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf) -->
