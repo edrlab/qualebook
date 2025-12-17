@@ -1,15 +1,7 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-  <section>
-    <div>
-      <div>
-        <div>
-          <div>
-            {{ .Content | markdownify }}
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="test">
+    {{ .Content | markdownify }}
   </section>
 {{ end }}

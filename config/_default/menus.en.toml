@@ -36,3 +36,10 @@ identifier = "pages"
 name = "Tags"
 url = "tags/"
 identifier = "pages"
+
+[[main]]
+# parent = "Pages"
+name = "Glossary"
+url = "glossary/"
+weight = 15
+identifier = "glossary"

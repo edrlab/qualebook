@@ -136,6 +136,17 @@ a, button {
     }
 
 }
+
+.rules-filtered-page {
+    h5 {
+        font-size: 30px;
+    }
+
+    .blog-card {
+        margin: 20px 0;
+    }
+}
+
 .card-container {
     margin: 20px 0;
 }
@@ -147,7 +158,7 @@ a, button {
     justify-content: space-between;
     min-height: 60px;
     gap: 20px;
-    padding: 0 20px;
+    padding: 5px 20px;
     margin: 20px 0;
 
     .rule-arrow {
@@ -394,9 +405,19 @@ a, button {
         margin-left: 0;
     }
 
+    
+    .rules-filters .filters .tabs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .tab-button {
         padding-right: 20px!important;
         margin-right: 10px;
+    }
+
+    .taxonomy-link {
+        font-size: 14px;
     }
 
     .tab-content {
@@ -410,4 +431,10 @@ a, button {
     .rules-container {
         flex-direction: column;
     }
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin-left: 10px;
 }

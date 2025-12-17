@@ -9,7 +9,7 @@
     </div>
     <!-- blog posts -->
     <div class="rules-list">
-      <h5>Les règles</h5>
+      <h5>{{ i18n "rules"}}</h5>
       <div>
         {{ $paginator:= .Paginate .RegularPages }}
         {{ range $paginator.Pages }}
