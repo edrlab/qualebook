@@ -43,3 +43,25 @@ name = "Glossary"
 url = "glossary/"
 weight = 15
 identifier = "glossary"
+
+# [[main]]
+# parent = "Pages"
+# name = "404 Page"
+# url = "404/"
+# identifier = "404"
+
+# footer menu
+[[footer]]
+name = "Access rules in JSON format"
+url = "https://edrlab.github.io/qualebook/en/rules/index.json"
+weight = 1
+
+[[footer]]
+name = "Download the rules in CSV format"
+url = "https://edrlab.github.io/qualebook/en/rules/index.csv"
+weight = 2
+
+# [[footer]]
+# name = "Privacy Policy"
+# url = "privacy-policy/"
+# weight = 3

@@ -10,23 +10,23 @@
 #     link: "fr/rules/"
 #   layout: homepage
 features:
-  - title: "See the rules"
+  - title: "Voir les règles"
     image: "images/illustrations/see-rules.svg"
     content: ""
     bulletpoints:
     button:
       enable: true
-      label: "See the rules"
-      link: "rules/"
+      label: "Voir les règles"
+      link: "fr/rules/"
 
-  - title: "About the rules"
+  - title: "A propos des règles"
     image: "images/illustrations/about-rules.svg"
     content: ""
     bulletpoints:
     button:
       enable: true
-      label: "About the rules"
-      link: "about/"
+      label: "A propos des règles"
+      link: "fr/about/"
 ---
 
 <!-- <div class="cover"></div> -->
