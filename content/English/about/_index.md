@@ -11,9 +11,9 @@ banner:
     link: "fr/rules/"
 
 features:
-  - title: "Qualebook est un travail en cours"
+  - title: "Qualebook is a work in progress"
     image: "/images/service-1.png"
-    content: "The first version of Qualebook was prepared in 2024 by EDRLab and the Standards & Standards Group of the National Syndicat Digital Commission’s (NES). The year 2025 is dedicated to confronting this list with the schedules of professional teams at the workshop course "
+    content: "The first version of Qualebook was prepared in 2024 by EDRLab and the Standards & Standards Group of the National Syndicat Digital Commission’s (NES). The year 2025 was dedicated to confronting this list with the schedules of professional teams at the workshop course. 2026 will focus on consolidation and building collaborations to extend the project."
     bulletpoints:
     button:
       enable: false
@@ -53,7 +53,7 @@ features:
       label: ""
       link: ""
 
-  - title: "Sous quelle licence est plmacé le contenu de ce site ?"
+  - title: "Under what license is the content of this site licensed? ?"
     image: "/images/service-3.png"
     content: ""
     bulletpoints:
@@ -63,9 +63,9 @@ features:
       enable: false
       label: ""
       link: ""
-  - title: "Ce que n'est pas Qualebook "
+  - title: "What Qualebook is not "
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Quality_assurance_oaicons.png/677px-Quality_assurance_oaicons.png?20211028203946"
-    content: "Qualebook n'est pas un standard ou une norme, il n'a pas vocation à remplacer les définitions techniques existantes, mais plutôt à les mettre en valeur et les rendre compréhensibles par l'ensemble de l'interprofession"
+    content: "Qualebook is not a standard or a norm, it is not intended to replace existing technical definitions, but rather to highlight them and make them understandable by the entire inter-professional sector."
 
     button:
       enable: false
