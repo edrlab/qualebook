@@ -1,0 +1,93 @@
+<div class="filters">
+  <h5>{{ i18n "filter"}}</h5>
+  <!-- Onglets -->
+  <div class="tabs">
+    <button class="tab-button" data-tab="categories">{{ i18n "categories" }}</button>
+    <button class="tab-button" data-tab="tags">{{ i18n "tags" }}</button>
+    <button class="tab-button" data-tab="steps">{{ i18n "steps" }}</button>
+  </div>
+
+  <!-- Contenus des onglets -->
+  <div class="tab-content">
+
+    <!-- Categories -->
+    <div class="tab-panel" data-tab="categories" style="display:none;">
+      {{ if isset site.Taxonomies "categories" }}
+        {{ if gt (len site.Taxonomies.categories) 0 }}
+          <ul class="taxonomy-list">
+            {{ range $name, $items := site.Taxonomies.categories }}
+              <li>
+                <a class="taxonomy-link {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `categories`) (eq $.Page.Title .Page.Title)) }}active{{ end }}"
+                   href="{{ .Page.RelPermalink }}">
+                  {{ .Page.Title | strings.ToLower }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <!-- Tags -->
+    <div class="tab-panel" data-tab="tags" style="display:none;">
+      {{ if isset site.Taxonomies "tags" }}
+        {{ if gt (len site.Taxonomies.tags) 0 }}
+          <ul class="taxonomy-list">
+            {{ range $name, $items := site.Taxonomies.tags }}
+              <li>
+                <a class="taxonomy-link {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `tags`) (eq $.Page.Title .Page.Title)) }}active{{ end }}"
+                   href="{{ .Page.RelPermalink }}">
+                  {{ .Page.Title | strings.ToLower }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <!-- Steps -->
+    <div class="tab-panel" data-tab="steps" style="display:none;">
+      {{ if isset site.Taxonomies "steps" }}
+        {{ if gt (len site.Taxonomies.steps) 0 }}
+          <ul class="taxonomy-list">
+            {{ range $name, $items := site.Taxonomies.steps }}
+              <li>
+                <a class="taxonomy-link {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `steps`) (eq $.Page.Title .Page.Title)) }}active{{ end }}"
+                   href="{{ .Page.RelPermalink }}">
+                  {{ .Page.Title | strings.ToLower }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // gestion simple des onglets
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll('.tab-button');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+
+        // cacher tout
+        panels.forEach(p => p.style.display = 'none');
+        buttons.forEach(b => b.classList.remove('active'));
+
+        // montrer le bon
+        document.querySelector(`.tab-panel[data-tab="${tab}"]`).style.display = 'block';
+        btn.classList.add('active');
+      });
+    });
+
+    // afficher le premier onglet par défaut
+    if (buttons.length) buttons[0].click();
+  });
+</script>
