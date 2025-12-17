@@ -10,7 +10,7 @@ date: 2025-07-15
 <div class="about-page">
 <div class="about-main-section">
 
-## Vocabulaire
+## Glossaire
 <dl>
 <dt id="accessibilitysummary">Élément <code>accessibility summary</code> (Cf. Règle 014)</dt>
 <dd>résumé textuel des caractéristiques d'accessibilité d'un document.</dd> <br/>
@@ -89,48 +89,45 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 <aside>
 <section>
 
-## Référentiels
-
-* [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
- * [Web Content Accessibility Guidelines (WCAG) 1.3.1 Info and Relationships Level A](https://www.w3.org/Translations/WCAG22-fr/#info-and-relationships)
- * [Web Content Accessibility Guidelines (WCAG) 1.1.1 Non-text Content (Level A)](https://www.w3.org/Translations/WCAG22-fr/#non-text-content)
- * [Web Content Accessibility Guidelines (WCAG) 2.5.8  Target Size (Minimum) (Level AA)](https://www.w3.org/Translations/WCAG22-fr/#target-size-minimum)
- * [Web Content Accessibility Guidelines (WCAG) 1.3.2 Meaningful Sequence (Level A)](https://www.w3.org/Translations/WCAG22-fr/#meaningful-sequence)
- * [Web Content Accessibility Guidelines (WCAG) 1.3.3 Sensory Characteristics (Level A)](https://www.w3.org/Translations/WCAG22-fr/#sensory-characteristics)
- * [Web Content Accessibility Guidelines (WCAG) 1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/Translations/WCAG22-fr/#contrast-minimum)
- * [Web Content Accessibility Guidelines (WCAG)  1.4.1 Use of Color (Level A)](https://www.w3.org/Translations/WCAG22-fr/#use-of-color)
- * [Web Content Accessibility Guidelines (WCAG) 3.2.3 Consistent Navigation (Level AA)](https://www.w3.org/Translations/WCAG22-fr/#consistent-navigation)
- * [Web Content Accessibility Guidelines (WCAG) Keyboard Accessible ](https://www.w3.org/Translations/WCAG22-fr/#keyboard-accessible)
- * [Web Content Accessibility Guidelines (WCAG)  (Level A)]()
- * [Web Content Accessibility Guidelines (WCAG) (Level A)]()
- * [Web Content Accessibility Guidelines (WCAG)  (Level A)]()
- * [Web Content Accessibility Guidelines (WCAG) (Level A)]()
- * [Web Content Accessibility Guidelines (WCAG)  (Level A)]()
- * [Web Content Accessibility Guidelines (WCAG) 2.4.4 Link Purpose (In Context) (Level A)](https://www.w3.org/Translations/WCAG22-fr/#link-purpose-in-context)
- * [Web Content Accessibility Guidelines (WCAG) 3.1.2 Language of Parts (Level A)](https://www.w3.org/Translations/WCAG22-fr/#language-of-parts)
- * [Web Content Accessibility Guidelines (WCAG) 3.1.1 Language of Page (Level A)](https://www.w3.org/Translations/WCAG22-fr/#language-of-page)
- * [Web Content Accessibility Guidelines (WCAG) 3.1.4 : Abréviations (Niveau AA)](https://www.w3.org/Translations/WCAG22-fr/#abbreviations)
-
- 
-* [HTML5 Specification](https://html.spec.whatwg.org/), 
-* [Extensible Markup Language (XML)](https://www.w3.org/TR/xml/)
-
-* [EPUB Type and ARIA Role Authoring guide](https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/)
-* [EPUB Accessibility 1.1](https://www.w3.org/TR/epub-a11y-11/)
-* [EPUB 3 Specification](https://www.w3.org/publishing/epub3/)
-
-* [Dublin Core Metadata Initiative (DCMI)](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
-
-* [TDM Reservation Protocol (TDMRep)](https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/)
-
-* ONIX
-  * [liste 196, code 51](https://ns.editeur.org/onix/en/196/51)
-  * [liste 196, code 52](https://ns.editeur.org/onix/en/196/52)
-
-* [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript"), 
-
-* [Référentiel général de l’écoconception des services numériques](https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf) 
+<h2 id="référentiels">Référentiels</h2>
+<ul>
+<li>
+<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
+</li>
+<li>
+<a href="https://html.spec.whatwg.org/" target="_blank">HTML5 Specification</a>
+</li>
+<li>
+<a href="https://www.w3.org/TR/xml/" target="_blank">Extensible Markup Language (XML)</a>
+</li>
+<li>
+<a href="https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/"  target="_blank">EPUB Type and ARIA Role Authoring guide</a>
+</li>
+<li>
+<a href="https://www.w3.org/TR/epub-a11y-11/"  target="_blank">EPUB Accessibility 1.1</a>
+</li>
+<li>
+<a href="https://www.w3.org/publishing/epub3/"  target="_blank">EPUB 3 Specification</a>
+</li>
+<li>
+<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"  target="_blank">Dublin Core Metadata Initiative (DCMI)</a>
+</li>
+<li><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/"  target="_blank">TDM Reservation Protocol (TDMRep)</a>
+</li>
+<li>
+<a href="https://ns.editeur.org/onix/fr/"  target="_blank">ONIX for books</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22"  target="_blank">Web Sustainability Guidelines (WSG)</a>
+</li>
+<li>
+<a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf"  target="_blank">Référentiel général de l’écoconception des services numériques</a>
+</li>
+</ul>
 </section>
+
 </aside>
 
 </div>

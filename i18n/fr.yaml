@@ -89,3 +89,10 @@
 
 - id: category
   translation: Catégorie
+
+
+- id: rules
+  translation: Les règles  
+
+- id: filter
+  translation: Filtrer les règles

@@ -7,8 +7,10 @@ description: ""
 layout: glossary
 date: 2025-07-15
 ---
+<div class="about-page">
+<div class="about-main-section">
 
-## Vocabulaire
+## Glossary
 
 <dl>
 <dt id="accessibilitysummary">Élément <code>accessibility summary</code> (Cf. Règle 014)</dt>
@@ -84,9 +86,51 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 <dt id="XMP">XMP (Extensible Metadata Platform) (Cf. Règle 017)</dt>
 <dd>norme de métadonnées utilisée pour intégrer des informations descriptives dans des fichiers numériques.</dd><br/>
 </dl>
+</div>
+<aside>
+<section>
+<h2 id="référentiels">Référentiels</h2>
+<ul>
+<li>
+<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
+</li>
+<li>
+<a href="https://html.spec.whatwg.org/" target="_blank">HTML5 Specification</a>
+</li>
+<li>
+<a href="https://www.w3.org/TR/xml/" target="_blank">Extensible Markup Language (XML)</a>
+</li>
+<li>
+<a href="https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/"  target="_blank">EPUB Type and ARIA Role Authoring guide</a>
+</li>
+<li>
+<a href="https://www.w3.org/TR/epub-a11y-11/"  target="_blank">EPUB Accessibility 1.1</a>
+</li>
+<li>
+<a href="https://www.w3.org/publishing/epub3/"  target="_blank">EPUB 3 Specification</a>
+</li>
+<li>
+<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"  target="_blank">Dublin Core Metadata Initiative (DCMI)</a>
+</li>
+<li><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/"  target="_blank">TDM Reservation Protocol (TDMRep)</a>
+</li>
+<li>
+<a href="https://ns.editeur.org/onix/fr/"  target="_blank">ONIX for books</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22"  target="_blank">Web Sustainability Guidelines (WSG)</a>
+</li>
+<li>
+<a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf"  target="_blank">Référentiel général de l’écoconception des services numériques</a>
+</li>
+</ul>
+</section>
+</aside>
 
-## Référentiels
 
+<!-- 
 - [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
 
 - ["[Web Content Accessibility Guidelines (WCAG) 1.3.1 Info and Relationships Level A](https://www.w3.org/Translations/WCAG22-fr/#info-and-relationships)"]
@@ -145,4 +189,4 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 
 - [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript"),
 
-- [Référentiel général de l’écoconception des services numériques](https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf)
+- [Référentiel général de l’écoconception des services numériques](https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf) -->
