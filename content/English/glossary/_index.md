@@ -1,5 +1,5 @@
 ---
-title: Glossaire
+title: Glossary
 detail:
 abstract:
 categories:
@@ -12,84 +12,83 @@ date: 2025-07-15
 
 ## Glossary
 
-<dl>
-<dt id="accessibilitysummary">Élément <code>accessibility summary</code> (Cf. Règle 014)</dt>
-<dd>résumé textuel des caractéristiques d'accessibilité d'un document.</dd><br/>
-<dt id="Ancre">Ancre (Cf. Règle 059)</dt>
-<dd>lien interne qui renvoie à une section spécifique d'une page.</dd><br/>
-<dt id="Argumentsdesimages">Arguments des images (Cf. Règle 022)</dt>
-<dd>attributs HTML (par exemple&nbsp;:<code>alt</code>, <code>title</code>, <code>width</code>, <code>height</code>) qui fournissent des informations supplémentaires sur une image.</dd><br/>
-<dt id="Attributcharset">Attribut charset (jeu de caractères) (Cf. Règles 070 et 071)</dt>
-<dd>attribut spécifiant l'encodage des caractères d'un document HTML.</dd><br/>
-<dt id="balisesemantique">Balise de structuration / balise sémantique (Cf. Règle 058)</dt>
-<dd>balise HTML qui donne un sens au contenu qu'elle englobe (par exemple&nbsp;:<code>header</code>, <code>article</code>, <code>footer</code>).</dd><br/>
-<dt id="Balisemeta">Balise meta (balise de métadonnées) (Cf. Règles 070 et 071)</dt>
-<dd>balise HTML utilisée pour fournir des métadonnées sur la page (description, mots-clés, etc.).</dd><br/>
-<dt id="canvas">Éléments canvas (Cf. Règle 026, Règle 023)</dt>
-<dd>élément HTML5 (<code>canvas</code>) permettant de dessiner des graphiques et des animations via JavaScript.</dd><br/>
-<dt id="Chargecognitive">charge cognitive (Cf. Règle 057)</dt>
-<dd>En psychologie cognitive, la charge cognitive est l'effort fourni par la mémoire de travail.</dd><br/>
-<dt id="Codesource">Code source</dt>
-<dd>texte brut d'un programme écrit dans un langage de programmation.</dd><br/>
-<dt id="contentdocument">Content Document (Fichier de contenu)</dt>
+<dl><dt id="accessibilitysummary">Element <code>accessibility summary</code> (See Rule 014)</dt>
+<dd>textual summary of a document's accessibility features.</dd><br/>
+<dt id="Anchor">Anchor (See Rule 059)</dt>
+<dd>internal link that links to a specific section of a page.</dd><br/>
+<dt id="Argumentsdesimages">Arguments of images (Cf. Rule 022)</dt>
+<dd>HTML attributes (for example: <code>alt</code>, <code>title</code>, <code>width</code>, <code>height</code>) that provide additional information about an image.</dd><br/>
+<dt id="Attributcharset">Charset attribute (character set) (See Rules 070 and 071)</dt>
+<dd>attribute specifying the character encoding of an HTML document.</dd><br/>
+<dt id="semantic tags">Structuring tag /semantic tag (Cf. Rule 058)</dt>
+<dd>HTML tag that gives meaning to the content it encloses (for example: <code>header</code>, <code>article</code>, <code>footer</code>).</dd><br/>
+<dt id="Balisemeta">Meta tag (metadata tag) (Cf. Rules 070 and 071)</dt>
+<dd>HTML tag used to provide metadata about the page (description, keywords, etc.).</dd><br/>
+<dt id="canvas">Canvas elements (See Rule 026, Rule 023)</dt>
+<dd>HTML5 element (<code>canvas</code>) for drawing graphics and animations via JavaScript.</dd><br/>
+<dt id="Cognitive Load">cognitive load (Cf. Rule 057)</dt>
+<dd>In cognitive psychology, cognitive load is the effort provided by working memory.</dd><br/>
+<dt id="SourceCode">Source Code</dt>
+<dd>plain text of a program written in a programming language.</dd><br/>
+<dt id="contentdocument">Content Document</dt>
 <dd>
-Un EPUB contient plusieurs dossiers et fichiers. Parmi eux, on appelle fichier de contenu (Content Document) les fichiers XHTML qui contiennent tout ou partie de la publication, c'est-à-dire le texte lui-même et les éventuels appels de ressources (image, audio, vidéo...). Ces fichiers de contenu peuvent être référencés dans le fichier OPF pour être atteignables via le sommaire de l'application de lecture.
-<!-- Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/#sec-contentdocs). -->
+An EPUB contains several folders and files. Among them, we call content files (Content Document) the XHTML files which contain all or part of the publication, that is to say the text itself and any resource calls (image, audio, video, etc.). These content files can be referenced in the OPF file to be accessible via the reading application summary.
+<!--See [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/#sec-contentdocs). -->
 </dd><br/>
-<dt id="couverture">Métadonnées de couverture (Cf. Règle 086)</dt>
-<dd>informations descriptives associées à l'image de couverture d'un livre numérique.</dd><br/>
+<dt id="coverage">Coverage metadata (See Rule 086)</dt>
+<dd>descriptive information associated with the cover image of an e-book.</dd><br/>
 <dt id="CSS">CSS</dt>
-<dd>Les feuilles de style en cascade (CSS) sont un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML ou en XML (y compris les dialectes XML tels que SVG, MathML ou XHTML). Les CSS décrivent comment les éléments doivent être rendus sur l'écran, sur papier, en audio, ou sur d'autres supports.</dd><br/>
-<dt id="Fallback">Fallback (chaîne de repli) (Cf. Règle 026)</dt>
-<dd>contenu alternatif affiché si le contenu principal n'est pas pris en charge ou disponible.</dd><br/>
-<dt id="FicheONIX">Fiche ONIX (Cf. Règle 012)</dt>
-<dd>format standardisé d'échange de métadonnées pour l'industrie du livre.</dd><br/>
-<dt id="landmarks">Landmarks (points de repère)</dt>
+<dd>Cascading Style Sheets (CSS) is a style sheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS describes how elements should be rendered on screen, in print, in audio, or in other media.</dd><br/>
+<dt id="Fallback">Fallback (See Rule 026)</dt>
+<dd>alternate content displayed if primary content is not supported or available.</dd><br/>
+<dt id="ONIX Sheet">ONIX Sheet (Cf. Rule 012)</dt>
+<dd>standardized metadata exchange format for the book industry.</dd><br/>
+<dt id="landmarks">Landmarks</dt>
 <dd>
-Les points de repère sont des endroits clés d'une publication auxquels un utilisateur est susceptible de vouloir accéder rapidement. Ils comprennent habituellement la table des matières, les glossaires, les bibliographies et d'autres aides à la navigation et à l'information.
-ARIA et EPUB définissent tous deux des méthodes pour exprimer les points de repère&nbsp;:
-Les repères ARIA sont exprimés à l'aide du rôle attibute et n'existent que dans le document dans lequel ils sont définis (voir les repères ARIA pour plus d'informations).
-EPUB utilise une aide à la navigation spéciale dans le document de navigation pour définir où se trouvent les points de repère, car ceux-ci sont généralement répartis dans de nombreux documents (voir les points de repère EPUB pour plus d'informations).
- <!-- 
-Voir [EPUB 3.3 section 7.4.4 The landmarks nav element](https://www.w3.org/TR/epub-33/#sec-nav-landmarks) -->
+Landmarks are key places in a post that a user is likely to want to quickly access. They usually include the table of contents, glossaries, bibliographies and other navigational and information aids.
+Both ARIA and EPUB define methods for expressing benchmarks:
+ARIA Markers are expressed using the role attribute and only exist in the document in which they are defined (see ARIA Markers for more information).
+EPUB uses a special navigation aid in the navigation document to define where landmarks are located, as these are usually spread across many documents (see EPUB Landmarks for more information).
+ <!--
+See [EPUB 3.3 section 7.4.4 The landmarks nav element](https://www.w3.org/TR/epub-33/#sec-nav-landmarks) -->
 </dd><br/>
-<dt id="Linearisation">Linéarisation (Cf. Règle 077)</dt>
-<dd>présentation séquentielle du contenu, souvent utilisée pour l'accessibilité ou l'impression.</dd><br/>
-<dt id="Listesdedefinitions">Listes de définitions (Cf. Règle 073)</dt>
-<dd>listes HTML (<code>dl</code>, <code>dt</code>, <code>dd</code>) utilisées pour définir des termes.</dd><br/>
-<dt id="Manifest">Manifest (Cf. Règle 026)</dt>
-<dd>fichier JSON ou XML décrivant les ressources d'une application web progressive (PWA).</dd><br/>
-<dt id="Mediaqueries">Media queries (Cf. Règle 086)</dt>
-<dd>règles CSS qui permettent d'appliquer des styles différents en fonction des caractéristiques de l'appareil (taille d'écran, orientation, etc.).</dd><br/>
-<dt id="metadata">Métadonnée</dt>
-<dd>Dans le monde de l'édition, il s'agit d'informations détaillées sur le livre qui sont transmises aux partenaires pour leur permettre d'avoir des informations sans disposer du livre. Les métadonnées les plus connues sont le titre et l'auteur.
-Dans le cas du livre numérique, ces informations permettent aussi aux dispositifs de lecture de restituer correctement le contenu.
+<dt id="Linearization">Linearization (Cf. Rule 077)</dt>
+<dd>sequential presentation of content, often used for accessibility or printing.</dd><br/>
+<dt id="Listsofdefinitions">Lists of definitions (Cf. Rule 073)</dt>
+<dd>HTML lists (<code>dl</code>, <code>dt</code>, <code>dd</code>) used to define terms.</dd><br/>
+<dt id="Manifest">Manifest (See Rule 026)</dt>
+<dd>JSON or XML file describing the resources of a progressive web application (PWA).</dd><br/>
+<dt id="Mediaqueries">Media queries (Cf. Rule 086)</dt>
+<dd>CSS rules that allow different styles to be applied depending on the characteristics of the device (screen size, orientation, etc.).</dd><br/>
+<dt id="metadata">Metadata</dt>
+<dd>In the publishing world, this is detailed information about the book that is transmitted to partners to allow them to have information without having the book. The most common metadata are the title and the author.
+In the case of digital books, this information also allows reading devices to correctly render the content.
 </dd><br/>
-<dt id="Minification">Minification (Cf. Règle 067)</dt>
-<dd>processus de suppression des caractères inutiles dans le code source pour réduire la taille des fichiers.</dd><br/>
+<dt id="Minification">Minification (See Rule 067)</dt>
+<dd>process of removing unnecessary characters in source code to reduce file size.</dd><br/>
 <dt id="opf">.opf</dt>
-<dd>fichier XML central d'un EPUB, contenant les métadonnées et la structure du livre.</dd><br/>
-<dt id="Registredessous-tagsdelangue ">Registre des sous-tags de langue (Cf. Règle 036)</dt>
-<dd>liste normalisée des sous-tags utilisés pour spécifier des variantes linguistiques (par exemple&nbsp;: <code>fr-CA</code>pour le français canadien).</dd><br/>
-<dt id="RolesARIA">Rôles ARIA (Cf. Règle 020)</dt>
-<dd>attributs qui définissent la nature sémantique des éléments HTML, améliorant l'accessibilité pour les technologies d'assistance.</dd><br/>
+<dd>central XML file of an EPUB, containing the metadata and structure of the book.</dd><br/>
+<dt id="Register under language tags ">Register of language subtags (Cf. Rule 036)</dt>
+<dd>standardized list of subtags used to specify language variants (for example: <code>fr-CA</code>for Canadian French).</dd><br/>
+<dt id="RolesARIA">ARIA Roles (See Rule 020)</dt>
+<dd>attributes that define the semantic nature of HTML elements, improving accessibility for assistive technologies.</dd><br/>
 <dt id="Script">Script</dt>
-<dd>ensemble d'instructions ou de commandes exécutées par un programme.</dd><br/>
-<dt id="TDM">Text and Data Mining (TDM) (Cf. Règle 017)</dt>
-<dd>techniques d'analyse automatique de grandes quantités de texte et de données.</dd><br/>
+<dd>set of instructions or commands executed by a program.</dd><br/>
+<dt id="TDM">Text and Data Mining (TDM) (See Rule 017)</dt>
+<dd>techniques for automatically analyzing large amounts of text and data.</dd><br/>
 <dt id="tocncx">toc.ncx</dt>
-<dd>fichier XML qui définit la table des matières d'un EPUB.</dd><br/>
-<dt id="Tooltip">Tooltip (Cf. Règle 007)</dt>
-<dd>petit texte d'aide qui apparaît lorsque l'utilisateur survole un élément.</dd> 
-<dt id="TypesEPUB">Types EPUB (Cf. Règle 020)</dt>
-<dd>cela signifie qu'il faut spécifier les valeurs ou les options possibles pour l'attribut <code>>epub:type</code>. En d'autres termes, il s'agit de lister les différentes catégories ou fonctions qu'un élément peut avoir dans un EPUB, en utilisant cet attribut.</dd><br/>
-<dt id="XMP">XMP (Extensible Metadata Platform) (Cf. Règle 017)</dt>
-<dd>norme de métadonnées utilisée pour intégrer des informations descriptives dans des fichiers numériques.</dd><br/>
+<dd>XML file that defines the table of contents of an EPUB.</dd><br/>
+<dt id="Tooltip">Tooltip (See Rule 007)</dt>
+<dd>small help text that appears when the user hovers over an element.</dd> 
+<dt id="EPUB Types">EPUB Types (See Rule 020)</dt>
+<dd>this means specifying possible values ​​or options for the <code>>epub:type</code> attribute. In other words, it is about listing the different categories or functions that an element can have in an EPUB, using this attribute.</dd><br/>
+<dt id="XMP">XMP (Extensible Metadata Platform) (See Rule 017)</dt>
+<dd>metadata standard used to embed descriptive information in digital files.</dd><br/>
 </dl>
 </div>
 <aside>
 <section>
-<h2 id="référentiels">Référentiels</h2>
+<h2 id="référentiels">Repositories</h2>
 <ul>
 <li>
 <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
@@ -122,9 +121,9 @@ Dans le cas du livre numérique, ces informations permettent aussi aux dispositi
 <li>
 <a href="https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript%22"  target="_blank">Web Sustainability Guidelines (WSG)</a>
 </li>
-<li>
+<!-- <li>
 <a href="https://www.arcep.fr/uploads/tx_gspublication/consultation-referentiel-ecoconception-services-numeriques_091023.pdf"  target="_blank">Référentiel général de l’écoconception des services numériques</a>
-</li>
+</li> -->
 </ul>
 </section>
 </aside>
