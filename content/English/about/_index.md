@@ -1,74 +1,36 @@
 ---
-layout: about
-# Banner
-banner:
-  title: "the quality checklist for digital books"
-  content: "By entering the age of maturity, the digital edition has developed industrialization processes of a new type for an essentially \"paper\" industry. The standardization of a digital book distribution format was obtained by the development of the EPUB format. Then came the industrialization of digital reading software, with the appearance of initiatives such as the Readium project. The current distribution of the digital rights management technology LCP also participates in this standardization movement. Issue numbering is now also subject to external injunctions linked to equal and societal provisions, which are not equally meticulous by the players in the sector. Pour que leur production numérique reste rentable tout en répondant aux attentes des publics et des financeurs, les maisons d'édition doivent acquérir des compétences variées, qui ne peuvent se limiter à la typographie&nbsp;: la performance, l’interopérabilité, l'accessibilité, l'éco-conception, la sécurité ou la gestion des données personnelles doivent également être maitrisées par ces équipes. Good coordination of these expertise is also impeded. This growing complexity of the digital publishing regulatory framework also has the side effect of further distancing the business from editing and editors, thus creating gaps and misunderstandings between the design, production, distribution and management teams. This creates difficulties for the publishing sector in terms of decision making, risk management, training, metrics, means and governance. In the industrialized sectors, quality insurance, quality management, quality control, certifications, qualifications, methods, techniques and training are common. The digital publishing sector is now ready to use these tools to adopt and integrate external expertise."
-  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Quality_assurance_oaicons.png/677px-Quality_assurance_oaicons.png?20211028203946"
-  button:
-    enable: false
-    label: "Consulter les règles"
-    link: "fr/rules/"
-
-features:
-  - title: "Qualebook is a work in progress"
-    image: "/images/service-1.png"
-    content: "The first version of Qualebook was prepared in 2024 by EDRLab and the Standards & Standards Group of the National Syndicat Digital Commission’s (NES). The year 2025 was dedicated to confronting this list with the schedules of professional teams at the workshop course. 2026 will focus on consolidation and building collaborations to extend the project."
-    bulletpoints:
-    button:
-      enable: false
-      label: "En savoir plus sur Qualebook"
-      link: "/about"
-
-  - title: "Authors"
-    image: "/images/service-1.png"
-    content: "Qualebook is developed by the European Laboratory for Digital Reading ([edrlab.org](https://www.edrlab.org/about/)) in partnership with the <span lang=\"fr\">Standard & Standards Group of the [National Publishing Union Numbering Commission](https://www.sne.fr/numerique-2/). </span> The rules have been developed from the 240 Opquast Checklist - web quality assurance developed by the company [OPQUAST](https://www.opquast.com/a-propos/). "
-    bulletpoints:
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
-
-  - title: "public presentations&nbsp;:"
-    image: "/images/service-3.png"
-    content: ""
-    bulletpoints:
-      - "What is a high-quality digital book&nbsp;?"
-      - "<span lang=\"en\">Digital Publishing Summit 2024: [Quality of ebooks, Video of the presentation on the EDRLab website](https://www.edrlab.org/events/digital-publishing-summit-2024/#1708288836982-85ce3f99-0b0f)</span>"
-
-    button:
-      enable: false
-      label: ""
-      link: ""
-
-  - title: "Comment collaborer ?"
-    image: "/images/service-3.png"
-    content: "There are several ways to comment, discuss and propose changes or improvements."
-    bulletpoints:
-      - "[Open an Issue on the tracking tool](https://github.com/edrlab/qualebook/issues/new) (requires a GitHub account)."
-      - "Use [Hypothesis](https://hypothes.is). [Hypothesis Annotation Example]((https://hyp.is/0Ue8yGaIEe6g0hMib30YBw/edrlab.github.io/qualebook/fr/rules/001/)"
-      - "Envoyez nous un mail"
-    button:
-      enable: false
-      label: ""
-      link: ""
-
-  - title: "Under what license is the content of this site licensed? ?"
-    image: "/images/service-3.png"
-    content: ""
-    bulletpoints:
-      - "The rules are licensed under a Creative Commons BY-SA license. You can use them freely, subject to the condition of maintaining the authorship of the content, via a link to&#8239;:"
-      - "Licence du contenu original des fiches de la checklist Opquast&nbsp;: Elie Sloïm, Laurent Denis et la société Opquast. <a href=\"https://checklists.opquast.com/fr/assurance-qualite-web/licence/\">View original license.</a>"
-    button:
-      enable: false
-      label: ""
-      link: ""
-  - title: "What Qualebook is not "
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Quality_assurance_oaicons.png/677px-Quality_assurance_oaicons.png?20211028203946"
-    content: "Qualebook is not a standard or a norm, it is not intended to replace existing technical definitions, but rather to highlight them and make them understandable by the entire inter-professional sector."
-
-    button:
-      enable: false
-      label: ""
-      link: ""
+layout: about 
+title: A quality checklist for ebooks
 ---
+
+# A quality checklist for ebooks
+
+
+As it enters the age of maturity, digital publishing has had to develop industrialization processes of a new type for an essentially paper-based industry. The standardization of a digital book distribution format was obtained by the development of the EPUB format. Then came the industrialization of digital reading software, with the appearance of initiatives such as the Readium project. The ongoing diffusion of LCP digital rights management technology also contributes to this standardization movement. 
+
+The digitization of publishing is today also subject to external injunctions linked to legal provisions and societal issues, which are not equally controlled by players in the sector. For their digital production to remain profitable while meeting the expectations of audiences and financiers, publishing houses must acquire varied skills, which cannot be limited to typography: performance, interoperability, accessibility, eco-design, security or the management of personal data must also be mastered by these teams. Good coordination of these expertises is also imperative. 
+
+This increasing complexity of the normative framework for digital publishing also has the side effect of further distancing the profession from the concerns of publishers, thus creating gaps and misunderstandings between the design, production, distribution and management teams. This creates difficulties for the publishing professions in terms of decision-making, risk management, training, methods, resources and governance. In industrialized sectors, quality assurance, quality management, quality control, certifications, quality specialists, methods, techniques and training are commonplace. The digital publishing sector is now ready to arm itself with these tools to integrate and assimilate various external expertise.
+
+## Qualebook is a work in progress
+THe project was first incubated in 2023, first version was prepared in 2024. The year 2025 was dedicated to testing this checklist with professional teams in workshop settings. In 2026, the focus will be on consolidation and building collaborations to extend the project.
+
+## Authors
+Qualebook is developed by the European Laboratory for Digital Reading (EDRLab) and the Digital commission, Norms & Standards Group, of the French <spn lang="fr">Syndicat national de l'édition</span> (SNE). The rules have been developed from the 240-item Opquast web quality assurance checklist, created by the company OPQUAST.
+
+## Public presentations
+* <a href="https://youtu.be/JZalXLASzO4?list=PLY0BtmO03yYGQ8sQ7fwSw7IVaymmtp4Pm&t=22506"><span lang="fr">Qualinum la liste de référence qualité du livre numérique.  Assises du livre numérique 2023. </span> In french.</a>
+* <a href:"https://www.edrlab.org/events/digital-publishing-summit-2024/#1708288836982-85ce3f99-0b0f"><span lang="en">Digital Publishing Summit 2024: Quality of ebooks, video of the presentation on the EDRLab website</span>.</a>
+* <a href="https://www.youtube.com/watch?v=dAKFe5uComs"><span lang="fr">« Qualebook » : vers une nouvelle ère de qualité pour l’édition numérique. Assises du livre numérique 2024. </span> In french.</a>
+
+## How to collaborate?
+There are several ways to comment, discuss, and propose changes or improvements:
+• Open an issue on the tracking tool (requires a GitHub account)
+• Send us an email
+
+## Under what license is the content of this site licensed?
+• The rules are licensed under a Creative Commons BY-SA license. You may use them freely, provided you maintain attribution to the authors, for example via a link to:
+• License for the original content of the Opquast checklist sheets: Elie Sloïm, Laurent Denis, and the Opquast company. <a href="https://checklists.opquast.com/fr/assurance-qualite-web/licence/">View original license.</a>
+
+## What Qualebook is not
+Qualebook is not a standard or a norm. It is not intended to replace existing technical definitions, but rather to highlight them and make them understandable to the entire inter-professional sector.
