@@ -13,7 +13,7 @@ The digitization of publishing is today also subject to external injunctions lin
 This increasing complexity of the normative framework for digital publishing also has the side effect of further distancing the profession from the concerns of publishers, thus creating gaps and misunderstandings between the design, production, distribution and management teams. This creates difficulties for the publishing professions in terms of decision-making, risk management, training, methods, resources and governance. In industrialized sectors, quality assurance, quality management, quality control, certifications, quality specialists, methods, techniques and training are commonplace. The digital publishing sector is now ready to arm itself with these tools to integrate and assimilate various external expertise.
 
 ## Qualebook is a work in progress
-THe project was first incubated in 2023, first version was prepared in 2024. The year 2025 was dedicated to testing this checklist with professional teams in workshop settings. In 2026, the focus will be on consolidation and building collaborations to extend the project.
+The project was first incubated in 2023, first version was prepared in 2024. The year 2025 was dedicated to testing this checklist with professional teams in workshop settings. In 2026, the focus will be on consolidation and building collaborations to extend the project.
 
 ## Authors
 Qualebook is developed by the European Laboratory for Digital Reading (EDRLab) and the Digital commission, Norms & Standards Group, of the French <spn lang="fr">Syndicat national de l'édition</span> (SNE). The rules have been developed from the 240-item Opquast web quality assurance checklist, created by the company OPQUAST.
