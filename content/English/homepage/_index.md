@@ -16,7 +16,7 @@ features:
     bulletpoints:
     button:
       enable: true
-      label: "See the rules"
+      label: "Access the rules"
       link: "rules/"
 
   - title: "About the rules"
