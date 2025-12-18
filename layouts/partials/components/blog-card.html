@@ -7,7 +7,7 @@
     {{ end }}
     <h4>
       <a href="{{ .RelPermalink }}">
-        {{ .Title }}
+        {{  .Title | safeHTML | markdownify }}
       </a>
     </h4>
   </div>
