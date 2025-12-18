@@ -1,7 +1,7 @@
 ---
-title: "interopérabilité"
-meta_title: "interoperabilite"
-description: "Capacité à fonctionner de manière cohérente et efficace sur différents appareils, plateformes et logiciels. Cela inclut la rétrocompatibilité avec des dispositifs de lecture spécifiques (plages braille, lecteurs Daisy, etc.) ou anciens."
+title: "Interoperability"
+meta_title: "Interoperability"
+description: "Ability to operate consistently and effectively across different devices, platforms and software. This includes backwards compatibility with specific reading devices (braille displays, Daisy readers, etc.) or older."
 draft: false
 layout: about
 ---
