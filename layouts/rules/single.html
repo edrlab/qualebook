@@ -29,7 +29,7 @@
           <h2>
             <i class="fa-solid fa-bullseye"></i> {{ i18n "objectives" }}
           </h2>
-          <ul>
+          <ul class="rules">
             {{ $objectif:= .Params.objectif }}
             {{ range $i,$p:= $objectif }}
             <li class="">
@@ -40,7 +40,7 @@
           <h2>
             <i class="fa-solid fa-rocket"></i> {{ i18n "meo" }}
           </h2>
-          <ul>
+          <ul class="rules">
             {{ $meo:= .Params.meo }}
             {{ range $i,$p:= $meo }}
             <li class="">
@@ -51,7 +51,7 @@
           <h2>
             <i class="fa-solid fa-magnifying-glass"></i> {{ i18n "control" }}
           </h2>
-          <ul>
+          <ul class="rules">
             {{ $controle:= .Params.controle }}
             {{ range $i,$p:= $controle }}
             <li class="inline-block">
