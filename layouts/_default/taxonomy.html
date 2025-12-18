@@ -1,21 +1,19 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-
-  <section class="section">
-    <div class="container">
-      <div class="row gx-5">
-        <!-- blog posts -->
-        <div class="">
-          <div class="row">
-            {{ range .Data.Pages }}
-              <div class="md:col-4 mb-14">
-                {{ partial "components/blog-card" . }}
-              </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
+  <section class="rules-container rules-filtered-page">
+    <div class="rules-filters">
+      <!-- widget -->
+      {{ partial "widgets/rules-filters.html" . }}
+    </div>
+    <div class="rules-list">
+          <div style="text-align: center; margin-bottom: 36px;">
+      <h1 style="font-size: 30px; font-weight: bold;">{{ .Title | title }}</h1>
+      <p>{{ .Description }}</p>
+    </div>
+      {{ range .Data.Pages }}
+        {{ partial "components/blog-card" . }}
+      {{ end }}
     </div>
   </section>
 {{ end }}

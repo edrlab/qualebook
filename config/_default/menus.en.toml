@@ -5,28 +5,63 @@
 name = "Home"
 url = ""
 weight = 1
+identifier = "home"
 
 [[main]]
 name = "About"
 url = "about/"
 weight = 2
+identifier = "about"
 
 # [[main]]
 # name = "Authors"
 # url = "authors/"
 # weight = 2
+# identifier = "authors"
 
 [[main]]
 name = "Rules"
 url = "rules/"
 weight = 3
+identifier = "rules"
 
 [[main]]
 # parent = "Pages"
 name = "Categories"
 url = "categories/"
+identifier = "pages"
 
 [[main]]
 # parent = "Pages"
 name = "Tags"
 url = "tags/"
+identifier = "pages"
+
+[[main]]
+# parent = "Pages"
+name = "Glossary"
+url = "glossary/"
+weight = 15
+identifier = "glossary"
+
+# [[main]]
+# parent = "Pages"
+# name = "404 Page"
+# url = "404/"
+# identifier = "404"
+
+# footer menu
+[[footer]]
+name = "Access rules in JSON format"
+url = "https://edrlab.github.io/qualebook/en/rules/index.json"
+weight = 1
+
+[[footer]]
+name = "Download the rules in CSV format"
+url = "https://edrlab.github.io/qualebook/en/rules/index.csv"
+weight = 2
+
+# [[footer]]
+# name = "Privacy Policy"
+# url = "privacy-policy/"
+# weight = 3
