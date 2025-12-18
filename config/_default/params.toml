@@ -1,10 +1,10 @@
 #################### default parameters ################################
 favicon = "images/favicon.png"
-# logo = "images/logo.png"
-logo_darkmode = "images/logo-darkmode.png"
+logo = "images/illustrations/QUALIBOOK_LOGO-03.svg"
+# logo_darkmode = "images/illustrations/QUALIBOOK_LOGO-03.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "160px"
+logo_width = "50px"
 logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
@@ -44,7 +44,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [search]
 enable = true
 primary_color = "#121212"
-include_sections = ["blog"]
+include_sections = ["rules", "authors", "pages", "tags"]
 show_image = true
 show_description = true
 show_tags = true
