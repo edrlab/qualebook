@@ -32,7 +32,7 @@ date: 2025-07-15
 <dd>texte brut d'un programme écrit dans un langage de programmation.</dd> <br/>
 <dt id="contentdocument">Content Document (Fichier de contenu)</dt>
 <dd>
-Un EPUB contient plusieurs dossiers et fichiers. Parmi eux, on appelle fichier de contenu (Content Document) les fichiers XHTML qui contiennent tout ou partie de la publication, c'est-à-dire le texte lui-même et les éventuels appels de ressources (image, audio, vidéo...). Ces fichiers de contenu peuvent être référencés dans le fichier OPF pour être atteignables via le sommaire de l'application de lecture.
+Un EPUB contient plusieurs dossiers et fichiers. Parmi eux, on appelle fichier de contenu (Content Document) les fichiers XHTML qui contiennent tout ou partie de la publication, c'est-à-dire le texte lui-même et les éventuels appels de ressources (image, audio, vidéo...). Ces fichiers de contenu peuvent être référencés dans le fichier OPF pour être atteignables via le sommaire de l'outil de lecture.
 <!-- Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/#sec-contentdocs). -->
 </dd> <br/>
 <dt id="couverture">Métadonnées de couverture (Cf. Règle 086)</dt>
@@ -62,7 +62,7 @@ Voir [EPUB 3.3 section 7.4.4 The landmarks nav element](https://www.w3.org/TR/ep
 <dd>règles CSS qui permettent d'appliquer des styles différents en fonction des caractéristiques de l'appareil (taille d'écran, orientation, etc.).</dd> <br/>
 <dt id="metadata">Métadonnée</dt>
 <dd>Dans le monde de l'édition, il s'agit d'informations détaillées sur le livre qui sont transmises aux partenaires pour leur permettre d'avoir des informations sans disposer du livre. Les métadonnées les plus connues sont le titre et l'auteur.
-Dans le cas du livre numérique, ces informations permettent aussi aux dispositifs de lecture de restituer correctement le contenu.
+Dans le cas du livre numérique, ces informations permettent aussi aux outils de lecture de restituer correctement le contenu.
 </dd> <br/>
 <dt id="Minification">Minification (Cf. Règle 067)</dt>
 <dd>processus de suppression des caractères inutiles dans le code source pour réduire la taille des fichiers.</dd> <br/>
