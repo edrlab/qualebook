@@ -1,5 +1,5 @@
 ---
-title: "SNE"
+title: "[currency symbol] SNE"
 email:
 image:
 description: National Editing Union
