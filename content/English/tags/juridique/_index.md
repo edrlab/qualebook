@@ -1,7 +1,7 @@
 ---
-title: "légalité"
-meta_title: "légalité"
-description: "Aspects légaux liés à la création, distribution et utilisation du livre numérique. Cela inclut les mentions légales, les licences d'utilisation, ainsi que le respect des réglementations locales et internationales."
+title: "Legality"
+meta_title: "Legality"
+description: "Legal aspects related to the creation, distribution and use of digital books. This includes legal notices, user licenses, as well as compliance with local and international regulations."
 draft: false
 layout: about
 ---
