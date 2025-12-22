@@ -8,6 +8,7 @@ layout: glossary
 date: 2025-07-15
 ---
 
+
 <div class="about-page">
 <div class="about-main-section">
 
@@ -109,7 +110,8 @@ In the case of digital books, this information also allows reading devices to co
 </li>
 <li><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/"  target="_blank">TDM Reservation Protocol (TDMRep)</a>
 </li>
-<li><a href="https://ns.editeur.org/onix/fr/"  target="_blank">ONIX for books</a>
+<li>
+<a href="https://ns.editeur.org/onix/fr/"  target="_blank">ONIX for books</a>
 </li>
 </ul>
 </li>
