@@ -1,9 +1,9 @@
 ---
 layout: about 
-title: A quality checklist for ebooks
+title: Une liste de qualité pour les livre numériques
 ---
 
-# A quality checklist for ebooks
+# Une liste de qualité pour les livre numériques
 
 En entrant dans l'âge de la maturité, l'édition numérique a dû développer des processus d'industrialisation d'un type nouveau pour une industrie essentiellement papier. La standardisation d'un format de distribution de livres numériques a été obtenue par le développement du format EPUB. Puis est venue l'industrialisation de outils de lecture numérique, avec l'apparition d'initiatives telles que le projet Readium. La diffusion en cours de la technologie de gestion de droits numériques LCP participe également à ce mouvement de standardisation. 
 
