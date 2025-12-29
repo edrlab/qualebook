@@ -21,9 +21,9 @@ Qualebook is developed by the European Laboratory for Digital Reading (EDRLab) a
 
 ## Public presentations
 
-- <a href="https://youtu.be/JZalXLASzO4?list=PLY0BtmO03yYGQ8sQ7fwSw7IVaymmtp4Pm&t=22506"><span lang="fr">Qualinum la liste de référence qualité du livre numérique.  Assises du livre numérique 2023. </span> In french.</a>
+- <a href="https://youtu.be/JZalXLASzO4?list=PLY0BtmO03yYGQ8sQ7fwSw7IVaymmtp4Pm&t=22506"><span lang="fr">Qualinum the quality reference list of the digital book.  Seat of the 2023 book number. </span> In french.</a>
 - <a href:"https://www.edrlab.org/events/digital-publishing-summit-2024/#1708288836982-85ce3f99-0b0f"><span lang="en">Digital Publishing Summit 2024: Quality of ebooks, video of the presentation on the EDRLab website</span>.</a>
-- <a href="https://www.youtube.com/watch?v=dAKFe5uComs"><span lang="fr">« Qualebook » : vers une nouvelle ère de qualité pour l’édition numérique. Assises du livre numérique 2024. </span> In french.</a>
+- <a href="https://www.youtube.com/watch?v=dAKFe5uComs"><span lang="fr">“Qualebook”: to a new quality for digital edition. Seat of the 2024 Numeric Book. </span> In french.</a>
 
 ## How to collaborate?
 
