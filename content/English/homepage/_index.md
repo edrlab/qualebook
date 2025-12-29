@@ -17,7 +17,7 @@ features:
     button:
       enable: true
       label: "Access the rules"
-      link: "rules/"
+      link: "en/rules/"
 
   - title: "About the rules"
     image: "images/illustrations/about-rules.svg"
@@ -26,7 +26,7 @@ features:
     button:
       enable: true
       label: "About the rules"
-      link: "about/"
+      link: "en/about/"
 ---
 
 <!-- <div class="cover"></div> -->
