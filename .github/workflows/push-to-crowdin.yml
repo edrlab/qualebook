@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ PUSH_ALL_to_Crowdin ]
+    branches: [ PUSH-ALL-to-Crowdin ]
 # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions
 permissions:
