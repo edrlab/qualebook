@@ -32,7 +32,7 @@
           <ul>
             {{ $objectif:= .Params.objectif }}
             {{ range $i,$p:= $objectif }}
-            <li class="">
+            <li class=""><i class="fa-solid fa-arrow-right"></i>
               {{ . | safeHTML | markdownify }}
             </li>
             {{ end }}
@@ -43,7 +43,7 @@
           <ul>
             {{ $meo:= .Params.meo }}
             {{ range $i,$p:= $meo }}
-            <li class="">
+            <li class=""><i class="fa-solid fa-arrow-right"></i>
               {{ . | safeHTML | markdownify }}
             </li>
             {{ end }}
@@ -51,10 +51,10 @@
           <h2>
             <i class="fa-solid fa-magnifying-glass"></i> {{ i18n "control" }}
           </h2>
-          <ul>
+          <ul class-="rule-lists">
             {{ $controle:= .Params.controle }}
             {{ range $i,$p:= $controle }}
-            <li class="inline-block">
+            <li class="inline-block"><i class="fa-solid fa-arrow-right"></i>
               {{ . | safeHTML | markdownify }}
             </li>
             {{ end }}
@@ -66,7 +66,7 @@
             <ul>
               {{ $epubcheck:= .Params.epubcheck }}
               {{ if eq $epubcheck true }}
-              <li>
+              <li class-="rule-lists">
                 <i class="fa-solid fa-check-to-slot"></i> {{ i18n "epubcheck" }} 
               </li>
               {{ end }}
