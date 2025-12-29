@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ crowdin ]
+    branches: [ GET-from-Crowdin ]
 # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions
 permissions:
@@ -28,8 +28,8 @@ jobs:
       - name: crowdin action
         uses: crowdin/github-action@v2
         with:
-          upload_sources: true
-          upload_translations: true
+          upload_sources: false
+          upload_translations: false
           download_translations: true
           localization_branch_name: l10n_crowdin_translations
           create_pull_request: true
