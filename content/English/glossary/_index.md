@@ -33,7 +33,7 @@ date: 2025-07-15
 <dt id="Codesource">Source Code</dt>
     <dd>plain text of a program written in a programming language.</dd><br/>
 <dt id="contentdocument">Content Document</dt>
-    <dd>
+<dd>
 An EPUB contains several folders and files. Among them, we call content files (Content Document) the XHTML files which contain all or part of the publication, that is to say the text itself and any resource calls (image, audio, video, etc.). These content files can be referenced in the OPF file to be accessible via the reading application summary.
 <!-- Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/#sec-contentdocs). -->
 </dd><br/>
@@ -46,7 +46,7 @@ An EPUB contains several folders and files. Among them, we call content files (C
 <dt id="FicheONIX">ONIX Sheet (Cf. Fallback (See Rule 012)</dt>
     <dd>standardized metadata exchange format for the book industry.</dd><br/>
 <dt id="landmarks">Landmarks</dt>
-    <dd>
+<dd>
 Landmarks are key places in a post that a user is likely to want to quickly access. They usually include the table of contents, glossaries, bibliographies and other navigational and information aids.
 Both ARIA and EPUB define methods for expressing benchmarks:
 ARIA Markers are expressed using the role attribute and only exist in the document in which they are defined (see ARIA Markers for more information).
@@ -63,7 +63,7 @@ Voir [EPUB 3.3 section 7.4.4 The landmarks nav element](https://www.w3.org/TR/ep
 <dt id="Mediaqueries">Media queries (Cf. Rule 036)</dt>
     <dd>CSS rules that allow different styles to be applied depending on the characteristics of the device (screen size, orientation, etc.).</dd><br/>
 <dt id="metadata">Metadata</dt>
-    <dd>In the publishing world, this is detailed information about the book that is transmitted to partners to allow them to have information without having the book. The most common metadata are the title and the author.
+<dd>In the publishing world, this is detailed information about the book that is transmitted to partners to allow them to have information without having the book. The most common metadata are the title and the author.
 In the case of digital books, this information also allows reading devices to correctly render the content.
 </dd><br/>
 <dt id="Minification">Minification (Cf. Minification (See Rule 067)</dt>
