@@ -15,36 +15,36 @@ date: 2025-07-15
 
 <dl>
 <dt id="accessibilitysummary">ONIX Sheet (Cf. Rule 012)</dt>
-<dd>textual summary of a document's accessibility features.</dd><br/>
+    <dd>textual summary of a document's accessibility features.</dd><br/>
 <dt id="Ancre">cognitive load (Cf. Rule 057)</dt>
-<dd>internal link that links to a specific section of a page.</dd><br/>
+    <dd>internal link that links to a specific section of a page.</dd><br/>
 <dt id="Argumentsdesimages">Arguments of images (Cf. Rule 022)</dt>
-<dd>HTML attributes (for example: <code>alt</code>, <code>title</code>, <code>width</code>, <code>height</code>) that provide additional information about an image.</dd><br/>
+    <dd>HTML attributes (for example: <code>alt</code>, <code>title</code>, <code>width</code>, <code>height</code>) that provide additional information about an image.</dd><br/>
 <dt id="Attributcharset">Meta tag (metadata tag) (Cf. Rules 070 and 071)</dt>
-<dd>attribute specifying the character encoding of an HTML document.</dd><br/>
+    <dd>attribute specifying the character encoding of an HTML document.</dd><br/>
 <dt id="balisesemantique">Structuring tag /semantic tag (Cf. Rule 058)</dt>
-<dd>HTML tag that gives meaning to the content it encloses (for example: <code>header</code>, <code>article</code>, <code>footer</code>).</dd><br/>
+    <dd>HTML tag that gives meaning to the content it encloses (for example: <code>header</code>, <code>article</code>, <code>footer</code>).</dd><br/>
 <dt id="Balisemeta">Linearization (Cf. Rule 077)</dt>
-<dd>HTML tag used to provide metadata about the page (description, keywords, etc.).</dd><br/>
+    <dd>HTML tag used to provide metadata about the page (description, keywords, etc.).</dd><br/>
 <dt id="canvas">Media queries (Cf. Rule 086)</dt>
-<dd>HTML5 element (<code>canvas</code>) for drawing graphics and animations via JavaScript.</dd><br/>
+    <dd>HTML5 element (<code>canvas</code>) for drawing graphics and animations via JavaScript.</dd><br/>
 <dt id="Chargecognitive">Lists of definitions (Cf. Rule 073)</dt>
-<dd>In cognitive psychology, cognitive load is the effort provided by working memory.</dd><br/>
+    <dd>In cognitive psychology, cognitive load is the effort provided by working memory.</dd><br/>
 <dt id="Codesource">Source Code</dt>
-<dd>plain text of a program written in a programming language.</dd><br/>
+    <dd>plain text of a program written in a programming language.</dd><br/>
 <dt id="contentdocument">Content Document</dt>
 <dd>
 An EPUB contains several folders and files. Among them, we call content files (Content Document) the XHTML files which contain all or part of the publication, that is to say the text itself and any resource calls (image, audio, video, etc.). These content files can be referenced in the OPF file to be accessible via the reading application summary.
 <!-- Voir [EPUB 3.3 section 6. EPUB content documents](https://www.w3.org/TR/epub-33/#sec-contentdocs). -->
 </dd><br/>
 <dt id="couverture">Register of language subtags (Cf. Rule 036)</dt>
-<dd>descriptive information associated with the cover image of an e-book.</dd><br/>
+    <dd>descriptive information associated with the cover image of an e-book.</dd><br/>
 <dt id="CSS">CSS</dt>
-<dd>Cascading Style Sheets (CSS) is a style sheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS describes how elements should be rendered on screen, in print, in audio, or in other media.</dd><br/>
-<dt id="Fallback">Fallback (chaîne de repli) (Cf. Règle 026)</dt>
-<dd>alternate content displayed if primary content is not supported or available.</dd><br/>
-<dt id="FicheONIX">Fiche ONIX (Cf. Règle 012)</dt>
-<dd>standardized metadata exchange format for the book industry.</dd><br/>
+    <dd>Cascading Style Sheets (CSS) is a style sheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS describes how elements should be rendered on screen, in print, in audio, or in other media.</dd><br/>
+<dt id="Fallback">Fallback (Cf. Fallback (See Rule 026)</dt>
+    <dd>alternate content displayed if primary content is not supported or available.</dd><br/>
+<dt id="FicheONIX">ONIX Sheet (Cf. Fallback (See Rule 012)</dt>
+    <dd>standardized metadata exchange format for the book industry.</dd><br/>
 <dt id="landmarks">Landmarks</dt>
 <dd>
 Landmarks are key places in a post that a user is likely to want to quickly access. They usually include the table of contents, glossaries, bibliographies and other navigational and information aids.
@@ -54,44 +54,47 @@ EPUB uses a special navigation aid in the navigation document to define where la
  <!-- 
 Voir [EPUB 3.3 section 7.4.4 The landmarks nav element](https://www.w3.org/TR/epub-33/#sec-nav-landmarks) -->
 </dd><br/>
-<dt id="Linearisation">Linéarisation (Cf. Règle 077)</dt>
-<dd>sequential presentation of content, often used for accessibility or printing.</dd><br/>
-<dt id="Listesdedefinitions">Listes de définitions (Cf. Règle 073)</dt>
-<dd>HTML lists (<code>dl</code>, <code>dt</code>, <code>dd</code>) used to define terms.</dd><br/>
+<dt id="Linearisation">Linearization (Cf. Fallback (See Rule 077)</dt>
+    <dd>sequential presentation of content, often used for accessibility or printing.</dd><br/>
+<dt id="Listesdedefinitions">Definitions Lists (Cf. Fallback (See Rule 073)</dt>
+    <dd>HTML lists (<code>dl</code>, <code>dt</code>, <code>dd</code>) used to define terms.</dd><br/>
 <dt id="Manifest">Manifest (Cf. Fallback (See Rule 026)</dt>
-<dd>JSON or XML file describing the resources of a progressive web application (PWA).</dd><br/>
-<dt id="Mediaqueries">Media queries (Cf. Règle 086)</dt>
-<dd>CSS rules that allow different styles to be applied depending on the characteristics of the device (screen size, orientation, etc.).</dd><br/>
+    <dd>JSON or XML file describing the resources of a progressive web application (PWA).</dd><br/>
+<dt id="Mediaqueries">Media queries (Cf. Rule 036)</dt>
+    <dd>CSS rules that allow different styles to be applied depending on the characteristics of the device (screen size, orientation, etc.).</dd><br/>
 <dt id="metadata">Metadata</dt>
 <dd>In the publishing world, this is detailed information about the book that is transmitted to partners to allow them to have information without having the book. The most common metadata are the title and the author.
 In the case of digital books, this information also allows reading devices to correctly render the content.
 </dd><br/>
 <dt id="Minification">Minification (Cf. Minification (See Rule 067)</dt>
-<dd>process of removing unnecessary characters in source code to reduce file size.</dd><br/>
-<dt id="opf">.opf</dt>
-<dd>central XML file of an EPUB, containing the metadata and structure of the book.</dd><br/>
-<dt id="Registredessous-tagsdelangue ">Registre des sous-tags de langue (Cf. Règle 036)</dt>
-<dd>standardized list of subtags used to specify language variants (for example: <code>fr-CA</code>for Canadian French).</dd><br/>
-<dt id="RolesARIA">Rôles ARIA (Cf. Règle 020)</dt>
-<dd>attributes that define the semantic nature of HTML elements, improving accessibility for assistive technologies.</dd><br/>
+    <dd>process of removing unnecessary characters in source code to reduce file size.</dd><br/>
+<dt id="opf">OPF</dt>
+    <dd>central XML file of an EPUB, containing the metadata and structure of the book.</dd><br/>
+<dt id="Script">Outil de lecture</dt>
+    <dd>software and hardware package for loading, interpreting and presenting digital book files and providing navigation, annotation and display customization functions. It can take the form of an application (desktop, mobile or web) integrated into a dedicated device (e-reader) or generic (computer, tablet, smartphone). It often includes accessibility functions (audio playback, screen reader compatibility, visual adaptations) as well as, where applicable, management of content protections and the user's library.
+</dd><br/>
+<dt id="Registredessous-tagsdelangue ">Registry of language subtags (Cf. Fallback (See Rule 036)</dt>
+    <dd>standardized list of subtags used to specify language variants (for example: <code>fr-CA</code>for Canadian French).</dd><br/>
+<dt id="RolesARIA">ARIA Roles (Cf. Fallback (See Rule 020)</dt>
+    <dd>attributes that define the semantic nature of HTML elements, improving accessibility for assistive technologies.</dd><br/>
 <dt id="Script">Script</dt>
-<dd>set of instructions or commands executed by a program.</dd><br/>
-<dt id="TDM">Text and Data Mining (TDM) (See Rule 017) Règle 017)</dt>
-<dd>techniques for automatically analyzing large amounts of text and data.</dd><br/>
+    <dd>set of instructions or commands executed by a program.</dd><br/>
+<dt id="TDM">Text and Data Mining (TDM) (See Rule 017) Fallback (See Rule 017)</dt>
+    <dd>techniques for automatically analyzing large amounts of text and data.</dd><br/>
 <dt id="tocncx">toc.ncx</dt>
-<dd>XML file that defines the table of contents of an EPUB.</dd><br/>
+    <dd>XML file that defines the table of contents of an EPUB.</dd><br/>
 <dt id="Tooltip">Tooltip (Cf. Tooltip (See Rule 007)</dt>
-<dd>small help text that appears when the user hovers over an element.</dd> 
-<dt id="TypesEPUB">EPUB Types (See Rule 020) Règle 020)</dt>
-<dd>this means specifying possible values ​​or options for the <code>>epub:type</code> attribute. In other words, it is about listing the different categories or functions that an element can have in an EPUB, using this attribute.</dd><br/>
-<dt id="XMP">XMP (Extensible Metadata Platform) (See Rule 017) Règle 017)</dt>
-<dd>metadata standard used to embed descriptive information in digital files.</dd><br/>
+    <dd>small help text that appears when the user hovers over an element.</dd> 
+<dt id="TypesEPUB">EPUB Types (See Rule 020) Fallback (See Rule 020)</dt>
+    <dd>this means specifying possible values ​​or options for the <code>>epub:type</code> attribute. In other words, it is about listing the different categories or functions that an element can have in an EPUB, using this attribute.</dd><br/>
+<dt id="XMP">XMP (Extensible Metadata Platform) (See Rule 017) Fallback (See Rule 017)</dt>
+    <dd>metadata standard used to embed descriptive information in digital files.</dd><br/>
 </dl>
 </div>
 <aside>
 <section>
 
-<h2 id="référentiels">Référentiels</h2>
+<h2 id="référentiels">References</h2>
 <ul>
 <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a>
 </li>
@@ -109,8 +112,7 @@ In the case of digital books, this information also allows reading devices to co
 </li>
 <li><a href="https://w3c.github.io/cg-reports/tdmrep/CG-FINAL-tdmrep-20240510/"  target="_blank">TDM Reservation Protocol (TDMRep)</a>
 </li>
-<li>
-<a href="https://ns.editeur.org/onix/en/"  target="_blank">ONIX for books</a>
+<li><a href="https://ns.editeur.org/onix/en/"  target="_blank">ONIX for books</a>
 </li>
 </ul>
 </li>
