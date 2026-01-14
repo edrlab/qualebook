@@ -67,7 +67,7 @@ identifier = "tags"
 # parent = "Pages"
 name = "Glossaire"
 url = "glossary/"
-weight = 15
+weight = 40
 identifier = "glossary"
 
 # [[main]]
@@ -75,7 +75,6 @@ identifier = "glossary"
 # name = "404 Page"
 # url = "404/"
 # identifier = "404"
-
 
 # footer menu
 [[footer]]
