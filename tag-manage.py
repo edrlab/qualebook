@@ -7,7 +7,7 @@ DIR_PATH = "content/English/rules"
 # The EXACT text to look for. 
 # We include the hyphen and quotes to be sure we don't replace the wrong thing.
 # We do NOT include the indentation spaces (the code handles that).
-TARGET_STRING = '- "Projet éditorial"'
+TARGET_STRING = '- "design"'
 
 # The EXACT text to replace it with.
 # Change this to "Editorial design" if you prefer that over "editorial planning"
