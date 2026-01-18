@@ -2,7 +2,7 @@ import glob
 import os
 
 # --- CONFIGURATION ---
-DIR_PATH = "content/English/rules"
+DIR_PATH = "content/french/rules"
 KEYS_TO_FIX = ['abstract', 'objectif', 'Meo', 'Control', 'Controle']
 
 def fix_line_punctuation(line):
