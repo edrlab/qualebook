@@ -4,7 +4,7 @@ import time
 import google.generativeai as genai
 from ruamel.yaml import YAML
 
-API_KEY = ""
+API_KEY = "AIzaSyBv0_XU62rKT7wpjseBFIX8v75gu3BMQ3c"
 
 ENGLISH_DIR = 'content/English/rules'
 KEYS_TO_TRANSLATE = ['title', 'abstract', 'Meo', 'objectif', 'Controle']
@@ -17,30 +17,40 @@ model = genai.GenerativeModel('gemini-3-flash-preview') # ou 'gemini-1.5-flash'
 yaml = YAML()
 yaml.preserve_quotes = True
 yaml.width = 4096
-yaml.indent(mapping=2, sequence=4, offset=2) # Ajustez selon votre préférence d'indentation
+yaml.indent(mapping=2, sequence=4, offset=2) 
 
 def get_translation_from_gemini(filename, full_content):
-    
     prompt = f"""
-    You are an expert translator specializing in digital accessibility, web quality, and ebook standards.
-    You are working on the "Qualebook" project, which is inspired by the "Opquast" quality checklist.
+    You are a native English-speaking expert in digital accessibility, web quality, and ebook standards (WCAG, EPUB).
+    You are working on the "Qualebook" project, an adaptation of the "Opquast" quality checklist.
     
     TASK:
-    Translate the French values found in the YAML Front Matter of the provided Markdown file into English.
+    Translate the French metadata values found in the YAML Front Matter into idiomatic, professional English.
     
-    CONTEXT:
-    - "Meo" stands for "Mise en œuvre" (Implementation).
-    - "Controle" stands for "Control" or "Audit".
-    - "Objectif" stands for "Objective".
-    - Keep the tone professional, technical, and concise.
-    - Terminology: Use standard W3C/WCAG/EPUB accessibility terminology (e.g., "Landmarks" for "Points de repère").
+    TARGET AUDIENCE & STYLE:
+    - **Technical but Accessible:** The language must be precise for developers/testers but easy to understand (Plain English).
+    - **Idiomatic English:** Do NOT translate word-for-word. Avoid clunky French structures.
+      - *Avoid:* "Verify the presence of..." or "Check the absence of..."
+      - *Prefer:* "Ensure that...", "Check that...", "Verify that...", or direct verbs like "Provide...", "Include...".
+    - **Active Voice:** Use the imperative mood for instructions.
+      - *Bad:* "The indication of rights must be done."
+      - *Good:* "Indicate the copyright information."
+    
+    CONTEXT FOR KEYS:
+    - **"title"**: The rule itself. Must be a requirement in SVO structure where the subject is the requirement matter.
+    - **"abstract"**: The rationale. Why is this important?
+    - **"Meo"** (Mise en œuvre / Implementation): Instructions for developers. Use strong imperative verbs (e.g., "Add," "Use," "Configure").
+    - **"Controle"** (Control / Audit): Instructions for testers. (e.g., "Check that," "Ensure," "Validate").
+    - **"objectif"**: The user benefit.
+    
+    TERMINOLOGY:
+    - Use standard W3C/WCAG/EPUB terminology (e.g., "Landmarks" for "Points de repère", "Table of Contents" for "Table des matières").
     
     INSTRUCTIONS:
     1. Read the provided Markdown file content below.
     2. Extract and translate the values for ONLY these specific keys: {KEYS_TO_TRANSLATE}.
-    3. If a value is a list (bullet points), keep it as a list in English.
-    4. If a value is a string, keep it as a string.
-    5. RETURN ONLY A VALID JSON OBJECT. Do not add markdown formatting (like ```json).
+    3. Keep lists as lists. Keep strings as strings.
+    4. RETURN ONLY A VALID JSON OBJECT. Do not add markdown formatting.
     
     MARKDOWN CONTENT ({filename}):
     {full_content}
