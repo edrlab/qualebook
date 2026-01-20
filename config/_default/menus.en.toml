@@ -53,12 +53,12 @@ identifier = "glossary"
 # footer menu
 [[footer]]
 name = "Access rules in JSON format"
-url = "https://qualebook.edrlab.org/en/rules/index.json"
+url = "/rules/index.json"
 weight = 1
 
 [[footer]]
 name = "Download the rules in CSV format"
-url = "https://qualebook.edrlab.org/en/rules/index.csv"
+url = "/rules/index.csv"
 weight = 2
 
 # [[footer]]
