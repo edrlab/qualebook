@@ -71,7 +71,7 @@ target = '$1'
 ############################# Outputs ############################
 [outputs]
 home = ["HTML", "RSS", "SearchIndex", "json"] 
-section = ["HTML", "SearchIndex", "json"] 
+section = ["HTML", "SearchIndex", "json", "CSV"] 
 about = ["HTML", "RSS", "SearchIndex", "json"] 
 
 
@@ -124,6 +124,11 @@ mediaType = "application/json"
 baseName = "searchindex"
 isPlainText = true
 notAlternative = true
+
+[outputFormats.CSV]
+mediaType = "text/csv"
+baseName = "index"
+isPlainText = true
 
 
 ############################# Plugins ##############################
