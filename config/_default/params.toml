@@ -1,5 +1,5 @@
 #################### default parameters ################################
-favicon = "images/favicon.png"
+favicon = "favicon.svg"
 logo = "images/illustrations/QUALIBOOK_LOGO-03.svg"
 # logo_darkmode = "images/illustrations/QUALIBOOK_LOGO-03.svg"
 # use `px` or `x` with logo_width, example: "100px".
