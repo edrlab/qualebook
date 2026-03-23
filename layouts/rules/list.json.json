@@ -13,67 +13,34 @@
 {{ $length := (len $pages) -}}
 {
     "version": "https://jsonfeed.org/version/1.1",
-    "title": "{{ if eq  .Title  site.Title }}{{ site.Title }}{{ else }}{{ with .Title }}{{ . }} {{ i18n "string_on" }} {{ end }}{{ site.Title }}{{ end }}",
-    "description": "{{ i18n "string_recent_content" }} {{ if ne  .Title  site.Title }}{{ with .Title }}{{ i18n "string_in" }} {{ . }} {{ end }}{{ end }}{{ i18n "string_on" }} {{ site.Title }}",
+    "title": {{ site.Title | jsonify }},
+    "description": "Quality checklist for digital books - Rule database",
     "home_page_url": "{{ site.BaseURL }}",
-    {{ with .OutputFormats.Get "JSON" -}}
     "feed_url": "{{ .Permalink }}",
-    {{ end -}}
-    {{ with site.LanguageCode -}}
-    "language": "{{ . }}",
-    {{ end -}}
-    {{ with $.Param "icon" -}}
-    "icon": "{{ . | absURL }}",
-    {{ end -}}
-    {{ with $.Param "favicon" -}}
-    "favicon": "{{ . | absURL }}",
-    {{ end -}}
-    {{ with site.Params.author.name -}}
-    "authors": [
-        {
-            "name": "{{ . }}"{{ with site.Params.author.url }},
-            "url": "{{ . }}"{{ end }}{{ with site.Params.author.avatar }},
-            "avatar": "{{ . | absURL }}"{{ end }}
-        }
-    ],
-    {{ end -}}
     "items": [
-        {{ range $index, $element := $pages -}}
+        {{- range $index, $element := $pages }}
         {
-            "title": {{ .Title | jsonify }},
+            "title": {{ .Params.title | jsonify }},
             "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
             "date_modified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
             "id": "{{ .Permalink }}",
             "url": "{{ .Permalink }}",
-"Rubrique": {{ .Params.Rubrique | jsonify }},
-"detail": {{ .Params.detail | jsonify }},
-"abstract": {{ .Params.abstract | jsonify }},
-"categories": {{ .Params.categories | jsonify }},
-"agrege": {{ .Params.agrege | jsonify }},
-"opquast": {{ .Params.opquast | jsonify }},
-"indiceebook": {{ .Params.indiceebook | jsonify }},
-"description": {{ .Params.description | jsonify }},
-"before": {{ .Params.before | jsonify }},
-"weight": {{ .Params.weight | jsonify }},
-"after": {{ .Params.after | jsonify }},
-"actif": {{ .Params.actif | jsonify }},
-"layout": {{ .Params.layout | jsonify }},
-"date": {{ .Params.date | jsonify }},
-"tags": {{ .Params.tags | jsonify }},
-"objectif": {{ .Params.objectif | jsonify }},
-"Meo": {{ .Params.Meo | jsonify }},
-"Controle": {{ .Params.Controle | jsonify }},
-"Source": {{ .Params.Source | jsonify }},
-"Referentiel": {{ .Params.Referentiel | jsonify }},
-"epubcheck": {{ .Params.epubcheck | jsonify }},
-"ace": {{ .Params.ace | jsonify }},
-"humancheck": {{ .Params.humancheck | jsonify }},
-"OPFmetadata": {{ .Params.OPFmetadata | jsonify }},
-"onixmetadata": {{ .Params.onixmetadata | jsonify }},
-"Steps": {{ .Params.Steps | jsonify }},
-            
- "content_html": {{ .Content | jsonify }}
-}{{ if ne (add $index 1) $length }},{{ end }}
-{{ end -}}
-]
+            "abstract": {{ .Params.abstract | jsonify }},
+            "categories": {{ .Params.categories | jsonify }},
+            "agrege": {{ .Params.agrege | jsonify }},
+            "description": {{ .Params.description | jsonify }},
+            "actif": {{ .Params.actif | jsonify }},
+            "tags": {{ .Params.tags | jsonify }},
+            "objectif": {{ .Params.objectif | jsonify }},
+            "Meo": {{ .Params.Meo | jsonify }},
+            "Controle": {{ .Params.Controle | jsonify }},
+            "Source": {{ .Params.Source | jsonify }},
+            "Referentiel": {{ .Params.Referentiel | jsonify }},
+            "epubcheck": {{ .Params.epubcheck | jsonify }},
+            "ace": {{ .Params.ace | jsonify }},
+            "humancheck": {{ .Params.humancheck | jsonify }},
+            "steps": {{ .Params.steps | jsonify }}
+        }{{ if ne (add $index 1) $length }},{{ end }}
+        {{- end }}
+    ]
 }
