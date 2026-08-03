@@ -101,7 +101,7 @@
               </span>
               {{ $steps:= .Params.steps }}
               {{ range $i,$p:= $steps }}
-              <a href="{{ `etapes/` | relLangURL }}{{ . | urlize | lower }}/">
+              <a href="{{ `steps/` | relLangURL }}{{ . | urlize | lower }}/">
                 {{ . | humanize }}</a>
               {{ end }}
             </li>
